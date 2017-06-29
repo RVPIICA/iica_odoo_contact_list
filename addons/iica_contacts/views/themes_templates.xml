@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <!--IICA Agroenlace-->
+  <template id="theme_iica_agro_enlace">
+      <t t-call="iica_contacts.s_iica_banner_agroenlace" />
+      <t t-call="iica_contacts.s_iica_player_agroenlace" />
+      <t t-call="iica_contacts.s_iica_footer_social" />
+  </template>
+  <template id="theme_iica_agro_enlace_live">
+      <t t-call="iica_contacts.s_iica_banner_agroenlace" />
+      <t t-call="iica_contacts.s_iica_live_agro_enlace" />
+      <t t-call="iica_contacts.s_iica_footer_social" />
+  </template>
+  <!--IICAConexión-->
+  <template id="theme_iica_conexion">
+      <t t-call="iica_contacts.s_iica_banner_conexion" />
+      <t t-call="iica_contacts.s_iica_block_image" />
+      <t t-call="iica_contacts.s_iica_footer_social" />
+  </template>
+  <template id="theme_iica_connection">
+      <t t-call="iica_contacts.s_iica_banner_connection" />
+      <t t-call="iica_contacts.s_iica_block_image" />
+      <t t-call="iica_contacts.s_iica_footer_social_eng" />
+  </template>
+</odoo>

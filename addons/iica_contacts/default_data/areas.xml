@@ -1,0 +1,24 @@
+<odoo>
+  <data>
+    <record id="ai_1" model="iica_contacts.area_interest">
+      <field name="name">Competitiveness and Sustainability of Agricultural Chains</field>
+      <field name="description"></field>
+    </record>
+    <record id="ai_2" model="iica_contacts.area_interest">
+      <field name="name">Inclusion in Agriculture and Rural Territories</field>
+      <field name="description"></field>
+    </record>
+    <record id="ai_3" model="iica_contacts.area_interest">
+      <field name="name">Resilience and Comprehensive Risk Management in Agriculture</field>
+      <field name="description"></field>
+    </record>
+    <record id="ai_4" model="iica_contacts.area_interest">
+      <field name="name">Productivity and Sustainability of Family Agriculture</field>
+      <field name="description"></field>
+    </record>
+    <record id="ai_5" model="iica_contacts.area_interest">
+      <field name="name">Agricultural health and food safety</field>
+      <field name="description"></field>
+    </record>
+  </data>
+</odoo>

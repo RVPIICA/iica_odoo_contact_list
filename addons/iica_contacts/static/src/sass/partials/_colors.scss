@@ -1,0 +1,206 @@
+//Fondos
+.azuliica {
+  background-color: $azul-iica;
+}
+
+.azuliica2 {
+  background-color: $azul-iica2;
+}
+
+.azuliica3 {
+  background-color: $azuliica3;
+}
+
+.mostaza {
+  background-color: $mostaza;
+}
+
+.rojo {
+  background-color: $rojo;
+}
+
+.amarillo {
+  background-color: $amarillo;
+}
+
+.naranja {
+  background-color: $naranja;
+}
+
+.verde1 {
+  background-color: $verde1;
+}
+
+.verde2 {
+  background-color: $verde2;
+}
+
+.verde3 {
+  background-color: $verde3;
+}
+
+.verde4 {
+  background-color: $verde4;
+}
+
+.gris {
+  background-color: $gris;
+}
+
+.gris2 {
+  background-color: $gris2;
+}
+
+.blanco {
+  background-color: $blanco;
+}
+//Letras
+.lt-azuliica {
+  color: $azul-iica;
+}
+
+.lt-azuliica2 {
+  color: $azul-iica2;
+}
+
+.lt-azuliica3 {
+  color: $azuliica3;
+}
+
+.lt-mostaza {
+  color: $mostaza;
+}
+
+.lt-rojo {
+  color: $rojo;
+}
+
+.lt-amarillo {
+  color: $amarillo;
+}
+
+.lt-naranja {
+  color: $naranja;
+}
+
+.lt-verde1 {
+  color: $verde1;
+}
+
+.lt-verde2 {
+  color: $verde2;
+}
+
+.lt-verde3 {
+  color: $verde3;
+}
+
+.lt-verde4 {
+  color: $verde4;
+}
+
+.lt-gris {
+  color: $gris;
+}
+
+.lt-blanco {
+  color: $blanco;
+}
+
+//Hovers
+.hover-azuliica {
+  &:hover{
+    background-color: $azul-iica;
+    color: white;
+  }
+}
+
+.hover-azuliica2 {
+  &:hover{
+    background-color: $azul-iica2;
+    color: white;
+  }
+}
+
+.hover-azuliica3 {
+  &:hover{
+    background-color: $azuliica3;
+    color: white;
+  }
+}
+
+.hover-mostaza {
+  &:hover{
+    background-color: $mostaza;
+    color: white;
+  }
+}
+
+.hover-rojo {
+  &:hover{
+    background-color: $rojo;
+    color: white;
+  }
+}
+
+.hover-amarillo {
+  &:hover{
+    background-color: $amarillo;
+    color: white;
+  }
+}
+
+.hover-naranja {
+  &:hover{
+    background-color: $naranja;
+    color: white;
+  }
+}
+
+.hover-verde1 {
+  &:hover{
+    background-color: $verde1;
+    color: white;
+  }
+}
+
+.hover-verde2 {
+  &:hover{
+    background-color: $verde2;
+    color: white;
+  }
+}
+
+.hover-verde3 {
+  &:hover{
+    background-color: $verde3;
+    color: white;
+  }
+}
+
+.hover-verde4 {
+  &:hover{
+    background-color: $verde4;
+    color: white;
+  }
+}
+
+.hover-gris {
+  &:hover{
+    background-color: $gris;
+  }
+  background-color: $gris;
+}
+
+.hover-gris2 {
+  &:hover{
+    background-color: $gris2;
+    color: white;
+  }
+}
+
+.hover-blanco {
+  &:hover{
+    background-color: $blanco;
+  }
+}

@@ -1,0 +1,136 @@
+<odoo>
+  <data>
+    <record id="ti_1" model="iica_contacts.topic_interest">
+      <field name="name">Organic farming</field>
+      <field name="description"></field>
+    </record>
+    <record id="ti_2" model="iica_contacts.topic_interest">
+      <field name="name">Family farming</field>
+      <field name="description"></field>
+    </record>
+    <record id="ti_3" model="iica_contacts.topic_interest">
+      <field name="name">Agroindustry</field>
+      <field name="description"></field>
+    </record>
+    <record id="ti_4" model="iica_contacts.topic_interest">
+      <field name="name">Agribusiness</field>
+      <field name="description"></field>
+    </record>
+    <record id="ti_5" model="iica_contacts.topic_interest">
+      <field name="name">Agrotourism</field>
+      <field name="description"></field>
+    </record>
+    <record id="ti_6" model="iica_contacts.topic_interest">
+      <field name="name">Water</field>
+      <field name="description"></field>
+    </record>
+    <record id="ti_7" model="iica_contacts.topic_interest">
+      <field name="name">Biofuels</field>
+      <field name="description"></field>
+    </record>
+    <record id="ti_8" model="iica_contacts.topic_interest">
+      <field name="name">Biosafety</field>
+      <field name="description"></field>
+    </record>
+    <record id="ti_9" model="iica_contacts.topic_interest">
+      <field name="name">Biotecnology</field>
+      <field name="description"></field>
+    </record>
+    <record id="ti_10" model="iica_contacts.topic_interest">
+      <field name="name">Climate change</field>
+      <field name="description"></field>
+    </record>
+    <record id="ti_11" model="iica_contacts.topic_interest">
+      <field name="name">Agricultural chains</field>
+      <field name="description"></field>
+    </record>
+    <record id="ti_12" model="iica_contacts.topic_interest">
+      <field name="name">Trade</field>
+      <field name="description"></field>
+    </record>
+    <record id="ti_13" model="iica_contacts.topic_interest">
+      <field name="name">Competitiveness</field>
+      <field name="description"></field>
+    </record>
+    <record id="ti_14" model="iica_contacts.topic_interest">
+      <field name="name">Rural development</field>
+      <field name="description"></field>
+    </record>
+    <record id="ti_15" model="iica_contacts.topic_interest">
+      <field name="name">Sustainable development</field>
+      <field name="description"></field>
+    </record>
+    <record id="ti_16" model="iica_contacts.topic_interest">
+      <field name="name">Renewable energies</field>
+      <field name="description"></field>
+    </record>
+    <record id="ti_17" model="iica_contacts.topic_interest">
+      <field name="name">Knowledge management</field>
+      <field name="description"></field>
+    </record>
+    <record id="ti_18" model="iica_contacts.topic_interest">
+      <field name="name">Risk management</field>
+      <field name="description"></field>
+    </record>
+    <record id="ti_19" model="iica_contacts.topic_interest">
+      <field name="name">Inclusion</field>
+      <field name="description"></field>
+    </record>
+    <record id="ti_20" model="iica_contacts.topic_interest">
+      <field name="name">Innovation</field>
+      <field name="description"></field>
+    </record>
+    <record id="ti_21" model="iica_contacts.topic_interest">
+      <field name="name">Food and nutrition security</field>
+      <field name="description"></field>
+    </record>
+    <record id="ti_22" model="iica_contacts.topic_interest">
+      <field name="name">Rural youth</field>
+      <field name="description"></field>
+    </record>
+    <record id="ti_23" model="iica_contacts.topic_interest">
+      <field name="name">Agricultural markets</field>
+      <field name="description"></field>
+    </record>
+    <record id="ti_24" model="iica_contacts.topic_interest">
+      <field name="name">Women</field>
+      <field name="description"></field>
+    </record>
+    <record id="ti_25" model="iica_contacts.topic_interest">
+      <field name="name">Productivity</field>
+      <field name="description"></field>
+    </record>
+    <record id="ti_26" model="iica_contacts.topic_interest">
+      <field name="name">Indigenous population</field>
+      <field name="description"></field>
+    </record>
+    <record id="ti_27" model="iica_contacts.topic_interest">
+      <field name="name">Natural resources</field>
+      <field name="description"></field>
+    </record>
+    <record id="ti_28" model="iica_contacts.topic_interest">
+      <field name="name">Resilient agriculture</field>
+      <field name="description"></field>
+    </record>
+    <record id="ti_29" model="iica_contacts.topic_interest">
+      <field name="name">Agricultural health</field>
+      <field name="description"></field>
+    </record>
+    <record id="ti_30" model="iica_contacts.topic_interest">
+      <field name="name">Food and nutrition security</field>
+      <field name="description"></field>
+    </record>
+    <record id="ti_31" model="iica_contacts.topic_interest">
+      <field name="name">Agricultural insurance</field>
+      <field name="description"></field>
+    </record>
+    <record id="ti_32" model="iica_contacts.topic_interest">
+      <field name="name">Soils</field>
+      <field name="description"></field>
+    </record>
+    <record id="ti_33" model="iica_contacts.topic_interest">
+      <field name="name">Information and communication technologies</field>
+      <field name="description"></field>
+    </record>
+  </data>
+</odoo>
