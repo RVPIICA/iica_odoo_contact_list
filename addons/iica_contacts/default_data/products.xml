@@ -1,0 +1,28 @@
+<odoo>
+  <data>
+    <record id="pi_1" model="iica_contacts.products_interest">
+      <field name="name">IICAConexión</field>
+      <field name="description"></field>
+    </record>
+    <record id="pi_2" model="iica_contacts.products_interest">
+      <field name="name">IICAConnection</field>
+      <field name="description"></field>
+    </record>
+    <record id="pi_3" model="iica_contacts.products_interest">
+      <field name="name">AgroEnlace</field>
+      <field name="description"></field>
+    </record>
+    <record id="pi_4" model="iica_contacts.products_interest">
+      <field name="name">Invitation to Events</field>
+      <field name="description"></field>
+    </record>
+    <record id="pi_5" model="iica_contacts.products_interest">
+      <field name="name">Invitation to Courses</field>
+      <field name="description"></field>
+    </record>
+    <record id="pi_6" model="iica_contacts.products_interest">
+      <field name="name">Invitation to Seminars</field>
+      <field name="description"></field>
+    </record>
+  </data>
+</odoo>

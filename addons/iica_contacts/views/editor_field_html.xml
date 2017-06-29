@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <template id="mass_mailing.assets_mail_themes">
+      <link rel="stylesheet" type="text/less" href="/iica_contacts/static/src/less/themes/theme_default.less"/>
+  </template>
+</odoo>

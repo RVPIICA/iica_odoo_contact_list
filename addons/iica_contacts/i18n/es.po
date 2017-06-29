@@ -1,0 +1,1100 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* iica_contacts
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-08 22:47+0000\n"
+"PO-Revision-Date: 2017-06-08 22:47+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_aniversary_logo
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_live_agro_enlace
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_player_agroenlace
+msgid "&amp;nbsp;"
+msgstr "&amp;nbsp;"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.register
+msgid "-- Select country --"
+msgstr "-- Seleccione un país --"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.register
+msgid "-- Select language --"
+msgstr "-- Seleccione un idioma --"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.register
+msgid "-- Select sector --"
+msgstr "-- Seleccione un sector --"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "0.5 miles North from the Ipís-Coronado Intersection"
+msgstr "600 metros norte del Cruce Ipís Coronado"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.layout
+msgid "<span class=\"sr-only\">Toggle navigation</span>\n"
+"                          <span class=\"icon-bar\"/>\n"
+"                          <span class=\"icon-bar\"/>\n"
+"                          <span class=\"icon-bar\"/>"
+msgstr "<span class=\"sr-only\">Cambiar navegación</span>\n"
+"                          <span class=\"icon-bar\"/>\n"
+"                          <span class=\"icon-bar\"/>\n"
+"                          <span class=\"icon-bar\"/>"
+
+#. module: iica_contacts
+#: model:iica_contacts.topic_interest,name:iica_contacts.ti_4
+msgid "Agribusiness"
+msgstr "Agronegocios"
+
+#. module: iica_contacts
+#: model:iica_contacts.topic_interest,name:iica_contacts.ti_11
+msgid "Agricultural chains"
+msgstr "Cadenas agrícolas"
+
+#. module: iica_contacts
+#: model:iica_contacts.topic_interest,name:iica_contacts.ti_29
+msgid "Agricultural health"
+msgstr "Sanidad agropecuaria"
+
+#. module: iica_contacts
+#: model:iica_contacts.area_interest,name:iica_contacts.ai_5
+msgid "Agricultural health and food safety"
+msgstr "Sanidad agropecuaria e inocuidad de los alimentos"
+
+#. module: iica_contacts
+#: model:iica_contacts.topic_interest,name:iica_contacts.ti_31
+msgid "Agricultural insurance"
+msgstr "Seguros agropecuarios"
+
+#. module: iica_contacts
+#: model:iica_contacts.topic_interest,name:iica_contacts.ti_23
+msgid "Agricultural markets"
+msgstr "Mercados agropecuarios"
+
+#. module: iica_contacts
+#: model:iica_contacts.products_interest,name:iica_contacts.pi_3
+msgid "AgroEnlace"
+msgstr "AgroEnlace"
+
+#. module: iica_contacts
+#: model:iica_contacts.topic_interest,name:iica_contacts.ti_3
+msgid "Agroindustry"
+msgstr "Agroindustria"
+
+#. module: iica_contacts
+#: model:iica_contacts.topic_interest,name:iica_contacts.ti_5
+msgid "Agrotourism"
+msgstr "Agroturismo"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "Antigua and Barbuda"
+msgstr "Antigua y Barbuda"
+
+#. module: iica_contacts
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_area_interest_name
+msgid "Area"
+msgstr "Area"
+
+#. module: iica_contacts
+#: code:addons/iica_contacts/models/mailing.py:18
+#, python-format
+msgid "Areas of Interest"
+msgstr "Areas de interés"
+
+#. module: iica_contacts
+#: model:ir.model.fields,field_description:iica_contacts.field_mail_mass_mailing_area_interest_ids
+msgid "Areas of interes"
+msgstr "Areas de interés"
+
+#. module: iica_contacts
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_contact_area_interest_ids
+#: model:ir.ui.view,arch_db:iica_contacts.register
+#: model:ir.ui.view,arch_db:iica_contacts.view_iica_contacts_contact_form
+msgid "Areas of interest"
+msgstr "Areas de interés"
+
+#. module: iica_contacts
+#: model:ir.model,name:iica_contacts.model_iica_contacts_area_interest
+msgid "Areas of interest for IICA contacts"
+msgstr "Areas de interés para los contactos del IICA"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "Argentina"
+msgstr "Argentina"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "Bahamas"
+msgstr "Bahamas"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_banner_agroenlace
+msgid "Banner Agroenlace"
+msgstr "Bannes Agroenlace"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_banner_conexion
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_banner_connection
+msgid "Banner IICAConexión"
+msgstr "Banner IICAConexión"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "Barbados"
+msgstr "Barbados"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "Belize"
+msgstr "Belize"
+
+#. module: iica_contacts
+#: model:iica_contacts.topic_interest,name:iica_contacts.ti_7
+msgid "Biofuels"
+msgstr "Biocombustibles"
+
+#. module: iica_contacts
+#: model:iica_contacts.topic_interest,name:iica_contacts.ti_8
+msgid "Biosafety"
+msgstr "Bioseguridad"
+
+#. module: iica_contacts
+#: model:iica_contacts.topic_interest,name:iica_contacts.ti_9
+msgid "Biotecnology"
+msgstr "Biotecnología"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "Bolivia"
+msgstr "Bolivia"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "Brazil"
+msgstr "Brasil"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "Canada"
+msgstr "Canadá"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "Chile"
+msgstr "Chile"
+
+#. module: iica_contacts
+#: model:iica_contacts.topic_interest,name:iica_contacts.ti_10
+msgid "Climate change"
+msgstr "Cambio climático"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "Colombia"
+msgstr "Colombia"
+
+#. module: iica_contacts
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_contact_company
+#: model:ir.ui.view,arch_db:iica_contacts.view_iica_contacts_contact_search
+msgid "Company"
+msgstr "Compañía"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.register
+msgid "Company:"
+msgstr "Compañía"
+
+#. module: iica_contacts
+#: model:iica_contacts.topic_interest,name:iica_contacts.ti_13
+msgid "Competitiveness"
+msgstr "Competitividad"
+
+#. module: iica_contacts
+#: model:iica_contacts.area_interest,name:iica_contacts.ai_1
+msgid "Competitiveness and Sustainability of Agricultural Chains"
+msgstr "Competitividad y sustentabilidad de cadenas agrícolas"
+
+#. module: iica_contacts
+#: model:ir.model.fields,field_description:iica_contacts.field_mail_mass_mailing_contact_ids
+msgid "Contacs"
+msgstr "Contactos"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.view_iica_contacts_contact_form
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.register
+msgid "Contact information"
+msgstr "Información de contacto"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.view_iica_contacts_contact_form
+msgid "Contact properties"
+msgstr "Propiedades de contacto"
+
+#. module: iica_contacts
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_area_interest_contact_ids
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_products_interest_contact_ids
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_topic_interest_contact_ids
+msgid "Contacts"
+msgstr "Contactos"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "Costa Rica"
+msgstr "Costa Rica"
+
+#. module: iica_contacts
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_contact_country_id
+msgid "Country"
+msgstr "País"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.register
+msgid "Country:"
+msgstr "País"
+
+#. module: iica_contacts
+#: model:ir.actions.act_window,help:iica_contacts.action_view_iica_contacts_contacts
+msgid "Create the first contact"
+msgstr "Crear el primer contacto"
+
+#. module: iica_contacts
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_area_interest_create_uid
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_contact_create_uid
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_create_uid
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_products_interest_create_uid
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_topic_interest_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: iica_contacts
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_area_interest_create_date
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_contact_create_date
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_create_date
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_products_interest_create_date
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_topic_interest_create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.view_iica_contacts_contact_search
+msgid "Creation Date"
+msgstr "Fecha de Creación"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_live_agro_enlace
+msgid "Descargar cuña"
+msgstr "Descargar cuña"
+
+#. module: iica_contacts
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_area_interest_description
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_products_interest_description
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_topic_interest_description
+msgid "Description"
+msgstr "Descripción"
+
+#. module: iica_contacts
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_area_interest_display_name
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_contact_display_name
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_display_name
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_products_interest_display_name
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_topic_interest_display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "Dominica"
+msgstr "Dominica"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "Dominican Republic"
+msgstr "República Dominicana"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "E-mail:"
+msgstr "E-mail"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "Ecuador"
+msgstr "Ecuador"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "El Salvador"
+msgstr "El Salvador"
+
+#. module: iica_contacts
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_contact_email
+msgid "Email"
+msgstr "Correo electrónico"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.register
+msgid "Email:"
+msgstr "Correo electrónico:"
+
+#. module: iica_contacts
+#: selection:iica_contacts.contact,language:0
+#: model:ir.ui.view,arch_db:iica_contacts.register
+msgid "English"
+msgstr "Inglés"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.view_iica_contacts_contact_search
+msgid "Exclude Opt Out"
+msgstr "Excluir los que han rehusado envíos"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social_eng
+msgid "Facebook"
+msgstr "Facebook"
+
+#. module: iica_contacts
+#: model:iica_contacts.topic_interest,name:iica_contacts.ti_2
+msgid "Family farming"
+msgstr "Agricultura familiar"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "Fax :(+506) 2216 0233"
+msgstr "Fax :(+506) 2216 0233"
+
+#. module: iica_contacts
+#: selection:iica_contacts.contact,sector:0
+#: model:ir.ui.view,arch_db:iica_contacts.register
+msgid "Financial"
+msgstr "Financieras"
+
+#. module: iica_contacts
+#: model:iica_contacts.topic_interest,name:iica_contacts.ti_21
+#: model:iica_contacts.topic_interest,name:iica_contacts.ti_30
+msgid "Food and nutrition security"
+msgstr "Seguridad alimentaria y nutricional"
+
+#. module: iica_contacts
+#: model:ir.model.fields,help:iica_contacts.field_iica_contacts_contact_email_formatted
+msgid "Format email address \"Name <email@domain>\""
+msgstr "Formatear dirección de correo \"Nombre <email@dominio>\""
+
+#. module: iica_contacts
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_contact_email_formatted
+msgid "Formatted Email"
+msgstr "Email formateado"
+
+#. module: iica_contacts
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_contact_name
+#: model:ir.ui.view,arch_db:iica_contacts.view_iica_contacts_contact_form
+msgid "Full Name"
+msgstr "Nombre completo"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.register
+msgid "Full name:"
+msgstr "Nombre completo:"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "Grenada"
+msgstr "Granada"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.view_iica_contacts_contact_search
+msgid "Group By"
+msgstr "Agrupar por"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "Guatemala"
+msgstr "Guatemala"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "Guyana"
+msgstr "Guyana"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "Haiti"
+msgstr "Haití"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "Headquarters"
+msgstr "Sede Central"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "Honduras"
+msgstr "Honduras"
+
+#. module: iica_contacts
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_area_interest_id
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_contact_id
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_id
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_products_interest_id
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_topic_interest_id
+msgid "ID"
+msgstr "ID"
+
+#. module: iica_contacts
+#: model:ir.actions.act_window,name:iica_contacts.action_view_iica_contacts_contacts
+msgid "IICA Contact list"
+msgstr "IICA Lista de contactos"
+
+#. module: iica_contacts
+#: model:ir.ui.menu,name:iica_contacts.iica_contacts_menu
+#: model:ir.ui.view,arch_db:iica_contacts.view_iica_contacts_contact_search
+msgid "IICA Contacts"
+msgstr "Contactos IICA"
+
+#. module: iica_contacts
+#: model:iica_contacts.products_interest,name:iica_contacts.pi_1
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "IICAConexión"
+msgstr "IICAConexión"
+
+#. module: iica_contacts
+#: model:iica_contacts.products_interest,name:iica_contacts.pi_2
+msgid "IICAConnection"
+msgstr "IICAConnection"
+
+#. module: iica_contacts
+#: model:iica_contacts.topic_interest,name:iica_contacts.ti_19
+msgid "Inclusion"
+msgstr "Inclusión"
+
+#. module: iica_contacts
+#: model:iica_contacts.area_interest,name:iica_contacts.ai_2
+msgid "Inclusion in Agriculture and Rural Territories"
+msgstr "Inclusión en la agricultura y en los territorios rurales"
+
+#. module: iica_contacts
+#: model:iica_contacts.topic_interest,name:iica_contacts.ti_26
+msgid "Indigenous population"
+msgstr "Pueblos indígenas"
+
+#. module: iica_contacts
+#: model:iica_contacts.topic_interest,name:iica_contacts.ti_33
+msgid "Information and communication technologies"
+msgstr "Tecnologías de información y comunicación"
+
+#. module: iica_contacts
+#: model:iica_contacts.topic_interest,name:iica_contacts.ti_20
+msgid "Innovation"
+msgstr "Innovación"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social_eng
+msgid "Instituto Interamericano de Cooperación para la Agricultura, 600 m. Norte del Cruce"
+msgstr "Instituto Interamericano de Cooperación para la Agricultura, 600 m. Norte del Cruce"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social_eng
+msgid "Inter-American Institute for Cooperation on Agriculture, 600 m. North of the Ipís-Coronado intersection"
+msgstr "Inter-American Institute for Cooperation on Agriculture, 600 m. North of the Ipís-Coronado intersection"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.register
+msgid "International Organization"
+msgstr "Organismo internacional"
+
+#. module: iica_contacts
+#: selection:iica_contacts.contact,sector:0
+msgid "International organization"
+msgstr "Organismo internacional"
+
+#. module: iica_contacts
+#: code:addons/iica_contacts/controllers/controllers.py:74
+#, python-format
+msgid "Invalid email! Please enter a valid email address."
+msgstr "Email no válido! Por favor ingrese un email correcto."
+
+#. module: iica_contacts
+#: model:iica_contacts.products_interest,name:iica_contacts.pi_5
+msgid "Invitation to Courses"
+msgstr "Invitaciones a cursos"
+
+#. module: iica_contacts
+#: model:iica_contacts.products_interest,name:iica_contacts.pi_4
+msgid "Invitation to Events"
+msgstr "Invitaciones a eventos"
+
+#. module: iica_contacts
+#: model:iica_contacts.products_interest,name:iica_contacts.pi_6
+msgid "Invitation to Seminars"
+msgstr "Invitaciones a seminarios"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social_eng
+msgid "Ipís-Coronado, San José 55-2200, Costa Rica"
+msgstr "Ipís-Coronado, San José 55-2200, Costa Rica"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "Isidro 11101 - Costa Rica"
+msgstr "Apartado 55-2200, San Isidro de Coronado"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "Jamaica"
+msgstr "Jamaica"
+
+#. module: iica_contacts
+#: model:iica_contacts.topic_interest,name:iica_contacts.ti_17
+msgid "Knowledge management"
+msgstr "Gestión de conocimiento"
+
+#. module: iica_contacts
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_contact_language
+msgid "Language"
+msgstr "Idioma"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.register
+msgid "Language:"
+msgstr "Idioma"
+
+#. module: iica_contacts
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts___last_update
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_area_interest___last_update
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_contact___last_update
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_products_interest___last_update
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_topic_interest___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: iica_contacts
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_area_interest_write_uid
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_contact_write_uid
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_products_interest_write_uid
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_topic_interest_write_uid
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: iica_contacts
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_area_interest_write_date
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_contact_write_date
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_products_interest_write_date
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_topic_interest_write_date
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_block_image
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_block_image_text
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_block_three_cols
+msgid "Leer más"
+msgstr "Leer más"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social_eng
+msgid "Linked In"
+msgstr "Linked In"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.register
+msgid "Location information"
+msgstr "Información de ubicación"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.view_iica_contacts_contact_form
+msgid "Location properties"
+msgstr "Información de ubicación"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_aniversary_logo
+msgid "Logo IICA"
+msgstr "Logo IICA"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.layout
+msgid "Logout"
+msgstr "Salir"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_block_three_cols
+msgid "Lorem ipsum dolor"
+msgstr "Lorem ipsum dolor"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_block_image
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_block_image_text
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_live_agro_enlace
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_player_agroenlace
+msgid "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+msgstr "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.view_iica_contacts_contact_tree
+msgid "Mailing Lists Subscribers"
+msgstr "Suscriptores de las listas de correo"
+
+#. module: iica_contacts
+#: model:ir.ui.menu,name:iica_contacts.iica_contacts_management_menu
+msgid "Manage contacts"
+msgstr "Administrar contactos"
+
+#. module: iica_contacts
+#: model:ir.model,name:iica_contacts.model_mail_mass_mailing
+msgid "Mass Mailing"
+msgstr "Correo masivo"
+
+#. module: iica_contacts
+#: model:ir.model,name:iica_contacts.model_mail_message
+msgid "Message"
+msgstr "Mensaje"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "Mexico"
+msgstr "México"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.layout
+msgid "My Website"
+msgstr "Mi sitio web"
+
+#. module: iica_contacts
+#: model:iica_contacts.topic_interest,name:iica_contacts.ti_27
+msgid "Natural resources"
+msgstr "Recursos naturales"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "Nicaragua"
+msgstr "Nicaragua"
+
+#. module: iica_contacts
+#: selection:iica_contacts.contact,sector:0
+#: model:ir.ui.view,arch_db:iica_contacts.register
+msgid "ONG"
+msgstr "ONG"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "OUR PRESENCE IN THE HEMISPHERE"
+msgstr "OUR PRESENCE IN THE HEMISPHERE"
+
+#. module: iica_contacts
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_contact_opt_out
+msgid "Opt Out"
+msgstr "Envío no deseado"
+
+#. module: iica_contacts
+#: model:iica_contacts.topic_interest,name:iica_contacts.ti_1
+msgid "Organic farming"
+msgstr "Agricultura orgánica"
+
+#. module: iica_contacts
+#: selection:iica_contacts.contact,sector:0
+#: model:ir.ui.view,arch_db:iica_contacts.register
+msgid "Other"
+msgstr "Otro"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "Panama"
+msgstr "Panamá"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "Paraguay"
+msgstr "Paraguay"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "Permanent Office for Europe"
+msgstr "Oficina permanente para europa"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "Peru"
+msgstr "Perú"
+
+#. module: iica_contacts
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_contact_phone
+msgid "Phone number"
+msgstr "Número telefónico"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.register
+msgid "Phone number:"
+msgstr "Número telefónico:"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "Phone:(+506) 2216 0222"
+msgstr "Teléfono (+506) 2216 0222"
+
+#. module: iica_contacts
+#: selection:iica_contacts.contact,sector:0
+#: model:ir.ui.view,arch_db:iica_contacts.register
+msgid "Private"
+msgstr "Privado"
+
+#. module: iica_contacts
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_products_interest_name
+msgid "Product"
+msgstr "Producto"
+
+#. module: iica_contacts
+#: model:iica_contacts.topic_interest,name:iica_contacts.ti_25
+msgid "Productivity"
+msgstr "Productividad"
+
+#. module: iica_contacts
+#: model:iica_contacts.area_interest,name:iica_contacts.ai_4
+msgid "Productivity and Sustainability of Family Agriculture"
+msgstr "Productividad y sustentabilidad de la agricultura familiar"
+
+#. module: iica_contacts
+#: model:ir.model.fields,field_description:iica_contacts.field_mail_mass_mailing_product_interest_ids
+msgid "Products of interes"
+msgstr "Products of interes"
+
+#. module: iica_contacts
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_contact_product_interest_ids
+#: model:ir.ui.view,arch_db:iica_contacts.register
+#: model:ir.ui.view,arch_db:iica_contacts.view_iica_contacts_contact_form
+msgid "Products of interest"
+msgstr "Productos de interés"
+
+#. module: iica_contacts
+#: model:ir.model,name:iica_contacts.model_iica_contacts_products_interest
+msgid "Products that a subscriber might want to receive"
+msgstr "Productos que el suscriptor quisiera recibir"
+
+#. module: iica_contacts
+#: selection:iica_contacts.contact,sector:0
+#: model:ir.ui.view,arch_db:iica_contacts.register
+msgid "Public"
+msgstr "Público"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "Receive the hemispheric bulletin"
+msgstr "Recibir el boletín hemisférico"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.register
+msgid "Register"
+msgstr "Registrar"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.register
+msgid "Register <span class=\"fa fa-long-arrow-right\"/>"
+msgstr "Registrarme <span class=\"fa fa-long-arrow-right\"/>"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.register_error
+msgid "Registration error"
+msgstr "Error en el registro"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.register_confirmation
+msgid "Registration succesfull"
+msgstr "Registro exitoso"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.register_confirmation
+msgid "Registration successfull"
+msgstr "Registro exitoso"
+
+#. module: iica_contacts
+#: model:iica_contacts.topic_interest,name:iica_contacts.ti_16
+msgid "Renewable energies"
+msgstr "Energías renovables"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_live_agro_enlace
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_player_agroenlace
+msgid "Reproducir"
+msgstr "Play"
+
+#. module: iica_contacts
+#: model:iica_contacts.area_interest,name:iica_contacts.ai_3
+msgid "Resilience and Comprehensive Risk Management in Agriculture"
+msgstr "Resiliencia y gestión integral de riesgos en la agricultura"
+
+#. module: iica_contacts
+#: model:iica_contacts.topic_interest,name:iica_contacts.ti_28
+msgid "Resilient agriculture"
+msgstr "Resiliencia de la agricultura"
+
+#. module: iica_contacts
+#: model:iica_contacts.topic_interest,name:iica_contacts.ti_18
+msgid "Risk management"
+msgstr "Gestión de riesgos"
+
+#. module: iica_contacts
+#: model:iica_contacts.topic_interest,name:iica_contacts.ti_14
+msgid "Rural development"
+msgstr "Desarrollo rural"
+
+#. module: iica_contacts
+#: model:iica_contacts.topic_interest,name:iica_contacts.ti_22
+msgid "Rural youth"
+msgstr "Juventud rural"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social_eng
+msgid "San Isidro, Coronado , San José 55-2200, Costa Rica"
+msgstr "San Isidro, Coronado , San José 55-2200, Costa Rica"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "San José, Costa Rica"
+msgstr "San José, Costa Rica"
+
+#. module: iica_contacts
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_contact_sector
+msgid "Sector"
+msgstr "Sector"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.register
+msgid "Sector:"
+msgstr "Sector"
+
+#. module: iica_contacts
+#: model:iica_contacts.topic_interest,name:iica_contacts.ti_32
+msgid "Soils"
+msgstr "Suelos"
+
+#. module: iica_contacts
+#: selection:iica_contacts.contact,language:0
+#: model:ir.ui.view,arch_db:iica_contacts.register
+msgid "Spanish"
+msgstr "Español"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "St. Kitts and Nevis"
+msgstr "San Cristobal y Nieves"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "St. Lucia"
+msgstr "Santa Lucía"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "St. Vincent and the Grenadines"
+msgstr "San Vicente y las Granadillas"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "Subscribe"
+msgstr "Suscribir"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "Suriname"
+msgstr "Suriname"
+
+#. module: iica_contacts
+#: model:iica_contacts.topic_interest,name:iica_contacts.ti_15
+msgid "Sustainable development"
+msgstr "Desarrollo sostenible"
+
+#. module: iica_contacts
+#: model:ir.model.fields,help:iica_contacts.field_iica_contacts_contact_opt_out
+msgid "The contact has chosen not to receive mails anymore from this list"
+msgstr "El contacto ha elegido no recibir más correos de esta lista"
+
+#. module: iica_contacts
+#: code:addons/iica_contacts/controllers/controllers.py:70
+#, python-format
+msgid "The email is a required field."
+msgstr "El campo correo es requerido"
+
+#. module: iica_contacts
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_topic_interest_name
+msgid "Topic"
+msgstr "Tema"
+
+#. module: iica_contacts
+#: model:ir.model.fields,field_description:iica_contacts.field_mail_mass_mailing_topic_interest_ids
+msgid "Topics of interes"
+msgstr "Temas de interés"
+
+#. module: iica_contacts
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_contact_topic_interest_ids
+#: model:ir.ui.view,arch_db:iica_contacts.register
+#: model:ir.ui.view,arch_db:iica_contacts.view_iica_contacts_contact_form
+msgid "Topics of interest"
+msgstr "Temas de interés"
+
+#. module: iica_contacts
+#: model:ir.model,name:iica_contacts.model_iica_contacts_topic_interest
+msgid "Topics of interest for IICA contacts"
+msgstr "Temas de interés para contactos del IICA."
+
+#. module: iica_contacts
+#: model:iica_contacts.topic_interest,name:iica_contacts.ti_12
+msgid "Trade"
+msgstr "Comercio"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "Trinidad and Tobago"
+msgstr "Trinidad y Tobago"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social_eng
+msgid "Twitter"
+msgstr "Twitter"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_live_agro_enlace
+msgid "Título Agroenlace"
+msgstr "Título Agroenlace"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_block_image
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_block_image_text
+msgid "Título de la noticia"
+msgstr "Título de la noticia"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "United States"
+msgstr "Estados Unidos"
+
+#. module: iica_contacts
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_contact_unsubscription_date
+msgid "Unsubscription Date"
+msgstr "Fecha de Baja"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "Uruguay"
+msgstr "Uruguay"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social
+msgid "Usted puede"
+msgstr "Usted puede"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "Vazquez de Coronado, San"
+msgstr "Vásquez de Coronado, San"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "Venezuela"
+msgstr "Venezuela"
+
+#. module: iica_contacts
+#: model:iica_contacts.topic_interest,name:iica_contacts.ti_6
+msgid "Water"
+msgstr "Agua"
+
+#. module: iica_contacts
+#: model:iica_contacts.topic_interest,name:iica_contacts.ti_24
+msgid "Women"
+msgstr "Mujeres"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social_eng
+msgid "You may"
+msgstr "Puede"
+
+#. module: iica_contacts
+#: code:addons/iica_contacts/controllers/controllers.py:66
+#, python-format
+msgid "You must type your name to continue. "
+msgstr "Debe digitar su nombre para continuar"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social_eng
+msgid "YouTube"
+msgstr "YouTube"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_block_image
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_block_image_text
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_block_three_cols
+msgid "Your Picture"
+msgstr "Tu Foto"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.register_confirmation
+msgid "Your registration was processed successfully."
+msgstr "Su suscripción fue procesada correctamente"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.register_error
+msgid "Your registration was processed unsuccessfully."
+msgstr "Su suscripción fue procesada con errores"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social
+msgid "darse de baja"
+msgstr "darse de baja"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "highlighting the results of our cooperation."
+msgstr "resultados de nuestra cooperación"
+
+#. module: iica_contacts
+#: model:ir.model,name:iica_contacts.model_iica_contacts
+msgid "iica_contacts"
+msgstr "iica_contacts"
+
+#. module: iica_contacts
+#: model:ir.model,name:iica_contacts.model_iica_contacts_contact
+msgid "iica_contacts.contact"
+msgstr "iica_contacts.contact"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.footer_default
+msgid "iicahq@iica.int"
+msgstr "iicahq@iica.int"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social
+msgid "o cambiar sus datos en cualquier momento."
+msgstr "o cambiar sus datos en cualquier momento."
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social_eng
+msgid "or change your contact details at any time."
+msgstr "o cambiar sus datos en cualquier momento"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social_eng
+msgid "unsubscribe"
+msgstr "darse de baja"
+

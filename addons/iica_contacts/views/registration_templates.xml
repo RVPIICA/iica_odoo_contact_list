@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <template id="register_confirmation">
+    <t t-call="iica_contacts.layout">
+      <t t-set="title">Registration successfull</t>
+      <div class="jumbotron text-center">
+        <h1>Registration succesfull</h1>
+        <p>Your registration was processed successfully.</p>
+      </div>
+    </t>
+  </template>
+
+  <template id="register_error">
+    <t t-call="iica_contacts.layout">
+      <t t-set="title">Registration error</t>
+      <div class="jumbotron text-center">
+        <h1>Registration error</h1>
+        <p>Your registration was processed unsuccessfully.</p>
+      </div>
+    </t>
+  </template>
+
+  <template id="register">
+    <t t-call="iica_contacts.layout">
+      <t t-set="title">Register</t>
+      <link href="/iica_contacts/static/libraries/js/multi_select/css/multi-select.css" media="screen" rel="stylesheet" type="text/css"/>
+      <form action="/contact/register" method="post" data-model_name="iica_contacts.contact" id="registration-form">
+        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+        <div class="container margin-top-20">
+            <div class="row">
+              <div class="col-md-6 form-group o_website_form_required_custom">
+                <label for="name" class="control-label">Full name:</label>
+                <input type="text" name="name" class="form-control" data-validation="required" t-att-value="name or contact.name" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="panel panel-default">
+                  <div class="panel-heading">Contact information</div>
+                  <div class="panel-body">
+                    <div class="row">
+                      <div class="col-md-12 form-group o_website_form_required_custom">
+                        <label class="control-label" for="email">Email:</label>
+                        <input type="email" name="email" class="form-control" data-validation="required,email" t-att-value="email or contact.email" />
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12 form-group">
+                        <label class="control-label" for="phone">Phone number:</label>
+                        <input type="tel" name="phone" class="form-control" t-att-value="phone or contact.phone" />
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12 form-group o_website_form_required_custom">
+                        <label class="control-label" for="language">Language:</label>
+                        <select name="language" class="form-control" data-validation="required">
+                          <option value=""> -- Select language -- </option>
+                          <option value="1" t-att-selected="1 == language">Spanish</option>
+                          <option value="2" t-att-selected="2 == language">English</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="panel panel-default">
+                  <div class="panel-heading">Location information</div>
+                  <div class="panel-body">
+                    <div class="row">
+                      <div class="col-md-12 form-group o_website_form_required_custom">
+                        <label class="control-label" for="country_id">Country:</label>
+                        <select name="country_id" class="form-control" data-validation="required">
+                          <option value=""> -- Select country -- </option>
+                          <t t-foreach="countries" t-as="country">
+                            <option t-att-value="country.id" t-att-selected="country.id == contact.country_id.id">
+                              <t t-esc="country.name" />
+                            </option>
+                          </t>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12 form-group">
+                        <label for="company">Company:</label>
+                        <input type="text" name="company" class="form-control" t-att-value="company or contact.company" />
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12 form-group">
+                        <label class="control-label" for="sector">Sector:</label>
+                        <select name="sector" class="form-control">
+                          <option value=""> -- Select sector -- </option>
+                          <option value="1" t-att-selected="1 == sector">Public</option>
+                          <option value="2" t-att-selected="2 == sector">Private</option>
+                          <option value="3" t-att-selected="3 == sector">ONG</option>
+                          <option value="4" t-att-selected="4 == sector">International Organization</option>
+                          <option value="5" t-att-selected="5 == sector">Financial</option>
+                          <option value="6" t-att-selected="6 == sector">Other</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <ul class="nav nav-tabs">
+                  <li class="active"><a href="#products-interest" data-toggle="tab">Products of interest</a></li>
+                  <li><a href="#areas-interest" data-toggle="tab">Areas of interest</a></li>
+                  <li><a href="#topics-interest" data-toggle="tab">Topics of interest</a></li>
+                </ul>
+                <div class="tab-content">
+                  <div id="products-interest" class="tab-pane fade in active">
+                    <h3>Products of interest</h3>
+                    <select name="products_interest" multiple="multiple" class="form-control elegant-multi-select">
+                      <t t-foreach="products_interest" t-as="product">
+                        <option t-att-value="product.id">
+                          <t t-esc="product.name" />
+                        </option>
+                      </t>
+                    </select>
+                  </div>
+                  <div id="areas-interest" class="tab-pane fade">
+                    <h3>Areas of interest</h3>
+                    <select name="areas_interest" multiple="multiple" class="form-control elegant-multi-select">
+                      <t t-foreach="areas_interest" t-as="area">
+                        <option t-att-value="area.id">
+                          <t t-esc="area.name" />
+                        </option>
+                      </t>
+                    </select>
+                  </div>
+                  <div id="topics-interest" class="tab-pane fade">
+                    <h3>Topics of interest</h3>
+                    <select name="topics_interest" multiple="multiple" class="form-control elegant-multi-select">
+                      <t t-foreach="topics_interest" t-as="topic">
+                        <option t-att-value="topic.id">
+                          <t t-esc="topic.name" />
+                        </option>
+                      </t>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <button type="submit" class="btn btn-default azuliica hover-azuliica2 lt-blanco margin-top-10">
+                  Register <span class="fa fa-long-arrow-right" />
+                </button>
+              </div>
+            </div>
+        </div>
+      </form>
+      <script src="/iica_contacts/static/libraries/js/node_modules/jquery/dist/jquery.min.js"></script>
+      <script src="/iica_contacts/static/libraries/js/node_modules/jquery-form-validator/form-validator/jquery.form-validator.min.js"></script>
+      <script src="/iica_contacts/static/libraries/js/multi_select/js/jquery.multi-select.js"></script>
+      <script src="/iica_contacts/static/src/js/registration.js"></script>
+      <script>
+        $.validate();
+        loadMultiSelect('.elegant-multi-select');
+      </script>
+    </t>
+  </template>
+
+  <template id="layout" inherit_id="website.layout" name="Custom Header">
+      <xpath expr="." position="inside">
+        <link href="/iica_contacts/static/src/css/styles.min.css" media="screen" rel="stylesheet" type="text/css"/>
+      </xpath>
+      <!-- Assign an id  -->
+      <xpath expr="//div[@id='wrapwrap']/header" position="replace">
+        <header>
+          <div class="navbar navbar-default navbar-static-top">
+              <div class="container">
+                  <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-top-collapse">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="http://iica.int" t-if="website" t-field="website.name">My Website</a>
+                  </div>
+                  <div class="collapse navbar-collapse navbar-top-collapse">
+                    <ul class="nav navbar-nav navbar-right" id="top_menu">
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                              <b>
+                                  <span>Language</span>
+                                  <span class="caret"></span>
+                              </b>
+                          </a>
+                          <t t-call="iica_contacts.language_selector"/>
+                        </li>
+                        <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <b>
+                                    <span t-esc="(len(user_id.name)&gt;25) and (user_id.name[:23]+'...') or user_id.name"/>
+                                    <span class="caret"></span>
+                                </b>
+                            </a>
+                            <ul class="dropdown-menu js_usermenu" role="menu">
+                                <li id="o_logout"><a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                  </div>
+              </div>
+          </div>
+        </header>
+      </xpath>
+  </template>
+
+  <template id="footer_default" inherit_id="website.footer_custom" customize_show="True" name="Automatic Footer">
+      <xpath expr="//footer" position="replace">
+        <footer class="lt-blanco row margin-top-20">
+              <div class="col-md-3">
+                  <ul class="list-unstyled footer-info-general">
+                      <li><img class="footer-iica-logo" src="http://www.iica.int/sites/all/themes/custom/iica/img/logo-iica-blanco.svg"/> </li>
+                      <li>Headquarters </li>
+                      <li>0.5 miles North from the Ipís-Coronado Intersection</li>
+                      <li>Vazquez de Coronado, San</li>
+                      <li>Isidro 11101 - Costa Rica</li>
+                      <li>San José, Costa Rica</li>
+                      <li>Phone:(+506) 2216 0222</li>
+                      <li>Fax :(+506) 2216 0233</li>
+                      <li>E-mail: <a href="mailto:iicahq@iica.int">iicahq@iica.int</a> </li>
+                  </ul>
+                  <ul class="list-unstyled footer-social">
+                      <li><a href="https://www.facebook.com/iicanoticias" target="_blank"><img src="http://www.iica.int/sites/all/themes/custom/iica/img/facebook-white.svg"/></a></li>
+                      <li><a href="https://www.twitter.com/iicanoticias" target="_blank"><img src="http://www.iica.int/sites/all/themes/custom/iica/img/twitter-white.svg"/></a></li>
+                      <li><a href="https://www.youtube.com/iicanoticias" target="_blank"><img src="http://www.iica.int/sites/all/themes/custom/iica/img/youtube-white.svg"/></a></li>
+                      <li><a href="https://www.linkedin.com/company/40611?trk=tyah&amp;trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A40611%2Cidx%3A2-2-3%2CtarId%3A1466108612043%2Ctas%3Aiica" target="_blank"><img src="http://www.iica.int/sites/all/themes/custom/iica/img/li_white.svg"/></a></li>
+                  </ul>
+              </div>
+              <div class="col-md-3 footer-bordered footer-conexion">
+                  <ul class="list-unstyled">
+                      <li><img src="http://www.iica.int/sites/all/themes/custom/iica/img/footer-iicaconexion.svg"/></li>
+                      <li class="footer-conexion-titulo">IICAConexión</li>
+                      <li>Receive the hemispheric bulletin</li>
+                      <li>highlighting the results of our cooperation.</li>
+                      <li class="footer-conexion-suscribase"><a href="http://eepurl.com/b1qOx1" target="_blank">Subscribe</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-6 footer-paises">
+                  <h6>OUR PRESENCE IN THE HEMISPHERE</h6>
+                  <div class="row">
+                      <ul class="col-md-4 list-unstyled">
+                          <li><a href="http://www.iica.int/en/countries/antigua-and-barbuda" target="_blank">Antigua and Barbuda</a></li>
+                          <li><a href="http://www.iica.int/es/countries/argentina" target="_blank">Argentina</a></li>
+                          <li><a href="http://www.iica.int/en/countries/bahamas" target="_blank">Bahamas</a></li>
+                          <li><a href="http://www.iica.int/en/countries/barbados" target="_blank">Barbados</a></li>
+                          <li><a href="http://www.iica.int/es/countries/belice" target="_blank">Belize</a></li>
+                          <li><a href="http://www.iica.int/es/countries/bolivia" target="_blank">Bolivia</a></li>
+                          <li><a href="http://www.iicabr.iica.org.br" target="_blank">Brazil</a></li>
+                          <li><a href="http://www.iica.int/en/countries/canada" target="_blank">Canada</a></li>
+                          <li><a href="http://www.iica.int/es/countries/chile" target="_blank">Chile</a></li>
+                          <li><a href="http://www.iica.int/es/countries/colombia" target="_blank">Colombia</a></li>
+                          <li><a href="http://www.iica.int/es/countries/costa-rica" target="_blank">Costa Rica</a></li>
+                          <li><a href="http://www.iica.int/en/countries/dominica" target="_blank">Dominica</a></li>
+                      </ul>
+                      <ul class="col-md-4 list-unstyled">
+                          <li><a href="http://www.iica.int/es/countries/republica-dominicana" target="_blank">Dominican Republic</a></li>
+                          <li><a href="http://www.iica.int/es/countries/ecuador" target="_blank">Ecuador</a></li>
+                          <li><a href="http://www.iica.int/es/countries/el-salvador" target="_blank">El Salvador</a></li>
+                          <li><a href="http://www.iica.int/en/countries/granada" target="_blank">Grenada</a></li>
+                          <li><a href="http://www.iica.int/es/countries/guatemala" target="_blank">Guatemala</a></li>
+                          <li><a href="http://www.iica.int/en/countries/guyana" target="_blank">Guyana</a></li>
+                          <li><a href="http://www.iica.int/en/countries/haiti" target="_blank">Haiti</a></li>
+                          <li><a href="http://www.iica.int/es/countries/honduras" target="_blank">Honduras</a></li>
+                          <li><a href="http://www.iica.int/en/countries/jamaica" target="_blank">Jamaica</a></li>
+                          <li><a href="http://www.iica.int/es/countries/mexico" target="_blank">Mexico</a></li>
+                          <li><a href="http://www.iica.int/es/countries/nicaragua" target="_blank">Nicaragua</a></li>
+                          <li><a href="http://www.iica.int/es/countries/panama" target="_blank">Panama</a></li>
+                      </ul>
+                      <ul class="col-md-4 list-unstyled">
+                          <li><a href="http://www.iica.int/es/countries/paraguay" target="_blank">Paraguay</a></li>
+                          <li><a href="http://www.iica.int/es/countries/spain" target="_blank">Permanent Office for Europe</a></li>
+                          <li><a href="http://www.iica.int/es/countries/peru" target="_blank">Peru</a></li>
+                          <li><a href="http://www.iica.int/en/countries/st-lucia" target="_blank">St. Lucia</a></li>
+                          <li><a href="http://www.iica.int/en/countries/san-cristobal-y-nieves" target="_blank">St. Kitts and Nevis</a></li>
+                          <li><a href="http://www.iica.int/en/countries/san-vicente-y-las-granadinas" target="_blank">St. Vincent and the Grenadines</a></li>
+                          <li><a href="http://www.iica.int/en/countries/surinam" target="_blank">Suriname</a></li>
+                          <li><a href="http://www.iica.int/en/countries/trinidad-and-tobago" target="_blank">Trinidad and Tobago</a></li>
+                          <li><a href="http://www.iica.int/en/countries/united-states" target="_blank">United States</a></li>
+                          <li><a href="http://www.iica.int/es/countries/uruguay" target="_blank">Uruguay</a></li>
+                          <li><a href="http://www.iica.int/es/countries/venezuela" target="_blank">Venezuela</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </footer>
+      </xpath>
+  </template>
+
+  <template id="language_selector">
+      <ul class="dropdown-menu" t-if="(request and request.website_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+          <li t-foreach="languages" t-as="lg">
+            <a
+              t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang=lg[0])"
+              t-att-data-default-lang="(editable or translatable) and 'true' if website and lg[0] == website.default_lang_code else None"
+              t-att-data-lang="lg[0]"
+              class="js_change_lang"
+            >
+              <t t-esc="lg[1].split('/').pop()"/>
+            </a>
+          </li>
+          <li groups="website.group_website_publisher">
+              <t t-set="url_return" t-value="url_for('', '[lang]') + '?' + keep_query()"/>
+              <a t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id if website else ''}&amp;url_return=#{url_return}">
+                  <i class="fa fa-plus-circle"/>
+                  Add a language...
+              </a>
+          </li>
+      </ul>
+  </template>
+
+  <template id="website.layout_footer_copyright" inherit_id="website.layout" name="Footer Copyright">
+      <xpath expr="//footer" position="inside">
+      </xpath>
+  </template>
+</odoo>

@@ -1,0 +1,61 @@
+html {
+  font-size: $default-font-size;
+}
+body
+{
+  font-family: $font-family;
+}
+
+//Margenes
+
+//Top
+.margin-top-10{
+  margin-top: 10px;
+}
+.margin-top-20{
+  margin-top: 20px;
+}
+.margin-top-30{
+   margin-top: 30px;
+ }
+.margin-top-40{
+  margin-top: 40px;
+}
+.margin-top-50{
+  margin-top: 50px;
+}
+.margin-top-60{
+  margin-top: 60px;
+}
+//Bottom
+.margin-bottom-10{
+  margin-bottom: 10px;
+}
+.margin-bottom-20{
+  margin-bottom: 20px;
+}
+.margin-bottom-30{
+  margin-bottom: 30px;
+}
+.margin-bottom-40{
+  margin-bottom: 40px;
+}
+.margin-bottom-50{
+  margin-bottom: 50px;
+}
+.margin-bottom-60{
+  margin-bottom: 60px;
+}
+
+
+.padding {
+  padding: 10px;
+}
+.padding40 {
+  padding: 40px;
+}
+
+.container{
+  padding-left: 5px;
+  padding-right: 5px;
+}

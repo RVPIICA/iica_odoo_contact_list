@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_iica_contacts_contact,iica_contacts contact,model_iica_contacts_contact,base.group_public,1,1,1,0
+access_iica_contacts_area_interest,iica_contacts area_interest,model_iica_contacts_area_interest,base.group_public,1,0,0,0
+access_iica_contacts_topic_interest,iica_contacts topic_interest,model_iica_contacts_topic_interest,base.group_public,1,0,0,0
+access_iica_contacts_products_interest,iica_contacts products_interest,model_iica_contacts_products_interest,base.group_public,1,0,0,0
+access_iica_contacts_followers,iica_contacts followers,mail.model_mail_followers,base.group_public,1,1,1,0
+access_iica_contacts_messages,iica_contacts messages,mail.model_mail_message,base.group_public,1,1,1,0
