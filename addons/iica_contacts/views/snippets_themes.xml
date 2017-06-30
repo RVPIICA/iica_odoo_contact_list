@@ -23,7 +23,7 @@
                       <t t-call="iica_contacts.theme_iica_conexion"/>
                   </div>
                   <div data-name="iica_connection"
-                       data-img="/iica_contacts/static/src/img/thumbnails/iica_connection_thumb_small.png"
+                       data-img="/iica_contacts/static/src/img/thumbnails/iica_connection_thumb"
                        data-images-info='{"logo": {"format": "png"}}'>
                       <t t-call="iica_contacts.theme_iica_connection"/>
                   </div>
