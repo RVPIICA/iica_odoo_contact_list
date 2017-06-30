@@ -34,6 +34,7 @@
         'default_data/areas.xml',
         'default_data/topics.xml',
         'default_data/products.xml',
+        'security/security.xml',
         'security/ir.model.access.csv',
     ],
     # only loaded in demonstration mode

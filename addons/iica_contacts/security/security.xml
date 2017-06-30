@@ -1,0 +1,7 @@
+<odoo>
+  <data>
+    <record id="iica_mailing_manager" model="res.groups">
+      <field name="name">IICA Mailing - Manager</field>
+    </record>
+  </data>
+</odoo>
