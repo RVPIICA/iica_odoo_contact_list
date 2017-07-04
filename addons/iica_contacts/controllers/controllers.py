@@ -37,11 +37,11 @@ class IICAContactsController(http.Controller):
 
     @http.route('/contact/register/success', type='http', auth='public', website='true')
     def register_success(self, **kw):
-        return request.render("register_confirmation")
+        return request.render("iica_contacts.register_confirmation")
 
     @http.route('/contact/register/error', type='http', auth='public', website='true')
-    def register_success(self, **kw):
-        return request.render("register_error")
+    def register_error(self, **kw):
+        return request.render("iica_contacts.register_error")
 
     #Métodos privados
     def _process_registration(self, post):
