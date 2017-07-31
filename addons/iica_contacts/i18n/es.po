@@ -217,6 +217,13 @@ msgid "Bolivia"
 msgstr "Bolivia"
 
 #. module: iica_contacts
+#: selection:iica_contacts.contact,language:0
+#: model:ir.ui.view,arch_db:iica_contacts.register
+#: selection:mail.mass_mailing,language:0
+msgid "Both"
+msgstr "Ambos"
+
+#. module: iica_contacts
 #: model:ir.ui.view,arch_db:iica_contacts.footer_default
 msgid "Brazil"
 msgstr "Brasil"
