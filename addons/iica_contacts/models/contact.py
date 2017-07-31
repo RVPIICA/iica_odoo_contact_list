@@ -12,12 +12,12 @@ class Contact(models.Model):
     _name = 'iica_contacts.contact'
 
     #Lists of static values
-    __language_list = [('1', 'Spanish'), ('2', 'English')]
+    __language_list = [('1', 'Spanish'), ('2', 'English'), ('3', 'Both')]
     __sectors = [('1', 'Public'), ('2', 'Private'), ('3', 'ONG'), ('4', 'International organization'), ('5', 'Financial'), ('6', 'Other')]
 
     #Field definitions
     name = fields.Char(string='Full Name', required=True)
-    company = fields.Char(string='Company', index=True)
+    company = fields.Char(string='Place of work', index=True)
     country_id = fields.Many2one('res.country', string='Country', ondelete='restrict', required=True)
     sector = fields.Selection(selection=__sectors, string='Sector')
     language = fields.Selection(selection=__language_list, string='Language', required=True)

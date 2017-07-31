@@ -14,7 +14,7 @@ class MassMailing(models.Model):
     _inherit = 'mail.mass_mailing'
 
     #Lists of static values
-    __language_list = [('1', 'Spanish'), ('2', 'English')]
+    __language_list = [('1', 'Spanish'), ('2', 'English'), ('3', 'Both')]
 
     def _get_mailing_model(self):
         res = []
@@ -33,7 +33,7 @@ class MassMailing(models.Model):
     #Fills the domain filter with the required areas and topics of interest.
     @api.onchange('language', 'area_interest_ids', 'topic_interest_ids', 'product_interest_ids')
     def _onchange_interest_ids(self):
-        _language = "('language', '=', %s)," % self.language
+        _language = "('language', 'in', (%s, 3))," % self.language
         _areas_interest = "('area_interest_ids', 'in', %s), " % self.area_interest_ids.ids
         _topics_interest = "('topic_interest_ids', 'in', %s), " % self.topic_interest_ids.ids
         _products_interest = "('product_interest_ids', 'in', %s)" % self.product_interest_ids.ids
