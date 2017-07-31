@@ -65,7 +65,7 @@ msgid "<b>\n"
 "                                  <span class=\"caret\"/>\n"
 "                              </b>"
 msgstr "<b>\n"
-"                                  <span>Language</span>\n"
+"                                  <span>Idioma</span>\n"
 "                                  <span class=\"caret\"/>\n"
 "                              </b>"
 
@@ -74,7 +74,7 @@ msgstr "<b>\n"
 msgid "<i class=\"fa fa-plus-circle\"/>\n"
 "                  Add a language..."
 msgstr "<i class=\"fa fa-plus-circle\"/>\n"
-"                  Add a language..."
+"                  Agregar idioma..."
 
 #. module: iica_contacts
 #: model:ir.ui.view,arch_db:iica_contacts.layout
@@ -244,13 +244,13 @@ msgstr "Colombia"
 #. module: iica_contacts
 #: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_contact_company
 #: model:ir.ui.view,arch_db:iica_contacts.view_iica_contacts_contact_search
-msgid "Company"
-msgstr "Compañía"
+msgid "Place of work"
+msgstr "Lugar de trabajo"
 
 #. module: iica_contacts
 #: model:ir.ui.view,arch_db:iica_contacts.register
-msgid "Company:"
-msgstr "Compañía"
+msgid "Place of work:"
+msgstr "Lugar de trabajo:"
 
 #. module: iica_contacts
 #: model:iica_contacts.topic_interest,name:iica_contacts.ti_13
@@ -1142,10 +1142,10 @@ msgstr "o cambiar sus datos en cualquier momento."
 
 #. module: iica_contacts
 #: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social_eng
-msgid "or change your contact details at any time."
-msgstr "o cambiar sus datos en cualquier momento"
+msgid "at any time."
+msgstr "at any time."
 
 #. module: iica_contacts
 #: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social_eng
 msgid "unsubscribe"
-msgstr "darse de baja"
+msgstr "unsubscribe"

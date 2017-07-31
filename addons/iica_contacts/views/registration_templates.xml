@@ -57,6 +57,7 @@
                           <option value=""> -- Select language -- </option>
                           <option value="1" t-att-selected="1 == language">Spanish</option>
                           <option value="2" t-att-selected="2 == language">English</option>
+                          <option value="3" t-att-selected="3 == language">Both</option>
                         </select>
                       </div>
                     </div>
@@ -82,7 +83,7 @@
                     </div>
                     <div class="row">
                       <div class="col-md-12 form-group">
-                        <label for="company">Company:</label>
+                        <label for="company">Place of work:</label>
                         <input type="text" name="company" class="form-control" t-att-value="company or contact.company" />
                       </div>
                     </div>
