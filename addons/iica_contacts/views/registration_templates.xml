@@ -121,6 +121,12 @@
                         </option>
                       </t>
                     </select>
+                    <br />
+                    <p>* IICA Connection is our weekly news bulletin, it contains varied information of the different subjects in which we work.
+                      See one here: <a href="http://www.iica.int/en/newsletters-page/iica-connection" target="_blank">http://www.iica.int/en/newsletters-page/iica-connection</a></p>
+                    <p>* AgroEnlace is a thematic radio magazine produced in spanish for the small and medium producers.
+                      It seeks to promote agribusiness and stimulate participation in national and international markets.
+                      Listen to one here: <a href="http://www.iica.int/en/prensa/agro-enlace" target="_blank">http://www.iica.int/en/prensa/agro-enlace</a></p>
                   </div>
                   <div id="areas-interest" class="tab-pane fade">
                     <h3>Areas of interest</h3>

@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-08 22:47+0000\n"
-"PO-Revision-Date: 2017-06-08 22:47+0000\n"
+"POT-Creation-Date: 2017-07-31 15:03+0000\n"
+"PO-Revision-Date: 2017-07-31 15:03+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -21,6 +21,22 @@ msgstr ""
 #: model:ir.ui.view,arch_db:iica_contacts.s_iica_player_agroenlace
 msgid "&amp;nbsp;"
 msgstr "&amp;nbsp;"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.register
+msgid "* AgroEnlace is a thematic radio magazine produced in spanish for the small and medium producers.\n"
+"                      It seeks to promote agribusiness and stimulate participation in national and international markets.\n"
+"                      Listen to one here:"
+msgstr "* AgroEnlace es una radio revista temática para los pequeños y medianos agroempresarios.\n"
+"                      Busca promover los agronegocios y estimular la participación en los mercados nacionales e internacionales.\n"
+"                      Escúche uno aquí:"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.register
+msgid "* IICA Connection is our weekly news bulletin, it contains varied information of the different subjects in which we work.\n"
+"                      See one here:"
+msgstr "* IICA Conexión es nuestro boletín semanal de noticias, contiene información variada de los diferentes temas en los que trabajamos.\n"
+"                       Vea uno aquí:"
 
 #. module: iica_contacts
 #: model:ir.ui.view,arch_db:iica_contacts.register
@@ -41,6 +57,24 @@ msgstr "-- Seleccione un sector --"
 #: model:ir.ui.view,arch_db:iica_contacts.footer_default
 msgid "0.5 miles North from the Ipís-Coronado Intersection"
 msgstr "600 metros norte del Cruce Ipís Coronado"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.layout
+msgid "<b>\n"
+"                                  <span>Language</span>\n"
+"                                  <span class=\"caret\"/>\n"
+"                              </b>"
+msgstr "<b>\n"
+"                                  <span>Language</span>\n"
+"                                  <span class=\"caret\"/>\n"
+"                              </b>"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.language_selector
+msgid "<i class=\"fa fa-plus-circle\"/>\n"
+"                  Add a language..."
+msgstr "<i class=\"fa fa-plus-circle\"/>\n"
+"                  Add a language..."
 
 #. module: iica_contacts
 #: model:ir.ui.view,arch_db:iica_contacts.layout
@@ -109,7 +143,7 @@ msgid "Area"
 msgstr "Area"
 
 #. module: iica_contacts
-#: code:addons/iica_contacts/models/mailing.py:18
+#: code:addons/iica_contacts/models/mailing.py:21
 #, python-format
 msgid "Areas of Interest"
 msgstr "Areas de interés"
@@ -352,11 +386,12 @@ msgstr "Correo electrónico"
 #. module: iica_contacts
 #: model:ir.ui.view,arch_db:iica_contacts.register
 msgid "Email:"
-msgstr "Correo electrónico:"
+msgstr "Correo electrónico"
 
 #. module: iica_contacts
 #: selection:iica_contacts.contact,language:0
 #: model:ir.ui.view,arch_db:iica_contacts.register
+#: selection:mail.mass_mailing,language:0
 msgid "English"
 msgstr "Inglés"
 
@@ -470,6 +505,11 @@ msgid "IICA Contacts"
 msgstr "Contactos IICA"
 
 #. module: iica_contacts
+#: model:res.groups,name:iica_contacts.iica_mailing_manager
+msgid "IICA Mailing - Manager"
+msgstr "IICA Mailing - Manager"
+
+#. module: iica_contacts
 #: model:iica_contacts.products_interest,name:iica_contacts.pi_1
 #: model:ir.ui.view,arch_db:iica_contacts.footer_default
 msgid "IICAConexión"
@@ -570,6 +610,7 @@ msgstr "Gestión de conocimiento"
 
 #. module: iica_contacts
 #: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_contact_language
+#: model:ir.model.fields,field_description:iica_contacts.field_mail_mass_mailing_language
 msgid "Language"
 msgstr "Idioma"
 
@@ -891,6 +932,7 @@ msgstr "Suelos"
 #. module: iica_contacts
 #: selection:iica_contacts.contact,language:0
 #: model:ir.ui.view,arch_db:iica_contacts.register
+#: selection:mail.mass_mailing,language:0
 msgid "Spanish"
 msgstr "Español"
 
@@ -1069,6 +1111,16 @@ msgid "highlighting the results of our cooperation."
 msgstr "resultados de nuestra cooperación"
 
 #. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.register
+msgid "http://www.iica.int/en/newsletters-page/iica-connection"
+msgstr "http://www.iica.int/es/newsletters-page/iica-conexion"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.register
+msgid "http://www.iica.int/en/prensa/agro-enlace"
+msgstr "http://www.iica.int/es/prensa/agro-enlace"
+
+#. module: iica_contacts
 #: model:ir.model,name:iica_contacts.model_iica_contacts
 msgid "iica_contacts"
 msgstr "iica_contacts"
@@ -1097,4 +1149,3 @@ msgstr "o cambiar sus datos en cualquier momento"
 #: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social_eng
 msgid "unsubscribe"
 msgstr "darse de baja"
-
