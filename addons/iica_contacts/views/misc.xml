@@ -1,0 +1,82 @@
+<odoo>
+  <data>
+
+    <!--Area tree view-->
+    <record model="ir.ui.view" id="view_iica_contacts_area_interest_tree">
+        <field name="name">iica_contacts.area_interest.tree</field>
+        <field name="model">iica_contacts.area_interest</field>
+        <field name="arch" type="xml">
+            <tree string="Areas of interest" editable="bottom">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <!--Topic tree view-->
+    <record model="ir.ui.view" id="view_iica_contacts_topic_interest_tree">
+        <field name="name">iica_contacts.topic_interest.tree</field>
+        <field name="model">iica_contacts.topic_interest</field>
+        <field name="arch" type="xml">
+            <tree string="Topics of interest" editable="bottom">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <!--Products tree view-->
+    <record model="ir.ui.view" id="view_iica_contacts_product_interest_tree">
+        <field name="name">iica_contacts.products_interest.tree</field>
+        <field name="model">iica_contacts.products_interest</field>
+        <field name="arch" type="xml">
+            <tree string="Products of interest" editable="bottom">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Area Action -->
+    <record model="ir.actions.act_window" id="action_view_iica_contacts_area">
+        <field name="name">Areas of interest</field>
+        <field name="res_model">iica_contacts.area_interest</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">Create the first area of interest
+            </p>
+        </field>
+    </record>
+    <!-- Topic Action -->
+    <record model="ir.actions.act_window" id="action_view_iica_contacts_topic">
+        <field name="name">Topics of interest</field>
+        <field name="res_model">iica_contacts.topic_interest</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">Create the first topic of interest
+            </p>
+        </field>
+    </record>
+    <!-- Product Action -->
+    <record model="ir.actions.act_window" id="action_view_iica_contacts_product">
+        <field name="name">Products of interest</field>
+        <field name="res_model">iica_contacts.products_interest</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">Create the first product of interest
+            </p>
+        </field>
+    </record>
+
+    <menuitem name="IICA Contacts Administration" id="iica_contacts_admin_menu"
+        parent="mass_mailing.mass_mailing_menu_root" sequence="1" groups="mass_mailing.group_mass_mailing_user"/>
+
+    <!-- Menu item that triggers IICA Contacts action -->
+    <menuitem id="iica_areas_management_menu" name="Manage areas of interest" parent="iica_contacts_admin_menu"
+              action="action_view_iica_contacts_area"/>
+    <menuitem id="iica_topics_management_menu" name="Manage topics of interest" parent="iica_contacts_admin_menu"
+              action="action_view_iica_contacts_topic"/>
+    <menuitem id="iica_products_management_menu" name="Manage products of interest" parent="iica_contacts_admin_menu"
+              action="action_view_iica_contacts_product"/>
+  </data>
+</odoo>

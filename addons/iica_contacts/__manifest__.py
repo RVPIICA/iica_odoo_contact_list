@@ -26,6 +26,7 @@
     'data': [
         'views/contact.xml',
         'views/mailing.xml',
+        'views/misc.xml',
         'views/registration_templates.xml',
         'views/snippets_themes.xml',
         'views/themes_templates.xml',
