@@ -51,15 +51,15 @@
                       </group>
                     </group>
                     <notebook>
+                      <page string="Products of interest">
+                        <field name="product_interest_ids" options="{'no_create': True}"/>
+                      </page>
                       <page string="Areas of interest">
                         <field name="area_interest_ids" options="{'no_create': True}"/>
                       </page>
                       <page string="Topics of interest">
                         <field name="topic_interest_ids" options="{'no_create': True}"/>
-                      </page>
-                      <page string="Products of interest">
-                        <field name="product_interest_ids" options="{'no_create': True}"/>
-                      </page>
+                      </page>                      
                     </notebook>
                 </sheet>
             </form>
