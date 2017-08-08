@@ -115,13 +115,15 @@
                 <div class="tab-content">
                   <div id="products-interest" class="tab-pane fade in active">
                     <h3>Products of interest</h3>
-                    <select name="products_interest" multiple="multiple" class="form-control elegant-multi-select">
-                      <t t-foreach="products_interest" t-as="product">
-                        <option t-att-value="product.id">
-                          <t t-esc="product.name" />
-                        </option>
-                      </t>
-                    </select>
+                    <div>
+                      <select name="products_interest" multiple="multiple" class="form-control elegant-multi-select" data-validation="required">
+                        <t t-foreach="products_interest" t-as="product">
+                          <option t-att-value="product.id">
+                            <t t-esc="product.name" />
+                          </option>
+                        </t>
+                      </select>
+                    </div>
                     <br />
                     <p>* IICA Connection is our weekly news bulletin, it contains varied information of the different subjects in which we work.
                       See one here: <a href="http://www.iica.int/en/newsletters-page/iica-connection" target="_blank">http://www.iica.int/en/newsletters-page/iica-connection</a></p>
