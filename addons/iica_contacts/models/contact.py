@@ -68,4 +68,4 @@ class Message(models.Model):
 
     @api.model
     def _get_default_from(self):
-        return formataddr(("Public User", "randall.vargas@iica.int"))
+        return formataddr(("IICA", "comunicacion.social@iica.int"))
