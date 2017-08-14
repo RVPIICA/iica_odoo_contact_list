@@ -101,6 +101,16 @@
                         </select>
                       </div>
                     </div>
+                    <div class="row">
+                      <div class="col-md-12 form-group">
+                        <label class="control-label" for="radio">Do you work in a radio?</label>
+                        <select name="radio" class="form-control">
+                          <option value=""> -- Select an option -- </option>
+                          <option value="true" t-att-selected="1 == sector">Sí</option>
+                          <option value="false" t-att-selected="2 == sector">No</option>
+                        </select>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

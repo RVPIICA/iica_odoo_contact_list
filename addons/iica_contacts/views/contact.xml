@@ -21,6 +21,8 @@
                         context="{'group_by': 'create_date'}"/>
                     <filter string="Place of work" name="group_company"
                         context="{'group_by': 'company'}"/>
+                    <filter string="Works in radio" name="group_radio"
+                        context="{'group_by': 'radio'}"/>
                 </group>
             </search>
         </field>
@@ -46,6 +48,7 @@
                       <group string="Contact properties">
                         <field name="email"/>
                         <field name="phone"/>
+                        <field name="radio"/>
                         <field name="opt_out"/>
                         <field name="unsubscription_date" readonly="1"/>
                       </group>
@@ -59,7 +62,7 @@
                       </page>
                       <page string="Topics of interest">
                         <field name="topic_interest_ids" options="{'no_create': True}"/>
-                      </page>                      
+                      </page>
                     </notebook>
                 </sheet>
             </form>

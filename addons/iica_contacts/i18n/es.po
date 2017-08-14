@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-31 15:03+0000\n"
-"PO-Revision-Date: 2017-07-31 15:03+0000\n"
+"POT-Creation-Date: 2017-08-14 17:23+0000\n"
+"PO-Revision-Date: 2017-08-14 17:23+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -37,6 +37,11 @@ msgid "* IICA Connection is our weekly news bulletin, it contains varied informa
 "                      See one here:"
 msgstr "* IICA Conexión es nuestro boletín semanal de noticias, contiene información variada de los diferentes temas en los que trabajamos.\n"
 "                       Vea uno aquí:"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.register
+msgid "-- Select an option --"
+msgstr "-- Select an option --"
 
 #. module: iica_contacts
 #: model:ir.ui.view,arch_db:iica_contacts.register
@@ -140,30 +145,32 @@ msgstr "Antigua y Barbuda"
 #. module: iica_contacts
 #: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_area_interest_name
 msgid "Area"
-msgstr "Área"
+msgstr "Area"
 
 #. module: iica_contacts
 #: code:addons/iica_contacts/models/mailing.py:21
 #, python-format
 msgid "Areas of Interest"
-msgstr "Áreas de interés"
+msgstr "Areas de interés"
 
 #. module: iica_contacts
 #: model:ir.model.fields,field_description:iica_contacts.field_mail_mass_mailing_area_interest_ids
 msgid "Areas of interes"
-msgstr "Áreas de interés"
+msgstr "Areas de interés"
 
 #. module: iica_contacts
+#: model:ir.actions.act_window,name:iica_contacts.action_view_iica_contacts_area
 #: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_contact_area_interest_ids
 #: model:ir.ui.view,arch_db:iica_contacts.register
+#: model:ir.ui.view,arch_db:iica_contacts.view_iica_contacts_area_interest_tree
 #: model:ir.ui.view,arch_db:iica_contacts.view_iica_contacts_contact_form
 msgid "Areas of interest"
-msgstr "Áreas de interés"
+msgstr "Areas de interés"
 
 #. module: iica_contacts
 #: model:ir.model,name:iica_contacts.model_iica_contacts_area_interest
 msgid "Areas of interest for IICA contacts"
-msgstr "Áreas de interés para los contactos del IICA"
+msgstr "Areas de interés para los contactos del IICA"
 
 #. module: iica_contacts
 #: model:ir.ui.view,arch_db:iica_contacts.footer_default
@@ -249,17 +256,6 @@ msgid "Colombia"
 msgstr "Colombia"
 
 #. module: iica_contacts
-#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_contact_company
-#: model:ir.ui.view,arch_db:iica_contacts.view_iica_contacts_contact_search
-msgid "Place of work"
-msgstr "Lugar de trabajo"
-
-#. module: iica_contacts
-#: model:ir.ui.view,arch_db:iica_contacts.register
-msgid "Place of work:"
-msgstr "Lugar de trabajo:"
-
-#. module: iica_contacts
 #: model:iica_contacts.topic_interest,name:iica_contacts.ti_13
 msgid "Competitiveness"
 msgstr "Competitividad"
@@ -312,9 +308,24 @@ msgid "Country:"
 msgstr "País"
 
 #. module: iica_contacts
+#: model:ir.actions.act_window,help:iica_contacts.action_view_iica_contacts_area
+msgid "Create the first area of interest"
+msgstr "Create the first area of interest"
+
+#. module: iica_contacts
 #: model:ir.actions.act_window,help:iica_contacts.action_view_iica_contacts_contacts
 msgid "Create the first contact"
 msgstr "Crear el primer contacto"
+
+#. module: iica_contacts
+#: model:ir.actions.act_window,help:iica_contacts.action_view_iica_contacts_product
+msgid "Create the first product of interest"
+msgstr "Create the first product of interest"
+
+#. module: iica_contacts
+#: model:ir.actions.act_window,help:iica_contacts.action_view_iica_contacts_topic
+msgid "Create the first topic of interest"
+msgstr "Create the first topic of interest"
 
 #. module: iica_contacts
 #: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_area_interest_create_uid
@@ -359,6 +370,11 @@ msgstr "Descripción"
 #: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_topic_interest_display_name
 msgid "Display Name"
 msgstr "Nombre a mostrar"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.register
+msgid "Do you work in a radio?"
+msgstr "¿Trabaja usted para una radio?"
 
 #. module: iica_contacts
 #: model:ir.ui.view,arch_db:iica_contacts.footer_default
@@ -512,6 +528,11 @@ msgid "IICA Contacts"
 msgstr "Contactos IICA"
 
 #. module: iica_contacts
+#: model:ir.ui.menu,name:iica_contacts.iica_contacts_admin_menu
+msgid "IICA Contacts Administration"
+msgstr "IICA Contacts Administration"
+
+#. module: iica_contacts
 #: model:res.groups,name:iica_contacts.iica_mailing_manager
 msgid "IICA Mailing - Manager"
 msgstr "IICA Mailing - Manager"
@@ -574,7 +595,7 @@ msgid "International organization"
 msgstr "Organismo internacional"
 
 #. module: iica_contacts
-#: code:addons/iica_contacts/controllers/controllers.py:74
+#: code:addons/iica_contacts/controllers/controllers.py:75
 #, python-format
 msgid "Invalid email! Please enter a valid email address."
 msgstr "Email no válido! Por favor ingrese un email correcto."
@@ -705,9 +726,24 @@ msgid "Mailing Lists Subscribers"
 msgstr "Suscriptores de las listas de correo"
 
 #. module: iica_contacts
+#: model:ir.ui.menu,name:iica_contacts.iica_areas_management_menu
+msgid "Manage areas of interest"
+msgstr "Administrar áreas de interés"
+
+#. module: iica_contacts
 #: model:ir.ui.menu,name:iica_contacts.iica_contacts_management_menu
 msgid "Manage contacts"
 msgstr "Administrar contactos"
+
+#. module: iica_contacts
+#: model:ir.ui.menu,name:iica_contacts.iica_products_management_menu
+msgid "Manage products of interest"
+msgstr "Administrar productos de interés"
+
+#. module: iica_contacts
+#: model:ir.ui.menu,name:iica_contacts.iica_topics_management_menu
+msgid "Manage topics of interest"
+msgstr "Administrar temas de interés"
 
 #. module: iica_contacts
 #: model:ir.model,name:iica_contacts.model_mail_mass_mailing
@@ -738,6 +774,11 @@ msgstr "Recursos naturales"
 #: model:ir.ui.view,arch_db:iica_contacts.footer_default
 msgid "Nicaragua"
 msgstr "Nicaragua"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.register
+msgid "No"
+msgstr "No"
 
 #. module: iica_contacts
 #: selection:iica_contacts.contact,sector:0
@@ -802,6 +843,17 @@ msgid "Phone:(+506) 2216 0222"
 msgstr "Teléfono (+506) 2216 0222"
 
 #. module: iica_contacts
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_contact_company
+#: model:ir.ui.view,arch_db:iica_contacts.view_iica_contacts_contact_search
+msgid "Place of work"
+msgstr "Lugar de trabajo"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.register
+msgid "Place of work:"
+msgstr "Lugar de trabajo:"
+
+#. module: iica_contacts
 #: selection:iica_contacts.contact,sector:0
 #: model:ir.ui.view,arch_db:iica_contacts.register
 msgid "Private"
@@ -828,9 +880,11 @@ msgid "Products of interes"
 msgstr "Products of interes"
 
 #. module: iica_contacts
+#: model:ir.actions.act_window,name:iica_contacts.action_view_iica_contacts_product
 #: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_contact_product_interest_ids
 #: model:ir.ui.view,arch_db:iica_contacts.register
 #: model:ir.ui.view,arch_db:iica_contacts.view_iica_contacts_contact_form
+#: model:ir.ui.view,arch_db:iica_contacts.view_iica_contacts_product_interest_tree
 msgid "Products of interest"
 msgstr "Productos de interés"
 
@@ -979,10 +1033,15 @@ msgid "The contact has chosen not to receive mails anymore from this list"
 msgstr "El contacto ha elegido no recibir más correos de esta lista"
 
 #. module: iica_contacts
-#: code:addons/iica_contacts/controllers/controllers.py:70
+#: code:addons/iica_contacts/controllers/controllers.py:71
 #, python-format
 msgid "The email is a required field."
 msgstr "El campo correo es requerido"
+
+#. module: iica_contacts
+#: model:ir.model.fields,help:iica_contacts.field_iica_contacts_contact_radio
+msgid "This contact works in a radio station"
+msgstr "Éste contacto trabaja en una radio"
 
 #. module: iica_contacts
 #: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_topic_interest_name
@@ -995,9 +1054,11 @@ msgid "Topics of interes"
 msgstr "Temas de interés"
 
 #. module: iica_contacts
+#: model:ir.actions.act_window,name:iica_contacts.action_view_iica_contacts_topic
 #: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_contact_topic_interest_ids
 #: model:ir.ui.view,arch_db:iica_contacts.register
 #: model:ir.ui.view,arch_db:iica_contacts.view_iica_contacts_contact_form
+#: model:ir.ui.view,arch_db:iica_contacts.view_iica_contacts_topic_interest_tree
 msgid "Topics of interest"
 msgstr "Temas de interés"
 
@@ -1074,12 +1135,18 @@ msgid "Women"
 msgstr "Mujeres"
 
 #. module: iica_contacts
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_contact_radio
+#: model:ir.ui.view,arch_db:iica_contacts.view_iica_contacts_contact_search
+msgid "Works in radio"
+msgstr "Trabaja en una radio"
+
+#. module: iica_contacts
 #: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social_eng
 msgid "You may"
 msgstr "Puede"
 
 #. module: iica_contacts
-#: code:addons/iica_contacts/controllers/controllers.py:66
+#: code:addons/iica_contacts/controllers/controllers.py:67
 #, python-format
 msgid "You must type your name to continue. "
 msgstr "Debe digitar su nombre para continuar"
@@ -1108,9 +1175,19 @@ msgid "Your registration was processed unsuccessfully."
 msgstr "Su suscripción fue procesada con errores"
 
 #. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social_eng
+msgid "at any time."
+msgstr "at any time."
+
+#. module: iica_contacts
 #: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social
 msgid "darse de baja"
 msgstr "darse de baja"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social
+msgid "en cualquier momento."
+msgstr "en cualquier momento."
 
 #. module: iica_contacts
 #: model:ir.ui.view,arch_db:iica_contacts.footer_default
@@ -1143,16 +1220,6 @@ msgid "iicahq@iica.int"
 msgstr "iicahq@iica.int"
 
 #. module: iica_contacts
-#: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social
-msgid "o cambiar sus datos en cualquier momento."
-msgstr "o cambiar sus datos en cualquier momento."
-
-#. module: iica_contacts
-#: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social_eng
-msgid "at any time."
-msgstr "at any time."
-
-#. module: iica_contacts
 #: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social_eng
 msgid "unsubscribe"
-msgstr "unsubscribe"
+msgstr "darse de baja"

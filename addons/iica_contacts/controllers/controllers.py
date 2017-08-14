@@ -53,6 +53,7 @@ class IICAContactsController(http.Controller):
             'language' : post.get('language'),
             'email' : post.get('email'),
             'phone' : post.get('phone'),
+            'radio' : post.get('radio'),
             'area_interest_ids' : self._process_many2may(request.httprequest.form.getlist('areas_interest')),
             'product_interest_ids' : self._process_many2may(request.httprequest.form.getlist('products_interest')),
             'topic_interest_ids' : self._process_many2may(request.httprequest.form.getlist('topics_interest')),

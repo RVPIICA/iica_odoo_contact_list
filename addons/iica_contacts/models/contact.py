@@ -26,6 +26,7 @@ class Contact(models.Model):
         'Formatted Email', compute='_compute_email_formatted',
         help='Format email address "Name <email@domain>"')
     phone = fields.Char(string='Phone number')
+    radio = fields.Boolean(string='Works in radio', help='This contact works in a radio station', default=False)
     opt_out = fields.Boolean(string='Opt Out', help='The contact has chosen not to receive mails anymore from this list')
     unsubscription_date = fields.Datetime(string='Unsubscription Date')
     area_interest_ids = fields.Many2many('iica_contacts.area_interest', 'iica_contacts_contact_area_rel', string='Areas of interest')
