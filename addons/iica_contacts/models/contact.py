@@ -17,7 +17,7 @@ class Contact(models.Model):
 
     #Field definitions
     name = fields.Char(string='Full Name', required=True)
-    company = fields.Char(string='Place of work', index=True)
+    company = fields.Char(string='Institution / Organization', index=True)
     country_id = fields.Many2one('res.country', string='Country', ondelete='restrict', required=True)
     sector = fields.Selection(selection=__sectors, string='Sector')
     language = fields.Selection(selection=__language_list, string='Language', required=True)

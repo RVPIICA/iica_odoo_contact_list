@@ -83,7 +83,7 @@
                     </div>
                     <div class="row">
                       <div class="col-md-12 form-group">
-                        <label for="company">Place of work:</label>
+                        <label for="company">Institution / Organization:</label>
                         <input type="text" name="company" class="form-control" t-att-value="company or contact.company" />
                       </div>
                     </div>

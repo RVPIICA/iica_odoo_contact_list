@@ -845,13 +845,13 @@ msgstr "Teléfono (+506) 2216 0222"
 #. module: iica_contacts
 #: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_contact_company
 #: model:ir.ui.view,arch_db:iica_contacts.view_iica_contacts_contact_search
-msgid "Place of work"
-msgstr "Lugar de trabajo"
+msgid "Institution / Organization"
+msgstr "Institución / Organización"
 
 #. module: iica_contacts
 #: model:ir.ui.view,arch_db:iica_contacts.register
-msgid "Place of work:"
-msgstr "Lugar de trabajo:"
+msgid "Institution / Organization:"
+msgstr "Institución / Organización:"
 
 #. module: iica_contacts
 #: selection:iica_contacts.contact,sector:0
