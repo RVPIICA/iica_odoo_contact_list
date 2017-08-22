@@ -105,9 +105,9 @@
                       <div class="col-md-12 form-group">
                         <label class="control-label" for="radio">Do you work in a radio?</label>
                         <select name="radio" class="form-control">
-                          <option value="false"> -- Select an option -- </option>
-                          <option value="true" t-att-selected="1 == sector">Sí</option>
-                          <option value="false" t-att-selected="2 == sector">No</option>
+                          <option value="0"> -- Select an option -- </option>
+                          <option value="1" t-att-selected="1 == radio">Sí</option>
+                          <option value="0" t-att-selected="0 == radio">No</option>
                         </select>
                       </div>
                     </div>

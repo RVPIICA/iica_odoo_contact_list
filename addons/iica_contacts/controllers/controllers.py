@@ -45,6 +45,11 @@ class IICAContactsController(http.Controller):
 
     #Métodos privados
     def _process_registration(self, post):
+
+        radio_bool = False
+        if(post.get('radio') == 1):
+            radio_bool = True
+
         request.env['iica_contacts.contact'].create({
             'name' : post.get('name'),
             'company' : post.get('company'),
@@ -53,7 +58,7 @@ class IICAContactsController(http.Controller):
             'language' : post.get('language'),
             'email' : post.get('email'),
             'phone' : post.get('phone'),
-            'radio' : post.get('radio'),
+            'radio' : radio_bool,
             'area_interest_ids' : self._process_many2may(request.httprequest.form.getlist('areas_interest')),
             'product_interest_ids' : self._process_many2may(request.httprequest.form.getlist('products_interest')),
             'topic_interest_ids' : self._process_many2may(request.httprequest.form.getlist('topics_interest')),
