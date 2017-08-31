@@ -1143,7 +1143,7 @@ msgstr "Trabaja en una radio"
 #. module: iica_contacts
 #: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social_eng
 msgid "You may"
-msgstr "Puede"
+msgstr "You may"
 
 #. module: iica_contacts
 #: code:addons/iica_contacts/controllers/controllers.py:67
@@ -1222,4 +1222,4 @@ msgstr "iicahq@iica.int"
 #. module: iica_contacts
 #: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social_eng
 msgid "unsubscribe"
-msgstr "darse de baja"
+msgstr "unsubscribe"
