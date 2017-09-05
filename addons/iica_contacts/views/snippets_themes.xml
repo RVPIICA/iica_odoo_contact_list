@@ -47,6 +47,8 @@
                     <t t-snippet="iica_contacts.s_iica_block_image_text" t-thumbnail="/mass_mailing/static/src/img/blocks/block_image_text.png"/>
                     <t t-snippet="iica_contacts.s_iica_block_image" t-thumbnail="/mass_mailing/static/src/img/blocks/block_image.png"/>
                     <t t-snippet="iica_contacts.s_iica_block_three_cols" t-thumbnail="/mass_mailing/static/src/img/blocks/block_three_cols.png"/>
+                    <t t-snippet="iica_contacts.s_iica_buttons" t-thumbnail="/mass_mailing/static/src/img/blocks/block_three_cols.png"/>
+                    <t t-snippet="iica_contacts.s_iica_only_text" t-thumbnail="/mass_mailing/static/src/img/blocks/block_image_text.png"/>
                   </div>
               </div>
               <div id="iica_designer_additional" class="o_panel">
@@ -302,6 +304,16 @@
             </table>
         </div>
     </div>
+</template>
+<template id="s_iica_buttons" name="IICA Additional Buttons">
+  <div class="small mt16" style="text-align: center;">
+      <a href="#" class="btn" style="background-color: rgb(153,27,30); color: #ffffff;">Suscríbase</a>
+      <a href="#" class="btn" style="background-color: rgb(102,153,51); color: #ffffff; margin-left:10px">Otros Programas</a>
+      <a href="#" class="btn" style="background-color: rgb(0,51,102); color: #ffffff; margin-left:10px">Contáctenos</a>
+  </div>
+</template>
+<template id="s_iica_only_text" name="IICA Only text paragraph">
+  <p style="padding-right: 20px; padding-left: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </template>
 <!--Finaliza elementos custom IICA-->
 
