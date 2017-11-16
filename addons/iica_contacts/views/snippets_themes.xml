@@ -237,6 +237,11 @@
             <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_h_padding">
                 <tbody>
                     <tr>
+                      <td width="100%" align="left" style="text-align:left; margin-bottom: 10px;" class="">
+                          <span style="font-weight: bold">Mes año</span> - <span>Edición ##</span>
+                      </td>
+                    </tr>
+                    <tr>
                         <td width="100%" align="center" style="text-align:center" class="">
                             <img src="/iica_contacts/static/src/img/demos/news_text_under_demo.jpg" class="center-block" alt="Your Picture" />
                         </td>
@@ -305,11 +310,25 @@
         </div>
     </div>
 </template>
-<template id="s_iica_buttons" name="IICA Additional Buttons">
+<template id="s_iica_buttons" name="IICA Additional Buttons Agro Enlace">
   <div class="small mt16" style="text-align: center;">
-      <a href="#" class="btn" style="background-color: rgb(153,27,30); color: #ffffff;">Suscríbase</a>
-      <a href="#" class="btn" style="background-color: rgb(102,153,51); color: #ffffff; margin-left:10px">Otros Programas</a>
-      <a href="#" class="btn" style="background-color: rgb(0,51,102); color: #ffffff; margin-left:10px">Contáctenos</a>
+      <a href="http://contacts.iica.int/contact/register" class="btn" style="background-color: rgb(153,27,30); color: #ffffff;">Suscríbase</a>
+      <a href="http://iica.int/es/prensa/agro-enlace" class="btn" style="background-color: rgb(102,153,51); color: #ffffff; margin-left:10px">Otros Programas</a>
+      <a href="mailto:radio@iica.int" class="btn" style="background-color: rgb(0,51,102); color: #ffffff; margin-left:10px">Contáctenos</a>
+  </div>
+</template>
+<template id="s_iica_buttons_iica_conexion" name="IICA Additional Buttons IICA Conexión">
+  <div class="small mt16" style="text-align: center;">
+      <a href="http://contacts.iica.int/contact/register" class="btn" style="background-color: rgb(153,27,30); color: #ffffff;">Suscríbase</a>
+      <a href="mailto:comunicacion.social@iica.int" class="btn" style="background-color: rgb(102,153,51); color: #ffffff; margin-left:10px">Contáctenos</a>
+      <a href="http://iica.int/es/" class="btn" style="background-color: rgb(0,51,102); color: #ffffff; margin-left:10px">Sitio web</a>
+  </div>
+</template>
+<template id="s_iica_buttons_iica_connection" name="IICA Additional Buttons IICA Connection">
+  <div class="small mt16" style="text-align: center;">
+      <a href="http://contacts.iica.int/contact/register" class="btn" style="background-color: rgb(153,27,30); color: #ffffff;">Subscribe</a>
+      <a href="mailto:comunicacion.social@iica.int" class="btn" style="background-color: rgb(102,153,51); color: #ffffff; margin-left:10px">Contact us</a>
+      <a href="http://iica.int/en/" class="btn" style="background-color: rgb(0,51,102); color: #ffffff; margin-left:10px">Website</a>
   </div>
 </template>
 <template id="s_iica_only_text" name="IICA Only text paragraph">
@@ -325,9 +344,8 @@
                 <tbody>
                     <tr>
                       <td style="text-align:center; width:100%; " colspan="6">
-                        <p>Instituto Interamericano de Cooperación para la Agricultura, 600 m. Norte del Cruce </p>
-                        <p>Ipís-Coronado, San José 55-2200, Costa Rica</p>
-                        <p>Usted puede <a href="/unsubscribe_from_list" class="btn btn-link">darse de baja</a> en cualquier momento.</p>
+                        <p>Instituto Interamericano de Cooperación para la Agricultura (IICA). Sede Central.</p>
+                        <p>600 m. Norte del Cruce Ipís-Coronado, San José 55-2200, Costa Rica</p>
                       </td>
                     </tr>
                     <tr>
@@ -353,6 +371,11 @@
                         </a>
                       </td>
                       <td style="width:60px;"></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center; width:100%; " colspan="6">
+                        <p>Si no desea recibir éste mensaje, dé click <a href="/unsubscribe_from_list" class="btn btn-link">aquí</a>.</p>
+                      </td>
                     </tr>
                 </tbody>
             </table>
@@ -366,11 +389,8 @@
                 <tbody>
                     <tr>
                       <td style="text-align:center; width:100%; " colspan="6">
-                        <p>Inter-American Institute for Cooperation on Agriculture, 600 m. North of the Ipís-Coronado intersection</p>
-                        <p>San Isidro, Coronado , San José 55-2200, Costa Rica</p>
-                        <p>Instituto Interamericano de Cooperación para la Agricultura, 600 m. Norte del Cruce </p>
-                        <p>Ipís-Coronado, San José 55-2200, Costa Rica</p>
-                        <p>You may <a href="/unsubscribe_from_list" class="btn btn-link">unsubscribe</a> at any time.</p>
+                        <p>Inter-American Institute for Cooperation on Agriculture (IICA)- Headquarters</p>
+                        <p>0.5 miles North from the Ipís-Coronado intersection Vásquez de Coronado, San Isidro 11101 - Costa Rica</p>
                       </td>
                     </tr>
                     <tr>
@@ -396,6 +416,11 @@
                         </a>
                       </td>
                       <td style="width:60px;"></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center; width:100%; " colspan="6">
+                        <p>You can <a href="/unsubscribe_from_list" class="btn btn-link">unsubscribe</a> at any time.</p>
+                      </td>
                     </tr>
                 </tbody>
             </table>
