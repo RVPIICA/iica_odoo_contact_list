@@ -271,7 +271,7 @@
                     <tr>
                         <td style="vertical-align:top;width:180px;" class="o_mail_col_mv">
                             <div class="o_mail_col_container">
-                                <img src="/iica_contacts/static/src/img/demos/news_3col_1_demo.jpg" class="center-block" alt="Your Picture" style="width: 145px; height: 101px" />
+                                <img src="/iica_contacts/static/src/img/demos/news_3col_1_demo.jpg" class="center-block" alt="Your Picture" style="width: 145px; height: 145px" />
                                 <h4>Lorem ipsum dolor</h4>
                                 <p class="o_mail_no_margin">
                                     Lorem ipsum dolor
@@ -284,7 +284,7 @@
 
                         <td style="vertical-align:top;width:180px;" class="o_mail_col_mv">
                             <div class="o_mail_col_container">
-                                <img src="/iica_contacts/static/src/img/demos/news_3col_2_demo.jpg" class="center-block" alt="Your Picture" style="width: 145px; height: 101px" />
+                                <img src="/iica_contacts/static/src/img/demos/news_3col_2_demo.jpg" class="center-block" alt="Your Picture" style="width: 145px; height: 145px" />
                                 <h4>Lorem ipsum dolor</h4>
                                 <p class="o_mail_no_margin">
                                     Lorem ipsum dolor
@@ -297,7 +297,7 @@
 
                         <td style="vertical-align:top;width:180px;" class="o_mail_col_mv">
                             <div class="o_mail_col_container">
-                                <img src="/iica_contacts/static/src/img/demos/news_3con_3_demo.jpg" class="center-block" alt="Your Picture" style="width: 145px; height: 101px" />
+                                <img src="/iica_contacts/static/src/img/demos/news_3con_3_demo.jpg" class="center-block" alt="Your Picture" style="width: 145px; height: 145px" />
                                 <h4>Lorem ipsum dolor</h4>
                                 <p class="o_mail_no_margin">
                                     Lorem ipsum dolor
