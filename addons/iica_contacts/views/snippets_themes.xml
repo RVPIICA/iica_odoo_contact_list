@@ -27,6 +27,11 @@
                        data-images-info='{"logo": {"format": "png"}}'>
                       <t t-call="iica_contacts.theme_iica_connection"/>
                   </div>
+                  <div data-name="iica_prensa"
+                       data-img="/iica_contacts/static/src/img/thumbnails/iica_press_thumb"
+                       data-images-info='{"logo": {"format": "png"}}'>
+                      <t t-call="iica_contacts.theme_iica_prensa"/>
+                  </div>
               </div>
               <div id="iica_designer_default_headers" class="o_panel">
                   <div class="o_panel_header">
@@ -37,6 +42,7 @@
                       <t t-snippet="iica_contacts.s_iica_banner_agroenlace" t-thumbnail="/mass_mailing/static/src/img/blocks/block_banner.png"/>
                       <t t-snippet="iica_contacts.s_iica_banner_conexion" t-thumbnail="/mass_mailing/static/src/img/blocks/block_banner.png"/>
                       <t t-snippet="iica_contacts.s_iica_banner_connection" t-thumbnail="/mass_mailing/static/src/img/blocks/block_banner.png"/>
+                      <t t-snippet="iica_contacts.s_iica_banner_prensa" t-thumbnail="/mass_mailing/static/src/img/blocks/block_banner.png"/>
                   </div>
               </div>
               <div id="iica_designer_body" class="o_panel">
@@ -57,7 +63,8 @@
                   </div>
                   <div class="o_panel_body">
                     <t t-snippet="iica_contacts.s_iica_live_agro_enlace" t-thumbnail="/mass_mailing/static/src/img/blocks/block_image.png"/>
-                      <t t-snippet="iica_contacts.s_iica_player_agroenlace" t-thumbnail="/mass_mailing/static/src/img/blocks/block_image.png"/>
+                    <t t-snippet="iica_contacts.s_iica_player_agroenlace" t-thumbnail="/mass_mailing/static/src/img/blocks/block_image.png"/>
+                    <t t-snippet="iica_contacts.s_iica_prensa_intro" t-thumbnail="/mass_mailing/static/src/img/blocks/block_image.png"/>
                   </div>
               </div>
               <div id="iica_designer_footer" class="o_panel">
@@ -140,6 +147,28 @@
                         <td width="100%" valign="top" class="o_mail_full_width_padding" style="color: rgb(242, 242, 242)">
                             <a href="#">
                                 <img src="/iica_contacts/static/src/img/banners/iica_connection.jpg" class="center-block" alt="Banner IICAConexión" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</template>
+<template id="s_iica_banner_prensa" name="Banner IICA en la prensa">
+    <div class="o_mail_block_banner">
+        <div class="o_mail_snippet_general">
+            <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles" style="padding-bottom:40px;">
+                <tbody>
+                  <tr>
+                    <td style="background-color: #003366; color: white; font-weight: bold; font-style: italic; text-align: right; padding: 8px 10px;">
+                      Boletin No.##
+                    </td>
+                  </tr>
+                    <tr>
+                        <td width="100%" valign="top" class="o_mail_full_width_padding" style="color: rgb(242, 242, 242)">
+                            <a href="#">
+                                <img style="margin-top: 20px;" src="/iica_contacts/static/src/img/banners/iica_prensa.png" class="center-block" alt="Banner IICAConexión" />
                             </a>
                         </td>
                     </tr>
@@ -337,6 +366,108 @@
 <template id="s_iica_only_text" name="IICA Only text paragraph">
   <p style="padding-right: 20px; padding-left: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </template>
+<template id="s_iica_prensa_intro" name="IICA introducción En la Prensa">
+  <table>
+    <tr>
+      <td style="font-style: italic; text-align: center; padding: 20px;">
+        <strong>“IICA en la prensa”</strong> es una recopilación textual de las noticias publicadas por medios de comunicación externos al Instituto. El IICA no es responsable del contenido de estas noticias.
+      </td>
+      <td style="font-style: italic; text-align: center; padding: 20px;">
+        <strong>“IICA in the press”</strong> is a compilation of the news items published by media outside the Institute. IICA is not responsible for the content of news items published by third parties.
+      </td>
+    </tr>
+  </table>
+</template>
+<template id="s_iica_prensa_norte" name="IICA en la Prensa - R Norte">
+  <div class="o_mail_snippet_general" style="padding: 0 20px; width: auto;">
+    <table style="width: 100%;">
+      <tr>
+        <td><h2 style="font-weight: bold; font-size: 24px; color: #991b1e;">País</h2></td>
+      </tr>
+      <tr>
+        <td><h3 style="font-weight: bold; font-size: 17px; margin-top: 0px;">Título</h3></td>
+      </tr>
+      <tr>
+        <td><p>Contenido de la noticias</p></td>
+      </tr>
+      <tr>
+        <td><a href="#" target="_blank" style="float: right;">Leer más</a></td>
+      </tr>
+    </table>
+  </div>
+</template>
+<template id="s_iica_prensa_central" name="IICA en la Prensa - R Central">
+  <div class="o_mail_snippet_general" style="padding: 0 20px; width: auto;">
+    <table style="width: 100%;">
+      <tr>
+        <td><h2 style="font-weight: bold; font-size: 24px; color: #669933;">País</h2></td>
+      </tr>
+      <tr>
+        <td><h3 style="font-weight: bold; font-size: 17px; margin-top: 0px;">Título</h3></td>
+      </tr>
+      <tr>
+        <td><p>Contenido de la noticias</p></td>
+      </tr>
+      <tr>
+        <td><a href="#" target="_blank" style="float: right;">Leer más</a></td>
+      </tr>
+    </table>
+  </div>
+</template>
+<template id="s_iica_prensa_caribe" name="IICA en la Prensa - R Caribe">
+  <div class="o_mail_snippet_general" style="padding: 0 20px; width: auto;">
+    <table style="width: 100%;">
+      <tr>
+        <td><h2 style="font-weight: bold; font-size: 24px; color: #006666;">País</h2></td>
+      </tr>
+      <tr>
+        <td><h3 style="font-weight: bold; font-size: 17px; margin-top: 0px;">Título</h3></td>
+      </tr>
+      <tr>
+        <td><p>Contenido de la noticias</p></td>
+      </tr>
+      <tr>
+        <td><a href="#" target="_blank" style="float: right;">Leer más</a></td>
+      </tr>
+    </table>
+  </div>
+</template>
+<template id="s_iica_prensa_andina" name="IICA en la Prensa - R Andina">
+  <div class="o_mail_snippet_general" style="padding: 0 20px; width: auto;">
+    <table style="width: 100%;">
+      <tr>
+        <td><h2 style="font-weight: bold; font-size: 24px; color: #cc9933;">País</h2></td>
+      </tr>
+      <tr>
+        <td><h3 style="font-weight: bold; font-size: 17px; margin-top: 0px;">Título</h3></td>
+      </tr>
+      <tr>
+        <td><p>Contenido de la noticias</p></td>
+      </tr>
+      <tr>
+        <td><a href="#" target="_blank" style="float: right;">Leer más</a></td>
+      </tr>
+    </table>
+  </div>
+</template>
+<template id="s_iica_prensa_sur" name="IICA en la Prensa - R Sur">
+  <div class="o_mail_snippet_general" style="padding: 0 20px; width: auto;">
+    <table style="width: 100%;">
+      <tr>
+        <td><h2 style="font-weight: bold; font-size: 24px; color: #d8781e;">País</h2></td>
+      </tr>
+      <tr>
+        <td><h3 style="font-weight: bold; font-size: 17px; margin-top: 0px;">Título</h3></td>
+      </tr>
+      <tr>
+        <td><p>Contenido de la noticias</p></td>
+      </tr>
+      <tr>
+        <td><a href="#" target="_blank" style="float: right;">Leer más</a></td>
+      </tr>
+    </table>
+  </div>
+</template>
 <!--Finaliza elementos custom IICA-->
 
 <!--Footer IICA-->
@@ -377,7 +508,7 @@
                     </tr>
                     <tr>
                       <td style="text-align:center; width:100%; padding-top: 20px; font-size: 12px;" colspan="6">
-                        <p>Si no desea recibir éste mensaje, dé click <a href="/unsubscribe_from_list" style="font-size:12px; padding: 0px;" class="btn btn-link">aquí</a>.</p>
+                        <p>Si no desea recibir este mensaje, dé clic <a href="/unsubscribe_from_list" style="font-size:12px; padding: 0px;" class="btn btn-link">aquí</a>.</p>
                       </td>
                     </tr>
                 </tbody>
@@ -423,6 +554,23 @@
                     <tr>
                       <td style="text-align:center; width:100%; padding-top: 20px; font-size: 12px;" colspan="6">
                         <p>You can <a href="/unsubscribe_from_list" class="btn btn-link" style="font-size:12px; padding: 0px;">unsubscribe</a> at any time.</p>
+                      </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</template>
+<!--Footer IICA-->
+<template id="s_iica_footer_press" name="Footer Press Newsletter">
+    <div class="o_mail_block_footer_social o_mail_footer_social_center">
+        <div class="o_mail_snippet_general">
+            <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_full_width_padding">
+                <tbody>
+                    <tr>
+                      <td style="text-align:center; width:100%; padding-top: 20px; font-size: 12px; padding-bottom: 20px;" colspan="6">
+                        <p>Instituto Interamericano de Cooperación para la Agricultura (IICA). Sede Central.</p>
+                        <p>600 m. Norte del Cruce Ipís-Coronado, San José 55-2200, Costa Rica.</p>
                       </td>
                     </tr>
                 </tbody>
