@@ -83,12 +83,14 @@
                         <field name="body_html" widget="html_frame" options="{'editor_url': '/mass_mailing/field/email_template'}"/>
                       </page>
                       <page string="Recipients">
-                        <label for="mailing_model" string="Recipients"/>
                         <div>
                           <field name="mailing_model" widget="radio" options="{'horizontal': true}" attrs="{'invisible': True}"/>
                           <field name="area_interest_ids" options="{'no_create': True}"/>
                           <field name="topic_interest_ids" options="{'no_create': True}"/>
                           <field name="product_interest_ids" options="{'no_create': True}"/>
+                          <br />
+                          <label for="additional_products_ids" string="Additional products:"/>
+                          <field name="additional_products_ids" widget="many2many_checkboxes"/>
                           <field name="mailing_domain"
                             options="{'model_field': 'mailing_model', 'model_domain': 'mailing_domain'}" attrs="{'invisible': True}"/>
                         </div>
