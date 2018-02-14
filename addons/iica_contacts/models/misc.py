@@ -28,3 +28,13 @@ class Products_Interest(models.Model):
 
     name = fields.Char(string='Product', required=True, translate=True)
     contact_ids = fields.Many2many('iica_contacts.contact', 'iica_contacts_contact_product_rel', string='Contacts')
+
+class Additional_Products(models.Model):
+    """Additional products for select IICA subscribers such as the press newsletter."""
+    _name = 'iica_contacts.additional_products'
+    _inherit = 'iica_contacts.area_interest'
+    _description = 'Additional select IICA products the a subscriber will receive'
+
+    name = fields.Char(string='Product', required=True, translate=True)
+    short_desc = fields.Char(string='Short Description', translate=True)
+    contact_ids = fields.Many2many('iica_contacts.contact', 'iica_contacts_contact_additional_products_rel', string='Contacts')

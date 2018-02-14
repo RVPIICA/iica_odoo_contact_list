@@ -34,6 +34,18 @@
         </field>
     </record>
 
+    <!--Additional products tree view-->
+    <record model="ir.ui.view" id="view_iica_contacts_additional_products_tree">
+        <field name="name">iica_contacts.additional_products.tree</field>
+        <field name="model">iica_contacts.additional_products</field>
+        <field name="arch" type="xml">
+            <tree string="Additional products" editable="bottom">
+                <field name="name"/>
+                <field name="short_desc"/>
+            </tree>
+        </field>
+    </record>
+
     <!-- Area Action -->
     <record model="ir.actions.act_window" id="action_view_iica_contacts_area">
         <field name="name">Areas of interest</field>
@@ -67,6 +79,17 @@
             </p>
         </field>
     </record>
+    <!-- Additional products -->
+    <record model="ir.actions.act_window" id="action_view_iica_contacts_add_product">
+        <field name="name">Additional products</field>
+        <field name="res_model">iica_contacts.additional_products</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">Create the first additional product
+            </p>
+        </field>
+    </record>
 
     <menuitem name="IICA Contacts Administration" id="iica_contacts_admin_menu"
         parent="mass_mailing.mass_mailing_menu_root" sequence="1" groups="mass_mailing.group_mass_mailing_user"/>
@@ -78,5 +101,7 @@
               action="action_view_iica_contacts_topic"/>
     <menuitem id="iica_products_management_menu" name="Manage products of interest" parent="iica_contacts_admin_menu"
               action="action_view_iica_contacts_product"/>
+    <menuitem id="iica_add_products_management_menu" name="Manage additional products" parent="iica_contacts_admin_menu"
+              action="action_view_iica_contacts_add_product"/>
   </data>
 </odoo>

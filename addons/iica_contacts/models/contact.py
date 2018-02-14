@@ -32,14 +32,7 @@ class Contact(models.Model):
     area_interest_ids = fields.Many2many('iica_contacts.area_interest', 'iica_contacts_contact_area_rel', string='Areas of interest')
     topic_interest_ids = fields.Many2many('iica_contacts.topic_interest', 'iica_contacts_contact_topic_rel', string='Topics of interest')
     product_interest_ids = fields.Many2many('iica_contacts.products_interest', 'iica_contacts_contact_product_rel', string='Products of interest')
-
-    # @api.depends('first_name', 'last_name')
-    # def _compute_full_name(self):
-    #     for contact in self:
-    #         if not contact.last_name:
-    #             contact.name = contact.first_name
-    #         else:
-    #             contact.name = contact.first_name + ' ' + contact.last_name
+    additional_products_ids = fields.Many2many('iica_contacts.additional_products', 'iica_contacts_contact_additional_products_rel', string='Additional products')
 
     @api.depends('name', 'email')
     def _compute_email_formatted(self):
