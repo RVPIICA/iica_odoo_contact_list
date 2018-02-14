@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-14 17:23+0000\n"
-"PO-Revision-Date: 2017-08-14 17:23+0000\n"
+"POT-Creation-Date: 2018-02-14 14:59+0000\n"
+"PO-Revision-Date: 2018-02-14 14:59+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -64,6 +64,17 @@ msgid "0.5 miles North from the Ipís-Coronado Intersection"
 msgstr "600 metros norte del Cruce Ipís Coronado"
 
 #. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social_eng
+msgid "0.5 miles North from the Ipís-Coronado intersection Vásquez de Coronado, San Isidro 11101 - Costa Rica."
+msgstr "0.5 miles North from the Ipís-Coronado intersection Vásquez de Coronado, San Isidro 11101 - Costa Rica."
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_press
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social
+msgid "600 m. Norte del Cruce Ipís-Coronado, San José 55-2200, Costa Rica."
+msgstr "600 m. Norte del Cruce Ipís-Coronado, San José 55-2200, Costa Rica."
+
+#. module: iica_contacts
 #: model:ir.ui.view,arch_db:iica_contacts.layout
 msgid "<b>\n"
 "                                  <span>Language</span>\n"
@@ -91,6 +102,35 @@ msgstr "<span class=\"sr-only\">Cambiar navegación</span>\n"
 "                          <span class=\"icon-bar\"/>\n"
 "                          <span class=\"icon-bar\"/>\n"
 "                          <span class=\"icon-bar\"/>"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_block_image
+msgid "<span style=\"font-weight: bold\">Mes año</span> - <span>Edición ##</span>"
+msgstr "<span style=\"font-weight: bold\">Mes año</span> - <span>Edición ##</span>"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_prensa_intro
+msgid "<strong>“IICA en la prensa”</strong> es una recopilación textual de las noticias publicadas por medios de comunicación externos al Instituto. El IICA no es responsable del contenido de estas noticias."
+msgstr "<strong>“IICA en la prensa”</strong> es una recopilación textual de las noticias publicadas por medios de comunicación externos al Instituto. El IICA no es responsable del contenido de estas noticias."
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_prensa_intro
+msgid "<strong>“IICA in the press”</strong> is a compilation of the news items published by media outside the Institute. IICA is not responsible for the content of news items published by third parties."
+msgstr "<strong>“IICA in the press”</strong> is a compilation of the news items published by media outside the Institute. IICA is not responsible for the content of news items published by third parties."
+
+#. module: iica_contacts
+#: model:ir.actions.act_window,name:iica_contacts.action_view_iica_contacts_add_product
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_contact_additional_products_ids
+#: model:ir.model.fields,field_description:iica_contacts.field_mail_mass_mailing_additional_products_ids
+#: model:ir.ui.view,arch_db:iica_contacts.view_iica_contacts_additional_products_tree
+#: model:ir.ui.view,arch_db:iica_contacts.view_iica_contacts_contact_form
+msgid "Additional products"
+msgstr "Productos adicionales"
+
+#. module: iica_contacts
+#: model:ir.model,name:iica_contacts.model_iica_contacts_additional_products
+msgid "Additional select IICA products the a subscriber will receive"
+msgstr "Additional select IICA products the a subscriber will receive"
 
 #. module: iica_contacts
 #: model:iica_contacts.topic_interest,name:iica_contacts.ti_4
@@ -190,6 +230,7 @@ msgstr "Bannes Agroenlace"
 #. module: iica_contacts
 #: model:ir.ui.view,arch_db:iica_contacts.s_iica_banner_conexion
 #: model:ir.ui.view,arch_db:iica_contacts.s_iica_banner_connection
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_banner_prensa
 msgid "Banner IICAConexión"
 msgstr "Banner IICAConexión"
 
@@ -217,6 +258,11 @@ msgstr "Bioseguridad"
 #: model:iica_contacts.topic_interest,name:iica_contacts.ti_9
 msgid "Biotecnology"
 msgstr "Biotecnología"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_banner_prensa
+msgid "Boletin No.##"
+msgstr "Boletin No.##"
 
 #. module: iica_contacts
 #: model:ir.ui.view,arch_db:iica_contacts.footer_default
@@ -286,11 +332,32 @@ msgid "Contact properties"
 msgstr "Propiedades de contacto"
 
 #. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_buttons_iica_connection
+msgid "Contact us"
+msgstr "Contáctenos"
+
+#. module: iica_contacts
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_additional_products_contact_ids
 #: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_area_interest_contact_ids
 #: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_products_interest_contact_ids
 #: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_topic_interest_contact_ids
 msgid "Contacts"
 msgstr "Contactos"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_prensa_andina
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_prensa_caribe
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_prensa_central
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_prensa_norte
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_prensa_sur
+msgid "Contenido de la noticias"
+msgstr "Contenido de la noticias"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_buttons
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_buttons_iica_conexion
+msgid "Contáctenos"
+msgstr "Contáctenos"
 
 #. module: iica_contacts
 #: model:ir.ui.view,arch_db:iica_contacts.footer_default
@@ -306,6 +373,11 @@ msgstr "País"
 #: model:ir.ui.view,arch_db:iica_contacts.register
 msgid "Country:"
 msgstr "País"
+
+#. module: iica_contacts
+#: model:ir.actions.act_window,help:iica_contacts.action_view_iica_contacts_add_product
+msgid "Create the first additional product"
+msgstr "Create the first additional product"
 
 #. module: iica_contacts
 #: model:ir.actions.act_window,help:iica_contacts.action_view_iica_contacts_area
@@ -328,6 +400,7 @@ msgid "Create the first topic of interest"
 msgstr "Create the first topic of interest"
 
 #. module: iica_contacts
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_additional_products_create_uid
 #: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_area_interest_create_uid
 #: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_contact_create_uid
 #: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_create_uid
@@ -337,6 +410,7 @@ msgid "Created by"
 msgstr "Creado por"
 
 #. module: iica_contacts
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_additional_products_create_date
 #: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_area_interest_create_date
 #: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_contact_create_date
 #: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_create_date
@@ -356,6 +430,7 @@ msgid "Descargar cuña"
 msgstr "Descargar cuña"
 
 #. module: iica_contacts
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_additional_products_description
 #: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_area_interest_description
 #: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_products_interest_description
 #: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_topic_interest_description
@@ -363,6 +438,7 @@ msgid "Description"
 msgstr "Descripción"
 
 #. module: iica_contacts
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_additional_products_display_name
 #: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_area_interest_display_name
 #: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_contact_display_name
 #: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_display_name
@@ -508,6 +584,7 @@ msgid "Honduras"
 msgstr "Honduras"
 
 #. module: iica_contacts
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_additional_products_id
 #: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_area_interest_id
 #: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_contact_id
 #: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_id
@@ -536,6 +613,11 @@ msgstr "IICA Contacts Administration"
 #: model:res.groups,name:iica_contacts.iica_mailing_manager
 msgid "IICA Mailing - Manager"
 msgstr "IICA Mailing - Manager"
+
+#. module: iica_contacts
+#: model:res.groups,name:iica_contacts.iica_mailing_press
+msgid "IICA Mailing - Press"
+msgstr "IICA Mailing - Press"
 
 #. module: iica_contacts
 #: model:iica_contacts.products_interest,name:iica_contacts.pi_1
@@ -574,15 +656,25 @@ msgid "Innovation"
 msgstr "Innovación"
 
 #. module: iica_contacts
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_contact_company
+msgid "Institution / Organization"
+msgstr "Institution / Organization"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.register
+msgid "Institution / Organization:"
+msgstr "Institución / Organización:"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_press
 #: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social
-#: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social_eng
-msgid "Instituto Interamericano de Cooperación para la Agricultura, 600 m. Norte del Cruce"
-msgstr "Instituto Interamericano de Cooperación para la Agricultura, 600 m. Norte del Cruce"
+msgid "Instituto Interamericano de Cooperación para la Agricultura (IICA). Sede Central."
+msgstr "Instituto Interamericano de Cooperación para la Agricultura (IICA). Sede Central."
 
 #. module: iica_contacts
 #: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social_eng
-msgid "Inter-American Institute for Cooperation on Agriculture, 600 m. North of the Ipís-Coronado intersection"
-msgstr "Inter-American Institute for Cooperation on Agriculture, 600 m. North of the Ipís-Coronado intersection"
+msgid "Inter-American Institute for Cooperation on Agriculture (IICA)- Headquarters"
+msgstr "Inter-American Institute for Cooperation on Agriculture (IICA)- Headquarters"
 
 #. module: iica_contacts
 #: model:ir.ui.view,arch_db:iica_contacts.register
@@ -595,7 +687,7 @@ msgid "International organization"
 msgstr "Organismo internacional"
 
 #. module: iica_contacts
-#: code:addons/iica_contacts/controllers/controllers.py:75
+#: code:addons/iica_contacts/controllers/controllers.py:80
 #, python-format
 msgid "Invalid email! Please enter a valid email address."
 msgstr "Email no válido! Por favor ingrese un email correcto."
@@ -614,12 +706,6 @@ msgstr "Invitaciones a eventos"
 #: model:iica_contacts.products_interest,name:iica_contacts.pi_6
 msgid "Invitation to Seminars"
 msgstr "Invitaciones a seminarios"
-
-#. module: iica_contacts
-#: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social
-#: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social_eng
-msgid "Ipís-Coronado, San José 55-2200, Costa Rica"
-msgstr "Ipís-Coronado, San José 55-2200, Costa Rica"
 
 #. module: iica_contacts
 #: model:ir.ui.view,arch_db:iica_contacts.footer_default
@@ -649,6 +735,7 @@ msgstr "Idioma"
 
 #. module: iica_contacts
 #: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts___last_update
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_additional_products___last_update
 #: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_area_interest___last_update
 #: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_contact___last_update
 #: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_products_interest___last_update
@@ -657,6 +744,7 @@ msgid "Last Modified on"
 msgstr "Última modificación en"
 
 #. module: iica_contacts
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_additional_products_write_uid
 #: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_area_interest_write_uid
 #: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_contact_write_uid
 #: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_products_interest_write_uid
@@ -666,6 +754,7 @@ msgid "Last Updated by"
 msgstr "Última actualización por"
 
 #. module: iica_contacts
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_additional_products_write_date
 #: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_area_interest_write_date
 #: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_contact_write_date
 #: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_products_interest_write_date
@@ -678,6 +767,11 @@ msgstr "Última actualización el"
 #: model:ir.ui.view,arch_db:iica_contacts.s_iica_block_image
 #: model:ir.ui.view,arch_db:iica_contacts.s_iica_block_image_text
 #: model:ir.ui.view,arch_db:iica_contacts.s_iica_block_three_cols
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_prensa_andina
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_prensa_caribe
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_prensa_central
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_prensa_norte
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_prensa_sur
 msgid "Leer más"
 msgstr "Leer más"
 
@@ -721,9 +815,19 @@ msgid "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod t
 msgstr "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 
 #. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_only_text
+msgid "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+msgstr "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+#. module: iica_contacts
 #: model:ir.ui.view,arch_db:iica_contacts.view_iica_contacts_contact_tree
 msgid "Mailing Lists Subscribers"
 msgstr "Suscriptores de las listas de correo"
+
+#. module: iica_contacts
+#: model:ir.ui.menu,name:iica_contacts.iica_add_products_management_menu
+msgid "Manage additional products"
+msgstr "Administrar productos adicionales."
 
 #. module: iica_contacts
 #: model:ir.ui.menu,name:iica_contacts.iica_areas_management_menu
@@ -808,6 +912,11 @@ msgid "Other"
 msgstr "Otro"
 
 #. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_buttons
+msgid "Otros Programas"
+msgstr "Otros Programas"
+
+#. module: iica_contacts
 #: model:ir.ui.view,arch_db:iica_contacts.footer_default
 msgid "Panama"
 msgstr "Panamá"
@@ -816,6 +925,15 @@ msgstr "Panamá"
 #: model:ir.ui.view,arch_db:iica_contacts.footer_default
 msgid "Paraguay"
 msgstr "Paraguay"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_prensa_andina
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_prensa_caribe
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_prensa_central
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_prensa_norte
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_prensa_sur
+msgid "País"
+msgstr "País"
 
 #. module: iica_contacts
 #: model:ir.ui.view,arch_db:iica_contacts.footer_default
@@ -843,15 +961,9 @@ msgid "Phone:(+506) 2216 0222"
 msgstr "Teléfono (+506) 2216 0222"
 
 #. module: iica_contacts
-#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_contact_company
 #: model:ir.ui.view,arch_db:iica_contacts.view_iica_contacts_contact_search
-msgid "Institution / Organization"
-msgstr "Institución / Organización"
-
-#. module: iica_contacts
-#: model:ir.ui.view,arch_db:iica_contacts.register
-msgid "Institution / Organization:"
-msgstr "Institución / Organización:"
+msgid "Place of work"
+msgstr "Lugar de trabajo"
 
 #. module: iica_contacts
 #: selection:iica_contacts.contact,sector:0
@@ -860,6 +972,7 @@ msgid "Private"
 msgstr "Privado"
 
 #. module: iica_contacts
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_additional_products_name
 #: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_products_interest_name
 msgid "Product"
 msgstr "Producto"
@@ -930,6 +1043,31 @@ msgid "Registration successfull"
 msgstr "Registro exitoso"
 
 #. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.theme_iica_prensa
+msgid "Región Andina"
+msgstr "Región Andina"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.theme_iica_prensa
+msgid "Región Caribe"
+msgstr "Región Caribe"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.theme_iica_prensa
+msgid "Región Central"
+msgstr "Región Central"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.theme_iica_prensa
+msgid "Región Norte"
+msgstr "Región Norte"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.theme_iica_prensa
+msgid "Región Sur"
+msgstr "Región Sur"
+
+#. module: iica_contacts
 #: model:iica_contacts.topic_interest,name:iica_contacts.ti_16
 msgid "Renewable energies"
 msgstr "Energías renovables"
@@ -966,11 +1104,6 @@ msgid "Rural youth"
 msgstr "Juventud rural"
 
 #. module: iica_contacts
-#: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social_eng
-msgid "San Isidro, Coronado , San José 55-2200, Costa Rica"
-msgstr "San Isidro, Coronado , San José 55-2200, Costa Rica"
-
-#. module: iica_contacts
 #: model:ir.ui.view,arch_db:iica_contacts.footer_default
 msgid "San José, Costa Rica"
 msgstr "San José, Costa Rica"
@@ -984,6 +1117,21 @@ msgstr "Sector"
 #: model:ir.ui.view,arch_db:iica_contacts.register
 msgid "Sector:"
 msgstr "Sector"
+
+#. module: iica_contacts
+#: model:ir.model.fields,field_description:iica_contacts.field_iica_contacts_additional_products_short_desc
+msgid "Short Description"
+msgstr "Descripción corta"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social
+msgid "Si no desea recibir este mensaje, dé clic"
+msgstr "Si no desea recibir este mensaje, dé clic"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_buttons_iica_conexion
+msgid "Sitio web"
+msgstr "Sitio web"
 
 #. module: iica_contacts
 #: model:iica_contacts.topic_interest,name:iica_contacts.ti_32
@@ -1014,6 +1162,7 @@ msgstr "San Vicente y las Granadillas"
 
 #. module: iica_contacts
 #: model:ir.ui.view,arch_db:iica_contacts.footer_default
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_buttons_iica_connection
 msgid "Subscribe"
 msgstr "Suscribir"
 
@@ -1021,6 +1170,12 @@ msgstr "Suscribir"
 #: model:ir.ui.view,arch_db:iica_contacts.footer_default
 msgid "Suriname"
 msgstr "Suriname"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_buttons
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_buttons_iica_conexion
+msgid "Suscríbase"
+msgstr "Suscríbase"
 
 #. module: iica_contacts
 #: model:iica_contacts.topic_interest,name:iica_contacts.ti_15
@@ -1033,7 +1188,7 @@ msgid "The contact has chosen not to receive mails anymore from this list"
 msgstr "El contacto ha elegido no recibir más correos de esta lista"
 
 #. module: iica_contacts
-#: code:addons/iica_contacts/controllers/controllers.py:71
+#: code:addons/iica_contacts/controllers/controllers.py:76
 #, python-format
 msgid "The email is a required field."
 msgstr "El campo correo es requerido"
@@ -1073,6 +1228,11 @@ msgid "Trade"
 msgstr "Comercio"
 
 #. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_live_agro_enlace
+msgid "Transmisión en vivo"
+msgstr "Transmisión en vivo"
+
+#. module: iica_contacts
 #: model:ir.ui.view,arch_db:iica_contacts.footer_default
 msgid "Trinidad and Tobago"
 msgstr "Trinidad y Tobago"
@@ -1082,6 +1242,15 @@ msgstr "Trinidad y Tobago"
 #: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social_eng
 msgid "Twitter"
 msgstr "Twitter"
+
+#. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_prensa_andina
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_prensa_caribe
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_prensa_central
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_prensa_norte
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_prensa_sur
+msgid "Título"
+msgstr "Título"
 
 #. module: iica_contacts
 #: model:ir.ui.view,arch_db:iica_contacts.s_iica_live_agro_enlace
@@ -1110,11 +1279,6 @@ msgid "Uruguay"
 msgstr "Uruguay"
 
 #. module: iica_contacts
-#: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social
-msgid "Usted puede"
-msgstr "Usted puede"
-
-#. module: iica_contacts
 #: model:ir.ui.view,arch_db:iica_contacts.footer_default
 msgid "Vazquez de Coronado, San"
 msgstr "Vásquez de Coronado, San"
@@ -1130,6 +1294,11 @@ msgid "Water"
 msgstr "Agua"
 
 #. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_buttons_iica_connection
+msgid "Website"
+msgstr "Sitio web"
+
+#. module: iica_contacts
 #: model:iica_contacts.topic_interest,name:iica_contacts.ti_24
 msgid "Women"
 msgstr "Mujeres"
@@ -1142,11 +1311,11 @@ msgstr "Trabaja en una radio"
 
 #. module: iica_contacts
 #: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social_eng
-msgid "You may"
-msgstr "You may"
+msgid "You can"
+msgstr "You can"
 
 #. module: iica_contacts
-#: code:addons/iica_contacts/controllers/controllers.py:67
+#: code:addons/iica_contacts/controllers/controllers.py:72
 #, python-format
 msgid "You must type your name to continue. "
 msgstr "Debe digitar su nombre para continuar"
@@ -1175,19 +1344,14 @@ msgid "Your registration was processed unsuccessfully."
 msgstr "Su suscripción fue procesada con errores"
 
 #. module: iica_contacts
+#: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social
+msgid "aquí"
+msgstr "aquí"
+
+#. module: iica_contacts
 #: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social_eng
 msgid "at any time."
 msgstr "at any time."
-
-#. module: iica_contacts
-#: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social
-msgid "darse de baja"
-msgstr "darse de baja"
-
-#. module: iica_contacts
-#: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social
-msgid "en cualquier momento."
-msgstr "en cualquier momento."
 
 #. module: iica_contacts
 #: model:ir.ui.view,arch_db:iica_contacts.footer_default
@@ -1222,4 +1386,4 @@ msgstr "iicahq@iica.int"
 #. module: iica_contacts
 #: model:ir.ui.view,arch_db:iica_contacts.s_iica_footer_social_eng
 msgid "unsubscribe"
-msgstr "unsubscribe"
+msgstr "darse de baja"
