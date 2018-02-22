@@ -1,0 +1,70 @@
+body {
+    font-family: @font-family;
+}
+
+header > nav.main-nav > .container-fluid .o_sub_menu > .o_sub_menu_content > .oe_secondary_menu ul.dropdown-menu > li.dropdown-header {
+    background-color: @iica-green;
+    color: @font-white;
+}
+
+.navbar-default .navbar-nav, nav.main-nav {
+    background-color: @iica-blue;
+    color: @font-white;
+
+    & > .active > a,  & > .open > a{
+        color: @font-white;
+        background-color: @iica-blue-light;
+
+        &:hover, &:focus {
+            color: @font-white;
+            font-weight: bold;
+            background-color: @iica-blue-light;
+        }
+    }
+
+    & > li > a {
+        color: @font-white;
+
+        &:hover {
+            color: @font-white;
+            font-weight: bold;
+        }
+    }
+}
+
+.main-nav .drawer-toggle {
+    i {
+        color: @font-white;
+    }
+    &:hover {
+        background-color: @iica-blue-light;
+    }
+}
+
+.btn-primary {
+    background-color: @iica-blue;
+
+    &:hover {
+        background-color: @iica-blue-light;
+    }
+}
+
+.o_kanban_view.o_kanban_dashboard.o_salesteam_kanban .o_sales_dashboard > div > table > tbody > tr > td.o_main{
+    background-color: @iica-green !important;
+}
+
+.o_mail_chat .o_mail_chat_sidebar {
+    background-color: @iica-blue-light !important;
+    & .o_active {
+        background-color: @iica-green !important;
+    }
+
+    & .o_mail_chat_channel_item:hover {
+        background-color: @iica-green !important;
+    }
+}
+
+.o_form_view .oe_button_box + .oe_avatar + .oe_title {
+    width: 100% !important;
+    max-width: 60% !important;
+}

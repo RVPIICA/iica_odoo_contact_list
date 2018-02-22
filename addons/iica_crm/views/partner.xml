@@ -1,0 +1,33 @@
+<odoo>
+  <data>
+    
+    <record id="view_partner_form_expanded" model="ir.ui.view">
+      <field name="name">partner.extender</field>
+      <field name="model">res.partner</field>
+      <field name="inherit_id" ref="base.view_partner_form"/>
+      <field name="arch" type="xml">
+        <xpath expr="//group[1]" position="before">
+          <group attrs="{'invisible': [('is_company', '=', False)]}">
+            <field name="objectives" placegolder='Objectives of the company.' />
+            <field name="workspace" placegolder='Brief description of the workspace of the company.' />
+          </group>          
+        </xpath>
+        <xpath expr="//page[1]" position="attributes">
+          <attribute name="autofocus">False</attribute>
+        </xpath>
+        <xpath expr="//page[1]" position="before">
+          <page string="Additional information" autofocus="True" attrs="{'invisible': [('is_company', '=', False)]}">
+            <group>
+              <field name="cooperation_sectors" widget="html"/>
+              <field name="iica_cooperation" widget="html"/>
+            </group> 
+          </page>                   
+        </xpath>
+        <xpath expr="//field[@name='type']" position="after">
+          <field name="geographic_zone" widget="many2many_tags" />
+        </xpath>
+      </field>
+    </record>
+    
+  </data>
+</odoo>
