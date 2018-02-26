@@ -7,33 +7,33 @@
       <xpath expr="//div[@id='o_scroll']" position="replace">
           <div id="o_scroll">
               <div id="email_designer_themes">
-                  <div data-name="iica_agro_enlace"
+                  <div data-name="iica_agro_enlace" groups="iica_contacts.iica_mailing_manager"
                        data-img="/iica_contacts/static/src/img/thumbnails/agro_enlace_thumb"
                        data-images-info='{"logo": {"format": "png"}}'>
                       <t t-call="iica_contacts.theme_iica_agro_enlace"/>
                   </div>
-                  <div data-name="iica_agro_enlace_live"
+                  <div data-name="iica_agro_enlace_live" groups="iica_contacts.iica_mailing_manager"
                        data-img="/iica_contacts/static/src/img/thumbnails/agro_enlace_live_thumb"
                        data-images-info='{"logo": {"format": "png"}}'>
                       <t t-call="iica_contacts.theme_iica_agro_enlace_live"/>
                   </div>
-                  <div data-name="iica_conexion"
+                  <div data-name="iica_conexion" groups="iica_contacts.iica_mailing_manager"
                        data-img="/iica_contacts/static/src/img/thumbnails/iica_conexion_thumb"
                        data-images-info='{"logo": {"format": "png"}}'>
                       <t t-call="iica_contacts.theme_iica_conexion"/>
                   </div>
-                  <div data-name="iica_connection"
+                  <div data-name="iica_connection" groups="iica_contacts.iica_mailing_manager"
                        data-img="/iica_contacts/static/src/img/thumbnails/iica_connection_thumb"
                        data-images-info='{"logo": {"format": "png"}}'>
                       <t t-call="iica_contacts.theme_iica_connection"/>
                   </div>
-                  <div data-name="iica_prensa"
+                  <div data-name="iica_prensa" groups="iica_contacts.iica_mailing_press"
                        data-img="/iica_contacts/static/src/img/thumbnails/iica_press_thumb"
                        data-images-info='{"logo": {"format": "png"}}'>
                       <t t-call="iica_contacts.theme_iica_prensa"/>
                   </div>
               </div>
-              <div id="iica_designer_conexion_agroenlace">
+              <div id="iica_designer_conexion_agroenlace" class="o_panel" groups="iica_contacts.iica_mailing_manager">
                 <div class="o_panel_header">
                     <i class="fa fa-envelope-open"/> IICA Conexión / Agroenlace
                 </div>
@@ -44,7 +44,7 @@
                 <t t-snippet="iica_contacts.s_iica_only_text" t-thumbnail="/mass_mailing/static/src/img/blocks/block_paragraph.png"/>
                 </div>
               </div>
-              <div id="iica_designer_press" class="o_panel">
+              <div id="iica_designer_press" class="o_panel" groups="iica_contacts.iica_mailing_press">
                   <div class="o_panel_header">
                       <i class="fa fa-bullhorn"/> Press Newsletter
                   </div>
@@ -61,6 +61,7 @@
                     <t t-snippet="iica_contacts.s_iica_prensa_sur" t-thumbnail="/mass_mailing/static/src/img/blocks/block_title_text.png"/>
                     <t t-snippet="iica_contacts.s_iica_prensa_r_otros" t-thumbnail="/mass_mailing/static/src/img/blocks/block_title_sub.png"/>
                     <t t-snippet="iica_contacts.s_iica_prensa_otros" t-thumbnail="/mass_mailing/static/src/img/blocks/block_title_text.png"/>
+                    <t t-snippet="mass_mailing.s_mail_block_footer_separator" t-thumbnail="/mass_mailing/static/src/img/blocks/block_footer_separator.png"/>
                   </div>
               </div>
           </div>
@@ -388,7 +389,7 @@
         <td><p>Contenido de la noticias</p></td>
       </tr>
       <tr>
-        <td><a href="#" target="_blank" style="color: #069;">Medio</a> (<span> mm/dd/yyyy </span>) </td>
+        <td style="padding-bottom: 10px;"><a href="#" target="_blank" style="color: #069;">Medio</a> (<span> mm/dd/yyyy </span>) </td>
       </tr>
     </table>
   </div>
@@ -415,7 +416,7 @@
         <td><p>Contenido de la noticias</p></td>
       </tr>
       <tr>
-        <td><a href="#" target="_blank" style="color: #069;">Medio</a> (<span> mm/dd/yyyy </span>) </td>
+        <td style="padding-bottom: 10px;"><a href="#" target="_blank" style="color: #069;">Medio</a> (<span> mm/dd/yyyy </span>) </td>
       </tr>
     </table>
   </div>
@@ -442,7 +443,7 @@
         <td><p>Contenido de la noticias</p></td>
       </tr>
       <tr>
-        <td><a href="#" target="_blank" style="color: #069;">Medio</a> (<span> mm/dd/yyyy </span>) </td>
+        <td style="padding-bottom: 10px;"><a href="#" target="_blank" style="color: #069;">Medio</a> (<span> mm/dd/yyyy </span>) </td>
       </tr>
     </table>
   </div>
@@ -469,7 +470,7 @@
         <td><p>Contenido de la noticias</p></td>
       </tr>
       <tr>
-        <td><a href="#" target="_blank" style="color: #069;">Medio</a> (<span> mm/dd/yyyy </span>) </td>
+        <td style="padding-bottom: 10px;"><a href="#" target="_blank" style="color: #069;">Medio</a> (<span> mm/dd/yyyy </span>) </td>
       </tr>
     </table>
   </div>
@@ -496,7 +497,7 @@
         <td><p>Contenido de la noticias</p></td>
       </tr>
       <tr>
-        <td><a href="#" target="_blank" style="color: #069;">Medio</a> (<span> mm/dd/yyyy </span>) </td>
+        <td style="padding-bottom: 10px;"><a href="#" target="_blank" style="color: #069;">Medio</a> (<span> mm/dd/yyyy </span>) </td>
       </tr>
     </table>
   </div>
@@ -523,7 +524,7 @@
         <td><p>Contenido de la noticias</p></td>
       </tr>
       <tr>
-        <td><a href="#" target="_blank" style="color: #069;">Medio</a> (<span> mm/dd/yyyy </span>) </td>
+        <td style="padding-bottom: 10px;"><a href="#" target="_blank" style="color: #069;">Medio</a> (<span> mm/dd/yyyy </span>) </td>
       </tr>
     </table>
   </div>
