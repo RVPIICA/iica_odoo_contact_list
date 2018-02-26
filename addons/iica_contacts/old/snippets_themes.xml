@@ -33,34 +33,47 @@
                       <t t-call="iica_contacts.theme_iica_prensa"/>
                   </div>
               </div>
-              <div id="iica_designer_conexion_agroenlace">
-                <div class="o_panel_header">
-                    <i class="fa fa-envelope-open"/> IICA Conexión / Agroenlace
-                </div>
-                <div class="o_panel_body">
-                <t t-snippet="iica_contacts.s_iica_block_image_text" t-thumbnail="/mass_mailing/static/src/img/blocks/block_image_text.png"/>
-                <t t-snippet="iica_contacts.s_iica_block_image" t-thumbnail="/mass_mailing/static/src/img/blocks/block_image.png"/>
-                <t t-snippet="iica_contacts.s_iica_block_three_cols" t-thumbnail="/mass_mailing/static/src/img/blocks/block_three_cols.png"/>
-                <t t-snippet="iica_contacts.s_iica_only_text" t-thumbnail="/mass_mailing/static/src/img/blocks/block_paragraph.png"/>
-                </div>
-              </div>
-              <div id="iica_designer_press" class="o_panel">
+              <div id="iica_designer_default_headers" class="o_panel">
                   <div class="o_panel_header">
-                      <i class="fa fa-bullhorn"/> Press Newsletter
+                      <i class="fa fa-angle-double-up"/> IICA Headers/Logos
                   </div>
                   <div class="o_panel_body">
-                  <t t-snippet="iica_contacts.s_iica_prensa_r_norte" t-thumbnail="/mass_mailing/static/src/img/blocks/block_title_sub.png"/>
-                    <t t-snippet="iica_contacts.s_iica_prensa_norte" t-thumbnail="/mass_mailing/static/src/img/blocks/block_title_text.png"/>
-                    <t t-snippet="iica_contacts.s_iica_prensa_r_central" t-thumbnail="/mass_mailing/static/src/img/blocks/block_title_sub.png"/>
-                    <t t-snippet="iica_contacts.s_iica_prensa_central" t-thumbnail="/mass_mailing/static/src/img/blocks/block_title_text.png"/>
-                    <t t-snippet="iica_contacts.s_iica_prensa_r_caribe" t-thumbnail="/mass_mailing/static/src/img/blocks/block_title_sub.png"/>
-                    <t t-snippet="iica_contacts.s_iica_prensa_caribe" t-thumbnail="/mass_mailing/static/src/img/blocks/block_title_text.png"/>
-                    <t t-snippet="iica_contacts.s_iica_prensa_r_andina" t-thumbnail="/mass_mailing/static/src/img/blocks/block_title_sub.png"/>
-                    <t t-snippet="iica_contacts.s_iica_prensa_andina" t-thumbnail="/mass_mailing/static/src/img/blocks/block_title_text.png"/>
-                    <t t-snippet="iica_contacts.s_iica_prensa_r_sur" t-thumbnail="/mass_mailing/static/src/img/blocks/block_title_sub.png"/>
-                    <t t-snippet="iica_contacts.s_iica_prensa_sur" t-thumbnail="/mass_mailing/static/src/img/blocks/block_title_text.png"/>
-                    <t t-snippet="iica_contacts.s_iica_prensa_r_otros" t-thumbnail="/mass_mailing/static/src/img/blocks/block_title_sub.png"/>
-                    <t t-snippet="iica_contacts.s_iica_prensa_otros" t-thumbnail="/mass_mailing/static/src/img/blocks/block_title_text.png"/>
+                      <t t-snippet="iica_contacts.s_iica_aniversary_logo" t-thumbnail="/mass_mailing/static/src/img/blocks/block_header_social.png"/>
+                      <t t-snippet="iica_contacts.s_iica_banner_agroenlace" t-thumbnail="/mass_mailing/static/src/img/blocks/block_banner.png"/>
+                      <t t-snippet="iica_contacts.s_iica_banner_conexion" t-thumbnail="/mass_mailing/static/src/img/blocks/block_banner.png"/>
+                      <t t-snippet="iica_contacts.s_iica_banner_connection" t-thumbnail="/mass_mailing/static/src/img/blocks/block_banner.png"/>
+                      <t t-snippet="iica_contacts.s_iica_banner_prensa" t-thumbnail="/mass_mailing/static/src/img/blocks/block_banner.png"/>
+                  </div>
+              </div>
+              <div id="iica_designer_body" class="o_panel">
+                  <div class="o_panel_header">
+                      <i class="fa fa-clone"/> Body
+                  </div>
+                  <div class="o_panel_body">
+                    <t t-snippet="iica_contacts.s_iica_block_image_text" t-thumbnail="/mass_mailing/static/src/img/blocks/block_image_text.png"/>
+                    <t t-snippet="iica_contacts.s_iica_block_image" t-thumbnail="/mass_mailing/static/src/img/blocks/block_image.png"/>
+                    <t t-snippet="iica_contacts.s_iica_block_three_cols" t-thumbnail="/mass_mailing/static/src/img/blocks/block_three_cols.png"/>
+                    <t t-snippet="iica_contacts.s_iica_buttons" t-thumbnail="/mass_mailing/static/src/img/blocks/block_three_cols.png"/>
+                    <t t-snippet="iica_contacts.s_iica_only_text" t-thumbnail="/mass_mailing/static/src/img/blocks/block_image_text.png"/>
+                  </div>
+              </div>
+              <div id="iica_designer_additional" class="o_panel">
+                  <div class="o_panel_header">
+                      <i class="fa fa-plus"/> IICA additional blocks
+                  </div>
+                  <div class="o_panel_body">
+                    <t t-snippet="iica_contacts.s_iica_live_agro_enlace" t-thumbnail="/mass_mailing/static/src/img/blocks/block_image.png"/>
+                    <t t-snippet="iica_contacts.s_iica_player_agroenlace" t-thumbnail="/mass_mailing/static/src/img/blocks/block_image.png"/>
+                    <t t-snippet="iica_contacts.s_iica_prensa_intro" t-thumbnail="/mass_mailing/static/src/img/blocks/block_image.png"/>
+                  </div>
+              </div>
+              <div id="iica_designer_footer" class="o_panel">
+                  <div class="o_panel_header">
+                      <i class="fa fa-angle-double-down"/> Footer
+                  </div>
+                  <div class="o_panel_body">
+                    <t t-snippet="iica_contacts.s_iica_footer_social" t-thumbnail="/mass_mailing/static/src/img/blocks/block_footer_social.png"/>
+                    <t t-snippet="iica_contacts.s_iica_footer_social_eng" t-thumbnail="/mass_mailing/static/src/img/blocks/block_footer_social.png"/>
                   </div>
               </div>
           </div>
@@ -365,165 +378,92 @@
     </tr>
   </table>
 </template>
-<!--IICA en la prensta-->
-<template id="s_iica_prensa_r_norte" name="Banner Región Norte">
-    <table style="width: 100%;">
-      <tr>
-        <td style="background-color: #991b1e; color: white; font-size: 24px; padding: 15px; text-align: center;">
-          Región Norte
-        </td>
-      </tr>
-    </table>
-</template>
-<template id="s_iica_prensa_norte" name="País región Norte">
+<template id="s_iica_prensa_norte" name="IICA en la Prensa - R Norte">
   <div class="o_mail_snippet_general" style="padding: 0 20px; width: auto;">
     <table style="width: 100%;">
       <tr>
-        <td><h2 style="font-weight: bold; font-size: 24px; color: #991b1e; margin-bottom: 0;">País</h2></td>
+        <td><h2 style="font-weight: bold; font-size: 24px; color: #991b1e;">País</h2></td>
       </tr>
       <tr>
-        <td><h3 style="font-weight: bold; font-size: 17px; margin-top: 0px; margin-top: 20px;">Título</h3></td>
+        <td><h3 style="font-weight: bold; font-size: 17px; margin-top: 0px;">Título</h3></td>
       </tr>
       <tr>
         <td><p>Contenido de la noticias</p></td>
       </tr>
       <tr>
-        <td><a href="#" target="_blank" style="color: #069;">Medio</a> (<span> mm/dd/yyyy </span>) </td>
+        <td><a href="#" target="_blank" style="float: right;">Leer más</a></td>
       </tr>
     </table>
   </div>
 </template>
-<template id="s_iica_prensa_r_central" name="Banner Región Central">
-    <table style="width: 100%;">
-      <tr>
-        <td style="background-color: #669933; color: white; font-size: 24px; padding: 15px; text-align: center;">
-          Región Central
-        </td>
-      </tr>
-    </table>
-</template>
-<template id="s_iica_prensa_central" name="País Región Central">
+<template id="s_iica_prensa_central" name="IICA en la Prensa - R Central">
   <div class="o_mail_snippet_general" style="padding: 0 20px; width: auto;">
     <table style="width: 100%;">
       <tr>
-        <td><h2 style="font-weight: bold; font-size: 24px; color: #669933; margin-bottom: 0;">País</h2></td>
+        <td><h2 style="font-weight: bold; font-size: 24px; color: #669933;">País</h2></td>
       </tr>
       <tr>
-        <td><h3 style="font-weight: bold; font-size: 17px; margin-top: 0px; margin-top: 20px;">Título</h3></td>
+        <td><h3 style="font-weight: bold; font-size: 17px; margin-top: 0px;">Título</h3></td>
       </tr>
       <tr>
         <td><p>Contenido de la noticias</p></td>
       </tr>
       <tr>
-        <td><a href="#" target="_blank" style="color: #069;">Medio</a> (<span> mm/dd/yyyy </span>) </td>
+        <td><a href="#" target="_blank" style="float: right;">Leer más</a></td>
       </tr>
     </table>
   </div>
 </template>
-<template id="s_iica_prensa_r_caribe" name="Banner Región Caribe">
-    <table style="width: 100%;">
-      <tr>
-        <td style="background-color: #006666; color: white; font-size: 24px; padding: 15px; text-align: center;">
-          Región Caribe
-        </td>
-      </tr>
-    </table>
-</template>
-<template id="s_iica_prensa_caribe" name="País Región Caribe">
+<template id="s_iica_prensa_caribe" name="IICA en la Prensa - R Caribe">
   <div class="o_mail_snippet_general" style="padding: 0 20px; width: auto;">
     <table style="width: 100%;">
       <tr>
-        <td><h2 style="font-weight: bold; font-size: 24px; color: #006666; margin-bottom: 0;">País</h2></td>
+        <td><h2 style="font-weight: bold; font-size: 24px; color: #006666;">País</h2></td>
       </tr>
       <tr>
-        <td><h3 style="font-weight: bold; font-size: 17px; margin-top: 0px; margin-top: 20px;">Título</h3></td>
+        <td><h3 style="font-weight: bold; font-size: 17px; margin-top: 0px;">Título</h3></td>
       </tr>
       <tr>
         <td><p>Contenido de la noticias</p></td>
       </tr>
       <tr>
-        <td><a href="#" target="_blank" style="color: #069;">Medio</a> (<span> mm/dd/yyyy </span>) </td>
+        <td><a href="#" target="_blank" style="float: right;">Leer más</a></td>
       </tr>
     </table>
   </div>
 </template>
-<template id="s_iica_prensa_r_andina" name="Banner Región Andina">
-    <table style="width: 100%;">
-      <tr>
-        <td style="background-color: #cc9933; color: white; font-size: 24px; padding: 15px; text-align: center;">
-          Región Andina
-        </td>
-      </tr>
-    </table>
-</template>
-<template id="s_iica_prensa_andina" name="País Región Andina">
+<template id="s_iica_prensa_andina" name="IICA en la Prensa - R Andina">
   <div class="o_mail_snippet_general" style="padding: 0 20px; width: auto;">
     <table style="width: 100%;">
       <tr>
-        <td><h2 style="font-weight: bold; font-size: 24px; color: #cc9933; margin-bottom: 0;">País</h2></td>
+        <td><h2 style="font-weight: bold; font-size: 24px; color: #cc9933;">País</h2></td>
       </tr>
       <tr>
-        <td><h3 style="font-weight: bold; font-size: 17px; margin-top: 0px; margin-top: 20px;">Título</h3></td>
+        <td><h3 style="font-weight: bold; font-size: 17px; margin-top: 0px;">Título</h3></td>
       </tr>
       <tr>
         <td><p>Contenido de la noticias</p></td>
       </tr>
       <tr>
-        <td><a href="#" target="_blank" style="color: #069;">Medio</a> (<span> mm/dd/yyyy </span>) </td>
+        <td><a href="#" target="_blank" style="float: right;">Leer más</a></td>
       </tr>
     </table>
   </div>
 </template>
-<template id="s_iica_prensa_r_sur" name="Banner Región Sur">
-    <table style="width: 100%;">
-      <tr>
-        <td style="background-color: #d8781e; color: white; font-size: 24px; padding: 15px; text-align: center;">
-          Región Sur
-        </td>
-      </tr>
-    </table>
-</template>
-<template id="s_iica_prensa_sur" name="País Región Sur">
+<template id="s_iica_prensa_sur" name="IICA en la Prensa - R Sur">
   <div class="o_mail_snippet_general" style="padding: 0 20px; width: auto;">
     <table style="width: 100%;">
       <tr>
-        <td><h2 style="font-weight: bold; font-size: 24px; color: #d8781e; margin-bottom: 0;">País</h2></td>
+        <td><h2 style="font-weight: bold; font-size: 24px; color: #d8781e;">País</h2></td>
       </tr>
       <tr>
-        <td><h3 style="font-weight: bold; font-size: 17px; margin-top: 0px; margin-top: 20px;">Título</h3></td>
+        <td><h3 style="font-weight: bold; font-size: 17px; margin-top: 0px;">Título</h3></td>
       </tr>
       <tr>
         <td><p>Contenido de la noticias</p></td>
       </tr>
       <tr>
-        <td><a href="#" target="_blank" style="color: #069;">Medio</a> (<span> mm/dd/yyyy </span>) </td>
-      </tr>
-    </table>
-  </div>
-</template>
-<template id="s_iica_prensa_r_otros" name="Banner Otros paises">
-    <table style="width: 100%;">
-      <tr>
-        <td style="background-color: #036; color: white; font-size: 24px; padding: 15px; text-align: center;">
-          Otros
-        </td>
-      </tr>
-    </table>
-</template>
-<template id="s_iica_prensa_otros" name="País Otros Paises">
-  <div class="o_mail_snippet_general" style="padding: 0 20px; width: auto;">
-    <table style="width: 100%;">
-      <tr>
-        <td><h2 style="font-weight: bold; font-size: 24px; color: #036; margin-bottom: 0;">País</h2></td>
-      </tr>
-      <tr>
-        <td><h3 style="font-weight: bold; font-size: 17px; margin-top: 0px; margin-top: 20px;">Título</h3></td>
-      </tr>
-      <tr>
-        <td><p>Contenido de la noticias</p></td>
-      </tr>
-      <tr>
-        <td><a href="#" target="_blank" style="color: #069;">Medio</a> (<span> mm/dd/yyyy </span>) </td>
+        <td><a href="#" target="_blank" style="float: right;">Leer más</a></td>
       </tr>
     </table>
   </div>

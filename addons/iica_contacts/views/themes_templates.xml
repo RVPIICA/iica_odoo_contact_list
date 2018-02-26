@@ -30,46 +30,18 @@
   <template id="theme_iica_prensa">
     <t t-call="iica_contacts.s_iica_banner_prensa" />
     <t t-call="iica_contacts.s_iica_prensa_intro" />
-    <table style="width: 100%;">
-      <tr>
-        <td style="background-color: #991b1e; color: white; font-size: 24px; padding: 15px; text-align: center;">
-          Región Norte
-        </td>
-      </tr>
-    </table>
+    <t t-call="iica_contacts.s_iica_prensa_r_norte" />
     <t t-call="iica_contacts.s_iica_prensa_norte" />
-    <table style="width: 100%;">
-      <tr>
-        <td style="background-color: #669933; color: white; font-size: 24px; padding: 15px; text-align: center;">
-          Región Central
-        </td>
-      </tr>
-    </table>
+    <t t-call="iica_contacts.s_iica_prensa_r_central" />
     <t t-call="iica_contacts.s_iica_prensa_central" />
-    <table style="width: 100%;">
-      <tr>
-        <td style="background-color: #006666; color: white; font-size: 24px; padding: 15px; text-align: center;">
-          Región Caribe
-        </td>
-      </tr>
-    </table>
+    <t t-call="iica_contacts.s_iica_prensa_r_caribe" />
     <t t-call="iica_contacts.s_iica_prensa_caribe" />
-    <table style="width: 100%;">
-      <tr>
-        <td style="background-color: #cc9933; color: white; font-size: 24px; padding: 15px; text-align: center;">
-          Región Andina
-        </td>
-      </tr>
-    </table>
+    <t t-call="iica_contacts.s_iica_prensa_r_andina" />
     <t t-call="iica_contacts.s_iica_prensa_andina" />
-    <table style="width: 100%;">
-      <tr>
-        <td style="background-color: #d8781e; color: white; font-size: 24px; padding: 15px; text-align: center;">
-          Región Sur
-        </td>
-      </tr>
-    </table>
+    <t t-call="iica_contacts.s_iica_prensa_r_sur" />
     <t t-call="iica_contacts.s_iica_prensa_sur" />
+    <t t-call="iica_contacts.s_iica_prensa_r_otros" />
+    <t t-call="iica_contacts.s_iica_prensa_otros" />
     <t t-call="iica_contacts.s_iica_footer_press" />
   </template>
 </odoo>
