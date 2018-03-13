@@ -569,7 +569,7 @@
                     </tr>
                     <tr>
                       <td style="text-align:center; width:100%; padding-top: 20px; font-size: 12px;" colspan="6">
-                        <p>Si no desea recibir este mensaje, dé clic <a href="/unsubscribe_from_list" style="font-size:12px; padding: 0px;" class="btn btn-link">aquí</a>.</p>
+                        <p>Si no desea recibir este mensaje, haga clic <a href="/unsubscribe_from_list" style="font-size:12px; padding: 0px;" class="btn btn-link">aquí</a>.</p>
                       </td>
                     </tr>
                 </tbody>
