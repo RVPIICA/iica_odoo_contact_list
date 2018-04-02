@@ -7,9 +7,21 @@ class Partner(models.Model):
 
     _inherit = 'res.partner'
 
-    objectives = fields.Text(string='Objective', translate=True)
-    workspace = fields.Text(string='Workspace', translate=True)    
-    geographic_zone = fields.Many2many('res.country', 'iica_partner_country_rel', string='Geographic zones')
-    cooperation_sectors = fields.Html('Cooperation sectors')
-    #related_partners = fields.Many2many('res.partner', 'iica_partner_partner_rel', string='Related partners')
-    iica_cooperation = fields.Html('IICA Cooperation')    
+    objective = fields.Text(string='Objective', translate=True)   
+    working_countries = fields.Many2many('res.country', 'iica_partner_country_rel', string='Working countries')
+    working_geographic_zones = fields.Many2many('iica_crm.geographic_regions', 'iica_partner_geographic_zone_rel', string='Geographic zones')
+    main_contact = fields.Many2one('res.partner', ondelete='set null',string='Main contact', index=True)    
+    national_counterparts = fields.Many2many('res.partner', 'iica_partner_counterpart_rel', string='Counterparts')
+    instruments_cooperation = fields.One2many('iica_crm.instrument_cooperation', 'partners_rel',string='Instrument of Cooperation')
+    lines_cooperation = fields.One2many('iica_crm.line_cooperation', 'partners_rel', string='Lines of cooperation')
+    lines_work = fields.One2many('iica_crm.line_work', 'partners_rel', string='Lines of work')
+    recent_projects = fields.One2many('iica_crm.project', 'partners_rel', string='Projects')
+    internships = fields.One2many('iica_crm.internship', 'partners_rel', string='Internships')
+    twitter = fields.Char(string='Twitter')
+    linked_in = fields.Char(string='Linked In')
+    facebook = fields.Char(string='Facebook')
+    languages = fields.Many2many('res.lang', 'iica_partner_lang_rel', string='Languages')
+    additional_info = fields.Html(string='Additional info')
+    is_company = fields.Boolean(string='Is a Company', default=True,
+        help="Check if the contact is a company, otherwise it is a person")
+    
