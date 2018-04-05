@@ -1,2 +1,11 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_iica_crm_iica_crm,iica_crm.iica_crm,model_iica_crm_iica_crm,,1,0,0,0
+access_iica_crm_geographic_regions,iica_crm geographic_regions,model_iica_crm_geographic_regions,base.group_partner_manager,1,1,1,1
+access_iica_crm_counterpart,iica_crm counterpart,model_iica_crm_counterpart,base.group_partner_manager,1,1,1,1
+access_iica_crm_line_cooperation,iica_crm line_cooperation,model_iica_crm_line_cooperation,base.group_partner_manager,1,1,1,1
+access_iica_crm_instrument_cooperation,iica_crm instrument_cooperation,model_iica_crm_instrument_cooperation,base.group_partner_manager,1,1,1,1
+access_iica_crm_line_work,iica_crm line_work,model_iica_crm_line_work,base.group_partner_manager,1,1,1,1
+access_iica_crm_project,iica_crm project,model_iica_crm_project,base.group_partner_manager,1,1,1,1
+access_iica_crm_internship,iica_crm internship,model_iica_crm_internship,base.group_partner_manager,1,1,1,1
+access_iica_crm_language,iica_crm language,model_iica_crm_language,base.group_partner_manager,1,1,1,1
+access_iica_crm_university,iica_crm university,model_iica_crm_university,base.group_partner_manager,1,1,1,1
+access_iica_crm_institution,iica_crm institution,model_iica_crm_institution,base.group_partner_manager,1,1,1,1
