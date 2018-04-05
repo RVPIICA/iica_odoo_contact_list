@@ -14,6 +14,7 @@ class Contact(models.Model):
     #Lists of static values
     __language_list = [('1', 'Spanish'), ('2', 'English'), ('3', 'Both')]
     __sectors = [('1', 'Public'), ('2', 'Private'), ('3', 'ONG'), ('4', 'International organization'), ('5', 'Financial'), ('6', 'Other')]
+    __contact_type = [('0', 'Normal Newsletter'), ('1', 'Journalist')]
 
     #Field definitions
     name = fields.Char(string='Full Name', required=True)
@@ -33,6 +34,19 @@ class Contact(models.Model):
     topic_interest_ids = fields.Many2many('iica_contacts.topic_interest', 'iica_contacts_contact_topic_rel', string='Topics of interest')
     product_interest_ids = fields.Many2many('iica_contacts.products_interest', 'iica_contacts_contact_product_rel', string='Products of interest')
     additional_products_ids = fields.Many2many('iica_contacts.additional_products', 'iica_contacts_contact_additional_products_rel', string='Additional products')
+    contact_type = fields.Selection(selection=__contact_type, string='Contact type', required=True, default='0')
+
+    #Journalist specific fields
+    #medium = company, change name in UI
+    #phone = work phone, added extension field in case needed
+    position = fields.Char(string='Job position')
+    extension = fields.Char(string='Phone extension')
+    mobile_phone = fields.Char(string='Mobile phone')
+    address = fields.Text(string='Address')
+    channels = fields.Many2many('iica_contacts.channels', 'iica_contacts_contact_channels_rel', string='Channels')
+    topics = fields.Many2many('iica_contacts.topics', 'iica_contacts_contact_j_topic_rel', string='Topics')
+    journalist_language = fields.Many2many('iica_contacts.languages', 'iica_contacts_contact_language_rel', 'Languages')
+        
 
     @api.depends('name', 'email')
     def _compute_email_formatted(self):
