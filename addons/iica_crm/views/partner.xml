@@ -26,6 +26,17 @@
               </tree>      
             </field>
           </page>
+          <page string="National counterparts" attrs="{'invisible': [('is_company', '=', False)]}">
+            <field name="national_counterparts" >
+              <tree string="National counterparts">
+                <field name="name"/>
+                <field name="working_countries"/>
+                <field name="working_geographic_zones"/>
+                <field name="email" />
+                <field name="phone" />
+              </tree>      
+            </field>
+          </page>  
           <page string="Internships" attrs="{'invisible': [('is_company', '=', False)]}">
             <field name="internships" >
               <tree string="Internships" editable="bottom">
