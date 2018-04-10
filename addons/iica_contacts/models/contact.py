@@ -21,7 +21,7 @@ class Contact(models.Model):
     company = fields.Char(string='Institution / Organization', index=True)
     country_id = fields.Many2one('res.country', string='Country', ondelete='restrict', required=True)
     sector = fields.Selection(selection=__sectors, string='Sector')
-    language = fields.Selection(selection=__language_list, string='Language', required=True)
+    language = fields.Selection(selection=__language_list, string='Language')
     email = fields.Char(string='Email', required=True)
     email_formatted = fields.Char(
         'Formatted Email', compute='_compute_email_formatted',
@@ -43,9 +43,9 @@ class Contact(models.Model):
     extension = fields.Char(string='Phone extension')
     mobile_phone = fields.Char(string='Mobile phone')
     address = fields.Text(string='Address')
-    channels = fields.Many2many('iica_contacts.channels', 'iica_contacts_contact_channels_rel', string='Channels')
-    topics = fields.Many2many('iica_contacts.topics', 'iica_contacts_contact_j_topic_rel', string='Topics')
-    journalist_language = fields.Many2many('iica_contacts.languages', 'iica_contacts_contact_language_rel', 'Languages')
+    j_channel_ids = fields.Many2many('iica_contacts.journalist_channels', 'iica_contacts_journalist_channels_rel', string='Channels')
+    j_topic_ids = fields.Many2many('iica_contacts.journalist_topics', 'iica_contacts_journalist_topic_rel', string='Topics')
+    j_lang_ids = fields.Many2many('iica_contacts.journalist_languages', 'iica_contacts_journalist_language_rel', string='Languages')
         
 
     @api.depends('name', 'email')

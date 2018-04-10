@@ -48,8 +48,8 @@
 
     <!--Journalist topic tree view-->
     <record model="ir.ui.view" id="view_iica_contacts_journalist_topics_tree">
-        <field name="name">iica_contacts.topics.tree</field>
-        <field name="model">iica_contacts.topics</field>
+        <field name="name">iica_contacts.journalist_topics.tree</field>
+        <field name="model">iica_contacts.journalist_topics</field>
         <field name="arch" type="xml">
             <tree string="Journalist Topics" editable="bottom">
                 <field name="name"/>
@@ -59,8 +59,8 @@
 
     <!--Channel tree view-->
     <record model="ir.ui.view" id="view_iica_contacts_channels_tree">
-        <field name="name">iica_contacts.channels.tree</field>
-        <field name="model">iica_contacts.channels</field>
+        <field name="name">iica_contacts.journalist_channels.tree</field>
+        <field name="model">iica_contacts.journalist_channels</field>
         <field name="arch" type="xml">
             <tree string="Journalist Channels" editable="bottom">
                 <field name="name"/>
@@ -115,7 +115,7 @@
     <!-- Journalist topics -->
     <record model="ir.actions.act_window" id="action_view_iica_contacts_journalist_topics">
         <field name="name">Journalist topics</field>
-        <field name="res_model">iica_contacts.topics</field>
+        <field name="res_model">iica_contacts.journalist_topics</field>
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
         <field name="help" type="html">
@@ -126,7 +126,7 @@
     <!-- Channels -->
     <record model="ir.actions.act_window" id="action_view_iica_contacts_channels">
         <field name="name">Channels</field>
-        <field name="res_model">iica_contacts.channels</field>
+        <field name="res_model">iica_contacts.journalist_channels</field>
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
         <field name="help" type="html">

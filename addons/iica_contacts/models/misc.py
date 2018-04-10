@@ -42,24 +42,24 @@ class Additional_Products(models.Model):
 
 class Channels(models.Model):
     """Channels for the IICA journalists"""
-    _name = 'iica_contacts.channels'
+    _name = 'iica_contacts.journalist_channels'
     _description = 'Channels for the IICA journalists'
 
     name = fields.Char(string='Channel name', required=True, translate=True)
-    contacts = fields.Many2many('iica_contacts.contact', 'iica_contacts_contact_channels_rel', string='Contacts')
+    contacts = fields.Many2many('iica_contacts.contact', 'iica_contacts_journalist_channels_rel', string='Contacts')
 
 class Topics(models.Model):
     """Topics for the IICA journalists"""
-    _name = 'iica_contacts.topics'
+    _name = 'iica_contacts.journalist_topics'
     _description = 'Topics for the IICA journalists'
 
     name = fields.Char(string='Topic name', required=True, translate=True)
-    contacts = fields.Many2many('iica_contacts.contact', 'iica_contacts_contact_j_topic_rel', string='Contacts')
+    contacts = fields.Many2many('iica_contacts.contact', 'iica_contacts_journalist_topic_rel', string='Contacts')
 
 class Languages(models.Model):
     """Languages for the journalists"""
-    _name = 'iica_contacts.languages'
+    _name = 'iica_contacts.journalist_languages'
     _description = 'Languages for the IICA journalists'
 
     name = fields.Char(string='Language name', required=True, translate=True)
-    contacts = fields.Many2many('iica_contacts.contact', 'iica_contacts_contact_language_rel', string='Contacts')
+    contacts = fields.Many2many('iica_contacts.contact', 'iica_contacts_journalist_language_rel', string='Contacts')
