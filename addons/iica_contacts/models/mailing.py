@@ -31,12 +31,12 @@ class MassMailing(models.Model):
     topic_interest_ids = fields.Many2many('iica_contacts.topic_interest', 'iica_contacts_topic_interest_mailing_rel', string='Topics of interes', groups='iica_contacts.iica_mailing_manager')
     product_interest_ids = fields.Many2many('iica_contacts.products_interest', 'iica_contacts_products_interest_mailing_rel', string='Products of interes', groups='iica_contacts.iica_mailing_manager')
     additional_products_ids = fields.Many2many('iica_contacts.additional_products', 'iica_contacts_additional_products_mailing_rel', string='Additional products', groups='iica_contacts.iica_mailing_manager, iica_contacts.iica_mailing_press')
-    languages_ids = fields.Many2many('iica_contacts.languages', 'iica_contacts_languages_mailing_rel', string='Languages', groups='iica_contacts.iica_mailing_manager')
+    languages_ids = fields.Many2many('iica_contacts.journalist_languages', 'iica_contacts_languages_mailing_rel', string='Languages', groups='iica_contacts.iica_mailing_manager')
     country_ids = fields.Many2many('res.country', 'iica_contacts_country_mailing_rel', string='Countries', groups='iica_contacts.iica_mailing_manager')
     newsletter_type = fields.Selection(selection=__newsletter_types, string='Type', default='1', required=True) 
 
     #Fills the domain filter with the required areas and topics of interest.
-    @api.onchange('language', 'area_interest_ids', 'topic_interest_ids', 'product_interest_ids', 'additional_products_ids', 'newsletter_type')
+    @api.onchange('language', 'area_interest_ids', 'topic_interest_ids', 'product_interest_ids', 'additional_products_ids', 'country_ids', 'languages_ids', 'newsletter_type')
     def _onchange_interest_ids(self):
         if(self.newsletter_type == '1'):
             _opt_out = "('opt_out', '=', False),"
