@@ -38,16 +38,21 @@ class MassMailing(models.Model):
     #Fills the domain filter with the required areas and topics of interest.
     @api.onchange('language', 'area_interest_ids', 'topic_interest_ids', 'product_interest_ids', 'additional_products_ids', 'country_ids', 'languages_ids', 'newsletter_type')
     def _onchange_interest_ids(self):
-        if(self.newsletter_type == '1'):
-            _opt_out = "('opt_out', '=', False),"
+        _opt_out = "('opt_out', '=', False),"
+        if(self.newsletter_type == '1'): #Normal newsletter            
+            _contact_type = "('contact_type', '=', '0'),"
             _language = "('language', 'in', (%s, 3))," % self.language
             _areas_interest = "('area_interest_ids', 'in', %s), " % self.area_interest_ids.ids
             _topics_interest = "('topic_interest_ids', 'in', %s), " % self.topic_interest_ids.ids
             _products_interest = "('product_interest_ids', 'in', %s)," % self.product_interest_ids.ids
             _additional_products = "('additional_products_ids', 'in', %s)" % self.additional_products_ids.ids
 
-            self.mailing_domain = "['&', '&'," + _opt_out +  _language + "'|', '|', " + _areas_interest + _topics_interest + "'|'," + _products_interest + _additional_products +"]"
-        elif(self.newsletter_type == '2'):
-            _opt_out = "('opt_out', '=', False),"
+            #self.mailing_domain = "['&', '&'," + _opt_out +  _language + "'|', '|', " + _areas_interest + _topics_interest + "'|'," + _products_interest + _additional_products +"]"
+            self.mailing_domain = "['&', '&'," + _opt_out +  _language + "'&', " + _contact_type + "  '|', '|', " + _areas_interest + _topics_interest + "'|'," + _products_interest + _additional_products +"]"
+
+        elif(self.newsletter_type == '2'): #Journalist newsletter
+            _contact_type = "('contact_type', '=', '1'),"
             _countries = "('country_id', 'in', %s), " % self.country_ids.ids
-            _languages = "('j_lang_ids', 'in', %s), " % self.languages_ids.ids
+            _languages = "('j_lang_ids', 'in', %s) " % self.languages_ids.ids
+
+            self.mailing_domain = "['&', '&', " + _opt_out + _contact_type + " '&', " + _countries + _languages + "]"
