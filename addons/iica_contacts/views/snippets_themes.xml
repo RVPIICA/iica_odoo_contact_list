@@ -26,12 +26,22 @@
                        data-img="/iica_contacts/static/src/img/thumbnails/iica_connection_thumb"
                        data-images-info='{"logo": {"format": "png"}}'>
                       <t t-call="iica_contacts.theme_iica_connection"/>
-                  </div>
+                  </div>                  
                   <div data-name="iica_prensa" groups="iica_contacts.iica_mailing_press"
                        data-img="/iica_contacts/static/src/img/thumbnails/iica_press_thumb"
                        data-images-info='{"logo": {"format": "png"}}'>
                       <t t-call="iica_contacts.theme_iica_prensa"/>
                   </div>
+                  <div data-name="iica_comunicado_prensa_es" groups="iica_contacts.iica_mailing_manager"
+                       data-img="/iica_contacts/static/src/img/thumbnails/iica_press_thumb"
+                       data-images-info='{"logo": {"format": "png"}}'>
+                      <t t-call="iica_contacts.theme_iica_comunicado_prensa_es"/>
+                  </div>  
+                  <div data-name="iica_comunicado_prensa_en" groups="iica_contacts.iica_mailing_manager"
+                       data-img="/iica_contacts/static/src/img/thumbnails/iica_press_thumb"
+                       data-images-info='{"logo": {"format": "png"}}'>
+                      <t t-call="iica_contacts.theme_iica_comunicado_prensa_en"/>
+                  </div>                  
               </div>
               <div id="iica_designer_conexion_agroenlace" class="o_panel" groups="iica_contacts.iica_mailing_manager">
                 <div class="o_panel_header">
@@ -42,6 +52,15 @@
                 <t t-snippet="iica_contacts.s_iica_block_image" t-thumbnail="/mass_mailing/static/src/img/blocks/block_image.png"/>
                 <t t-snippet="iica_contacts.s_iica_block_three_cols" t-thumbnail="/mass_mailing/static/src/img/blocks/block_three_cols.png"/>
                 <t t-snippet="iica_contacts.s_iica_only_text" t-thumbnail="/mass_mailing/static/src/img/blocks/block_paragraph.png"/>
+                </div>
+              </div>
+              <div id="iica_designer_press_release" class="o_panel" groups="iica_contacts.iica_mailing_manager">
+                <div class="o_pane_header">
+                    <i class="fas fa-address-book"/> Press Release
+                </div>
+                <div class="o_panel_body">
+                    <t t-snippet="iica_contacts.s_iica_block_image_text" t-thumbnail="/mass_mailing/static/src/img/blocks/block_image_text.png"/>
+                    <t t-snippet="iica_contacts.s_iica_block_image" t-thumbnail="/mass_mailing/static/src/img/blocks/block_image.png"/>
                 </div>
               </div>
               <div id="iica_designer_press" class="o_panel" groups="iica_contacts.iica_mailing_press">
@@ -89,6 +108,18 @@
             </table>
         </div>
     </div>
+  </template>
+
+  <template id="s_iica_logo_es" name="IICA logo ES">
+    <a t-att-href="(company_id.website) or '#'" style="text-decoration:none;float:none;">
+        <img border="0" src="/iica_contacts/static/src/img/logos/iica_es_azul.jpg" style="height:auto;max-width:400px;" alt="Logo IICA" />
+    </a>
+  </template>
+
+  <template id="s_iica_logo_en" name="IICA logo EN">
+    <a t-att-href="(company_id.website) or '#'" style="text-decoration:none;float:none;">
+        <img border="0" src="/iica_contacts/static/src/img/logos/iica_eng_blue.jpg" style="height:auto;max-width:400px;" alt="Logo IICA" />
+    </a>
   </template>
 
 <template id="s_iica_banner_agroenlace" name="Banner Agroenlace">
@@ -577,6 +608,46 @@
         </div>
     </div>
 </template>
+<template id="s_iica_footer_social_nu" name="Footer Center">
+    <div class="o_mail_block_footer_social o_mail_footer_social_center">
+        <div class="o_mail_snippet_general">
+            <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_full_width_padding">
+                <tbody>
+                    <tr>
+                      <td style="text-align:center; width:100%; padding-top: 20px; font-size: 12px; padding-bottom: 20px;" colspan="6">
+                        <p>Instituto Interamericano de Cooperación para la Agricultura (IICA). Sede Central.</p>
+                        <p>600 m. Norte del Cruce Ipís-Coronado, San José 55-2200, Costa Rica.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="width:60px;"></td>
+                      <td style="text-align:center;">
+                        <a href="https://www.facebook.com/iicanoticias" target="_blank">
+                          <img src="/iica_contacts/static/src/img/logos/fb_icon.png" style="width:40px;" alt="Facebook"/>
+                        </a>
+                      </td>
+                      <td style="text-align:center;">
+                        <a href="https://twitter.com/iicanoticias" target="_blank">
+                          <img src="/iica_contacts/static/src/img/logos/twitter_icon.png" style="width:40px;" alt="Twitter"/>
+                        </a>
+                      </td>
+                      <td style="text-align:center;">
+                        <a href="https://www.linkedin.com/company/iica" target="_blank">
+                          <img src="/iica_contacts/static/src/img/logos/li_icon.png" style="width:40px;" alt="Linked In"/>
+                        </a>
+                      </td>
+                      <td style="text-align:center;">
+                        <a href="https://www.youtube.com/iicanoticias" target="_blank">
+                          <img src="/iica_contacts/static/src/img/logos/yt_icon.png" style="width:40px;" alt="YouTube"/>
+                        </a>
+                      </td>
+                      <td style="width:60px;"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</template>
 <template id="s_iica_footer_social_eng" name="Footer Center (English)">
     <div class="o_mail_block_footer_social o_mail_footer_social_center">
         <div class="o_mail_snippet_general">
@@ -616,6 +687,46 @@
                       <td style="text-align:center; width:100%; padding-top: 20px; font-size: 12px;" colspan="6">
                         <p>You can <a href="/unsubscribe_from_list" class="btn btn-link" style="font-size:12px; padding: 0px;">unsubscribe</a> at any time.</p>
                       </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</template>
+<template id="s_iica_footer_social_eng_nu" name="Footer Center (English)">
+    <div class="o_mail_block_footer_social o_mail_footer_social_center">
+        <div class="o_mail_snippet_general">
+            <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_full_width_padding">
+                <tbody>
+                    <tr>
+                      <td style="text-align:center; width:100%; padding-top: 20px; font-size: 12px; padding-bottom: 20px;" colspan="6">
+                        <p>Inter-American Institute for Cooperation on Agriculture (IICA)- Headquarters</p>
+                        <p>0.5 miles North from the Ipís-Coronado intersection Vásquez de Coronado, San Isidro 11101 - Costa Rica.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="width:60px;"></td>
+                      <td style="text-align:center;">
+                        <a href="https://www.facebook.com/iicanews" target="_blank">
+                          <img src="/iica_contacts/static/src/img/logos/fb_icon.png" style="width:40px;" alt="Facebook"/>
+                        </a>
+                      </td>
+                      <td style="text-align:center;">
+                        <a href="https://twitter.com/iicanews" target="_blank">
+                          <img src="/iica_contacts/static/src/img/logos/twitter_icon.png" style="width:40px;" alt="Twitter"/>
+                        </a>
+                      </td>
+                      <td style="text-align:center;">
+                        <a href="https://www.linkedin.com/company/iica" target="_blank">
+                          <img src="/iica_contacts/static/src/img/logos/li_icon.png" style="width:40px;" alt="Linked In"/>
+                        </a>
+                      </td>
+                      <td style="text-align:center;">
+                        <a href="https://www.youtube.com/iicanoticias" target="_blank">
+                          <img src="/iica_contacts/static/src/img/logos/yt_icon.png" style="width:40px;" alt="YouTube"/>
+                        </a>
+                      </td>
+                      <td style="width:60px;"></td>
                     </tr>
                 </tbody>
             </table>
