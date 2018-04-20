@@ -44,4 +44,151 @@
     <t t-call="iica_contacts.s_iica_prensa_otros" />
     <t t-call="iica_contacts.s_iica_footer_press" />
   </template>
+  <!-- IICA Comunicado de prensa -->
+  <template id="theme_iica_comunicado_prensa_es">
+    <style>
+        .pull-left, .pull-right {
+            margin: 10px;
+        }
+    </style>
+    <div style="padding: 0 10px; width: 600px;">
+        <t t-call="iica_contacts.s_iica_logo_es" />
+        <table style="width: 100%">
+            <tr>
+                <td style="font-size: 20px; color: #036; font-weight: bold;">Título en dos líneas título en dos líneas título en dos líneas título en dos líneas título en dos líneas</td>
+            </tr>
+            <tr>
+                <td style="font-style: italic; font-size: 12px; padding-top: 20px;">Bajada en dos líneas, bajada en dos líneas bajada en dos líneas bajada en dos líneas bajada en dos líneas bajada en dos líneas bajada en dos líneas bajada en dos líneas.</td>
+            </tr>
+            <tr>
+                <td style="padding-top: 20px;">
+                    <div style="width:100%">
+                        <p>
+                            <span style="font-weight:bold">Lugar, XX de mes, 2018 (IICA).</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget massa vel odio mollis vehicula sed vehicula eros. Phasellus sem tellus, sagittis a mi ac, laoreet pellentesque tortor. Curabitur a blandit neque, a scelerisque enim. Fusce sed ultrices libero, sit amet tincidunt neque. Sed nec volutpat magna. Aenean convallis massa tincidunt porttitor molestie. Phasellus risus elit, aliquet a pretium eu, tincidunt sit amet orci. Fusce sem orci, placerat congue eleifend sit amet, venenatis ac risus. Sed ultrices, lacus eu iaculis pretium, quam dolor rhoncus orci, non facilisis elit purus at est. Donec mollis, nulla eget interdum eleifend, ante odio ultrices purus, eu interdum velit diam nec nunc. Donec pretium quam justo, sed consequat quam pretium vel. Mauris ac pretium nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                            Etiam orci risus, malesuada eu lectus eget, rutrum rutrum lacus. 
+                        </p>
+                    </div>                
+                </td>            
+            </tr>
+            <tr>
+                <td style="padding-top: 20px;">
+                    <span style="font-weight: bold;">Más información:</span>
+                    <br/>
+                    <span>Nombre, cargo.</span>
+                    <br/>
+                    <a href="#">xxxxx.xxxxx@iica.int</a>
+                </td>
+            </tr>
+        </table>
+        <table style="width: 100%; margin-top: 20px;">
+            <tr>
+                <td style="text-align: center;">
+                    <a href="#"><img width="250px" height="166px" src="/iica_contacts/static/src/img/demos/news_text_right_demo.jpg"/>
+                    <br/>
+                    <span>Galería de fotos</span></a>
+                </td>
+                <td style="text-align: center;">
+                    <a href="#"><img width="250px" height="166px" src="/iica_contacts/static/src/img/demos/news_text_right_demo.jpg"/>
+                    <br/>
+                    <span>Video: Título del video</span></a>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">
+                    <a href="#"><img width="250px" height="166px" src="/iica_contacts/static/src/img/demos/news_text_right_demo.jpg"/>
+                    <br/>
+                    <span>Audio: Título del audio</span></a>
+                </td>
+                <td style="text-align: center;">
+                    <a href="#"><img width="250px" height="166px" src="/iica_contacts/static/src/img/demos/news_text_right_demo.jpg"/>
+                    <br/>
+                    <span>Publicación: Título de la publicación</span></a>
+                </td>
+            </tr>
+        </table>
+        <table style="width: 100%; margin-top: 20px;">
+            <tr>
+                <td style="font-style: italic;font-size: 12px;">
+                    Comunicado elaborado por: <span>Nombre apellido</span>
+                    <br/>
+                    <span>Teléfono</span> - <a href="#">correo.electronico@iica.int</a>
+                </td>
+            </tr>
+        </table>        
+    </div>
+    <t t-call="iica_contacts.s_iica_footer_social_nu" />        
+  </template>
+  <template id="theme_iica_comunicado_prensa_en">
+    <style>
+        .pull-left, .pull-right {
+            margin: 10px;
+        }
+    </style>
+    <div style="padding: 0 10px; width: 600px;">
+        <t t-call="iica_contacts.s_iica_logo_en" />
+        <table style="width: 100%">
+            <tr>
+                <td style="font-size: 20px; color: #036; font-weight: bold;">Título en dos líneas título en dos líneas título en dos líneas título en dos líneas título en dos líneas</td>
+            </tr>
+            <tr>
+                <td style="font-style: italic; font-size: 12px; padding-top: 20px;">Bajada en dos líneas, bajada en dos líneas bajada en dos líneas bajada en dos líneas bajada en dos líneas bajada en dos líneas bajada en dos líneas bajada en dos líneas.</td>
+            </tr>
+            <tr>
+                <td style="padding-top: 20px;">
+                    <div style="width:100%">
+                        <p>
+                            <span style="font-weight:bold">Lugar, XX de mes, 2018 (IICA).</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget massa vel odio mollis vehicula sed vehicula eros. Phasellus sem tellus, sagittis a mi ac, laoreet pellentesque tortor. Curabitur a blandit neque, a scelerisque enim. Fusce sed ultrices libero, sit amet tincidunt neque. Sed nec volutpat magna. Aenean convallis massa tincidunt porttitor molestie. Phasellus risus elit, aliquet a pretium eu, tincidunt sit amet orci. Fusce sem orci, placerat congue eleifend sit amet, venenatis ac risus. Sed ultrices, lacus eu iaculis pretium, quam dolor rhoncus orci, non facilisis elit purus at est. Donec mollis, nulla eget interdum eleifend, ante odio ultrices purus, eu interdum velit diam nec nunc. Donec pretium quam justo, sed consequat quam pretium vel. Mauris ac pretium nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                            Etiam orci risus, malesuada eu lectus eget, rutrum rutrum lacus. 
+                        </p>
+                    </div>                
+                </td>            
+            </tr>
+            <tr>
+                <td style="padding-top: 20px;">
+                    <span style="font-weight: bold;">More information:</span>
+                    <br/>
+                    <span>Nombre, cargo.</span>
+                    <br/>
+                    <a href="#">xxxxx.xxxxx@iica.int</a>
+                </td>
+            </tr>
+        </table>
+        <table style="width: 100%; margin-top: 20px;">
+            <tr>
+                <td style="text-align: center;">
+                    <a href="#"><img width="250px" height="166px" src="/iica_contacts/static/src/img/demos/news_text_right_demo.jpg"/>
+                    <br/>
+                    <span>Photo gallery</span></a>
+                </td>
+                <td style="text-align: center;">
+                    <a href="#"><img width="250px" height="166px" src="/iica_contacts/static/src/img/demos/news_text_right_demo.jpg"/>
+                    <br/>
+                    <span>Video: Title of the view</span></a>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">
+                    <a href="#"><img width="250px" height="166px" src="/iica_contacts/static/src/img/demos/news_text_right_demo.jpg"/>
+                    <br/>
+                    <span>Audio: Título del audio</span></a>
+                </td>
+                <td style="text-align: center;">
+                    <a href="#"><img width="250px" height="166px" src="/iica_contacts/static/src/img/demos/news_text_right_demo.jpg"/>
+                    <br/>
+                    <span>Publication: Title of the publication</span></a>
+                </td>
+            </tr>
+        </table>
+        <table style="width: 100%; margin-top: 20px;">
+            <tr>
+                <td style="font-style: italic;font-size: 12px;">
+                    Press release written by: <span>Nombre apellido</span>
+                    <br/>
+                    <span>Phone</span> - <a href="#">correo.electronico@iica.int</a>
+                </td>
+            </tr>
+        </table>        
+    </div>
+    <t t-call="iica_contacts.s_iica_footer_social_eng_nu" />        
+  </template>
 </odoo>

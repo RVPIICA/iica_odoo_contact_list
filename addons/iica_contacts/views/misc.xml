@@ -46,6 +46,28 @@
         </field>
     </record>
 
+    <!--Journalist topic tree view-->
+    <record model="ir.ui.view" id="view_iica_contacts_journalist_topics_tree">
+        <field name="name">iica_contacts.journalist_topics.tree</field>
+        <field name="model">iica_contacts.journalist_topics</field>
+        <field name="arch" type="xml">
+            <tree string="Journalist Topics" editable="bottom">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <!--Channel tree view-->
+    <record model="ir.ui.view" id="view_iica_contacts_channels_tree">
+        <field name="name">iica_contacts.journalist_channels.tree</field>
+        <field name="model">iica_contacts.journalist_channels</field>
+        <field name="arch" type="xml">
+            <tree string="Journalist Channels" editable="bottom">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
     <!-- Area Action -->
     <record model="ir.actions.act_window" id="action_view_iica_contacts_area">
         <field name="name">Areas of interest</field>
@@ -90,6 +112,28 @@
             </p>
         </field>
     </record>
+    <!-- Journalist topics -->
+    <record model="ir.actions.act_window" id="action_view_iica_contacts_journalist_topics">
+        <field name="name">Journalist topics</field>
+        <field name="res_model">iica_contacts.journalist_topics</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">Create the first topic
+            </p>
+        </field>
+    </record>
+    <!-- Channels -->
+    <record model="ir.actions.act_window" id="action_view_iica_contacts_channels">
+        <field name="name">Channels</field>
+        <field name="res_model">iica_contacts.journalist_channels</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">Create the first channel
+            </p>
+        </field>
+    </record>
 
     <menuitem name="IICA Contacts Administration" id="iica_contacts_admin_menu"
         parent="mass_mailing.mass_mailing_menu_root" sequence="1" groups="mass_mailing.group_mass_mailing_user"/>
@@ -103,5 +147,9 @@
               action="action_view_iica_contacts_product"/>
     <menuitem id="iica_add_products_management_menu" name="Manage additional products" parent="iica_contacts_admin_menu"
               action="action_view_iica_contacts_add_product"/>
+    <menuitem id="iica_add_journalist_topic_management_menu" name="Manage journalist topics" parent="iica_contacts_admin_menu"
+              action="action_view_iica_contacts_journalist_topics"/>
+    <menuitem id="iica_add_channels_management_menu" name="Manage channels" parent="iica_contacts_admin_menu"
+              action="action_view_iica_contacts_channels"/>
   </data>
 </odoo>

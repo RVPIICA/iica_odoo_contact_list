@@ -6,5 +6,8 @@
     <record id="iica_mailing_press" model="res.groups">
       <field name="name">IICA Mailing - Press</field>
     </record>
+    <record id="iica_mailing_journalist" model="res.groups">
+      <field name="name">IICA Mailing - Journalist</field>
+    </record>
   </data>
 </odoo>
