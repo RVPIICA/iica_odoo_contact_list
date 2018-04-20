@@ -32,13 +32,13 @@
                        data-images-info='{"logo": {"format": "png"}}'>
                       <t t-call="iica_contacts.theme_iica_prensa"/>
                   </div>
-                  <div data-name="iica_comunicado_prensa_es" groups="iica_contacts.iica_mailing_manager"
-                       data-img="/iica_contacts/static/src/img/thumbnails/iica_press_thumb"
+                  <div data-name="iica_comunicado_prensa_es" groups="iica_contacts.iica_mailing_journalist"
+                       data-img="/iica_contacts/static/src/img/thumbnails/press_release_spanish"
                        data-images-info='{"logo": {"format": "png"}}'>
                       <t t-call="iica_contacts.theme_iica_comunicado_prensa_es"/>
                   </div>  
-                  <div data-name="iica_comunicado_prensa_en" groups="iica_contacts.iica_mailing_manager"
-                       data-img="/iica_contacts/static/src/img/thumbnails/iica_press_thumb"
+                  <div data-name="iica_comunicado_prensa_en" groups="iica_contacts.iica_mailing_journalist"
+                       data-img="/iica_contacts/static/src/img/thumbnails/press_release_english"
                        data-images-info='{"logo": {"format": "png"}}'>
                       <t t-call="iica_contacts.theme_iica_comunicado_prensa_en"/>
                   </div>                  
