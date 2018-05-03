@@ -49,7 +49,7 @@
                         <field name="sector" attrs="{'invisible': [('contact_type','=', '1')]}" />
                         <field name="position" attrs="{'invisible': [('contact_type','=', '0')]}" />
                         <field name="language" attrs="{'invisible': [('contact_type', '=', '1')], 'required': [('contact_type', '=', '0')]}"/>
-                        <field name="j_lang_ids" attrs="{'invisible': [('contact_type','=', '0')]}" widget="many2many_tags" />
+                        <field name="j_lang_ids" attrs="{'invisible': [('contact_type','=', '0')]}" widget="many2many_tags" options="{'no_create': True}" />
                       </group>
                       <group string="Contact properties">
                         <field name="email"/>
