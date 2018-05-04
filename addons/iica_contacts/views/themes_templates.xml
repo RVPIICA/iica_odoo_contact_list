@@ -83,26 +83,26 @@
         <table style="width: 100%; margin-top: 20px;">
             <tr>
                 <td style="text-align: center;">
-                    <a href="#"><img width="250px" height="166px" src="/iica_contacts/static/src/img/demos/news_text_right_demo.jpg"/>
+                    <a href="#"><img width="250px" height="166px" src="/iica_contacts/static/src/img/demos/news_text_right_demo.jpg"/></a>
                     <br/>
-                    <span>Galería de fotos</span></a>
+                    <span style="display: block;">Galería de fotos</span>
                 </td>
                 <td style="text-align: center;">
-                    <a href="#"><img width="250px" height="166px" src="/iica_contacts/static/src/img/demos/news_text_right_demo.jpg"/>
+                    <a href="#"><img width="250px" height="166px" src="/iica_contacts/static/src/img/demos/news_text_right_demo.jpg"/></a>
                     <br/>
-                    <span>Video: Título del video</span></a>
+                    <span style="display: block;">Video: Título del video</span>
                 </td>
             </tr>
             <tr>
                 <td style="text-align: center;">
-                    <a href="#"><img width="250px" height="166px" src="/iica_contacts/static/src/img/demos/news_text_right_demo.jpg"/>
+                    <a href="#"><img width="250px" height="166px" src="/iica_contacts/static/src/img/demos/news_text_right_demo.jpg"/></a>
                     <br/>
-                    <span>Audio: Título del audio</span></a>
+                    <span style="display: block;">Audio: Título del audio</span>
                 </td>
                 <td style="text-align: center;">
-                    <a href="#"><img width="250px" height="166px" src="/iica_contacts/static/src/img/demos/news_text_right_demo.jpg"/>
+                    <a href="#"><img width="250px" height="166px" src="/iica_contacts/static/src/img/demos/news_text_right_demo.jpg"/></a>
                     <br/>
-                    <span>Publicación: Título de la publicación</span></a>
+                    <span style="display: block;">Publicación: Título de la publicación</span>
                 </td>
             </tr>
         </table>
@@ -156,26 +156,26 @@
         <table style="width: 100%; margin-top: 20px;">
             <tr>
                 <td style="text-align: center;">
-                    <a href="#"><img width="250px" height="166px" src="/iica_contacts/static/src/img/demos/news_text_right_demo.jpg"/>
+                    <a href="#"><img width="250px" height="166px" src="/iica_contacts/static/src/img/demos/news_text_right_demo.jpg"/></a>
                     <br/>
-                    <span>Photo gallery</span></a>
+                    <span style="font-weight: srong;">Photo gallery</span>
                 </td>
                 <td style="text-align: center;">
-                    <a href="#"><img width="250px" height="166px" src="/iica_contacts/static/src/img/demos/news_text_right_demo.jpg"/>
+                    <a href="#"><img width="250px" height="166px" src="/iica_contacts/static/src/img/demos/news_text_right_demo.jpg"/></a>
                     <br/>
-                    <span>Video: Title of the view</span></a>
+                    <span style="font-weight: srong;">Video: Title of the view</span>
                 </td>
             </tr>
             <tr>
                 <td style="text-align: center;">
-                    <a href="#"><img width="250px" height="166px" src="/iica_contacts/static/src/img/demos/news_text_right_demo.jpg"/>
+                    <a href="#"><img width="250px" height="166px" src="/iica_contacts/static/src/img/demos/news_text_right_demo.jpg"/></a>
                     <br/>
-                    <span>Audio: Título del audio</span></a>
+                    <span style="font-weight: srong;">Audio: Título del audio</span>
                 </td>
                 <td style="text-align: center;">
-                    <a href="#"><img width="250px" height="166px" src="/iica_contacts/static/src/img/demos/news_text_right_demo.jpg"/>
+                    <a href="#"><img width="250px" height="166px" src="/iica_contacts/static/src/img/demos/news_text_right_demo.jpg"/></a>
                     <br/>
-                    <span>Publication: Title of the publication</span></a>
+                    <span style="font-weight: srong;">Publication: Title of the publication</span>
                 </td>
             </tr>
         </table>

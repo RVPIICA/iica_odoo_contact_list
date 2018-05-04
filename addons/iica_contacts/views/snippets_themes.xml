@@ -54,15 +54,6 @@
                 <t t-snippet="iica_contacts.s_iica_only_text" t-thumbnail="/mass_mailing/static/src/img/blocks/block_paragraph.png"/>
                 </div>
               </div>
-              <div id="iica_designer_press_release" class="o_panel" groups="iica_contacts.iica_mailing_manager">
-                <div class="o_pane_header">
-                    <i class="fas fa-address-book"/> Press Release
-                </div>
-                <div class="o_panel_body">
-                    <t t-snippet="iica_contacts.s_iica_block_image_text" t-thumbnail="/mass_mailing/static/src/img/blocks/block_image_text.png"/>
-                    <t t-snippet="iica_contacts.s_iica_block_image" t-thumbnail="/mass_mailing/static/src/img/blocks/block_image.png"/>
-                </div>
-              </div>
               <div id="iica_designer_press" class="o_panel" groups="iica_contacts.iica_mailing_press">
                   <div class="o_panel_header">
                       <i class="fa fa-bullhorn"/> Press Newsletter
