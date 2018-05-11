@@ -162,18 +162,18 @@
 
     <!-- Menu item that triggers IICA Contacts action -->
     <menuitem id="iica_areas_management_menu" name="Manage areas of interest" parent="iica_contacts_admin_menu"
-              action="action_view_iica_contacts_area"/>
+              action="action_view_iica_contacts_area" groups="iica_contacts.iica_mailing_contact_admin"/>
     <menuitem id="iica_topics_management_menu" name="Manage topics of interest" parent="iica_contacts_admin_menu"
-              action="action_view_iica_contacts_topic"/>
+              action="action_view_iica_contacts_topic" groups="iica_contacts.iica_mailing_contact_admin"/>
     <menuitem id="iica_products_management_menu" name="Manage products of interest" parent="iica_contacts_admin_menu"
-              action="action_view_iica_contacts_product"/>
+              action="action_view_iica_contacts_product" groups="iica_contacts.iica_mailing_contact_admin"/>
     <menuitem id="iica_add_products_management_menu" name="Manage additional products" parent="iica_contacts_admin_menu"
-              action="action_view_iica_contacts_add_product"/>
+              action="action_view_iica_contacts_add_product" groups="iica_contacts.iica_mailing_contact_admin"/>
     <menuitem id="iica_add_journalist_topic_management_menu" name="Manage journalist topics" parent="iica_contacts_admin_menu"
-              action="action_view_iica_contacts_journalist_topics"/>
+              action="action_view_iica_contacts_journalist_topics" groups="iica_contacts.iica_mailing_journalist_admin"/>
     <menuitem id="iica_add_channels_management_menu" name="Manage channels" parent="iica_contacts_admin_menu"
-              action="action_view_iica_contacts_channels"/>
+              action="action_view_iica_contacts_channels" groups="iica_contacts.iica_mailing_journalist_admin"/>
     <menuitem id="iica_add_journalist_languages_management_menu" name="Manage journalist languages" parent="iica_contacts_admin_menu"
-              action="action_view_iica_contacts_journalist_languages"/>
+              action="action_view_iica_contacts_journalist_languages" groups="iica_contacts.iica_mailing_journalist_admin"/>
   </data>
 </odoo>

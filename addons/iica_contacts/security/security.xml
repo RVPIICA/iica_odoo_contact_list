@@ -2,12 +2,31 @@
   <data>
     <record id="iica_mailing_manager" model="res.groups">
       <field name="name">IICA Mailing - Manager</field>
+      <field name="implied_ids" eval="[(4, ref('mass_mailing.group_mass_mailing_user'))]"/>
+    </record>
+    <record id="iica_mailing_journalist_admin" model="res.groups">
+      <field name="name">IICA Mailing - Admin Journalists</field>
+      <field name="implied_ids" eval="[(4, ref('iica_contacts.iica_mailing_manager'))]"/>
+    </record>
+    <record id="iica_mailing_contact_admin" model="res.groups">
+      <field name="name">IICA Mailing - Admin Contacts</field>
+      <field name="implied_ids" eval="[(4, ref('iica_contacts.iica_mailing_manager'))]"/>
     </record>
     <record id="iica_mailing_press" model="res.groups">
       <field name="name">IICA Mailing - Press</field>
+      <field name="implied_ids" eval="[(4, ref('iica_contacts.iica_mailing_manager'))]"/>
     </record>
     <record id="iica_mailing_journalist" model="res.groups">
       <field name="name">IICA Mailing - Journalist</field>
+      <field name="implied_ids" eval="[(4, ref('iica_contacts.iica_mailing_manager'))]"/>
+    </record>
+    <record id="iica_mailing_conexion" model="res.groups">
+      <field name="name">IICA Mailing - IICA Connection</field>
+      <field name="implied_ids" eval="[(4, ref('iica_contacts.iica_mailing_manager'))]"/>
+    </record>
+    <record id="iica_mailing_agro_enlace" model="res.groups">
+      <field name="name">IICA Mailing - Agroenlace</field>
+      <field name="implied_ids" eval="[(4, ref('iica_contacts.iica_mailing_manager'))]"/>
     </record>
   </data>
 </odoo>

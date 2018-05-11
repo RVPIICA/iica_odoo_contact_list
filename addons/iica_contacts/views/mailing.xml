@@ -115,12 +115,12 @@
                       <page string="Recipients" attrs="{'invisible': [('newsletter_type','=', '2')]}">
                         <div>
                           <field name="mailing_model" widget="radio" options="{'horizontal': true}" attrs="{'invisible': True}"/>
-                          <field name="area_interest_ids" options="{'no_create': True}"/>
-                          <field name="topic_interest_ids" options="{'no_create': True}"/>
-                          <field name="product_interest_ids" options="{'no_create': True}"/>
+                          <field name="area_interest_ids" options="{'no_create': True}" groups="iica_contacts.iica_mailing_conexion,iica_contacts.iica_mailing_agro_enlace"/>
+                          <field name="topic_interest_ids" options="{'no_create': True}" groups="iica_contacts.iica_mailing_conexion,iica_contacts.iica_mailing_agro_enlace"/>
+                          <field name="product_interest_ids" options="{'no_create': True}" groups="iica_contacts.iica_mailing_conexion,iica_contacts.iica_mailing_agro_enlace"/>
                           <br />
-                          <label for="additional_products_ids" string="Additional products:"/>
-                          <field name="additional_products_ids" widget="many2many_checkboxes"/>                          
+                          <label for="additional_products_ids" string="Additional products:" groups="iica_contacts.iica_mailing_press"/>
+                          <field name="additional_products_ids" widget="many2many_checkboxes" groups="iica_contacts.iica_mailing_press"/>                          
                         </div>   
                       </page>
                       <page string="Options">
