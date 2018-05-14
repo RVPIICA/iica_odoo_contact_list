@@ -24,6 +24,8 @@
 
     # always loaded
     'data': [
+        'security/security.xml',
+        'security/ir.model.access.csv',
         'views/contact.xml',
         'views/mailing.xml',
         'views/misc.xml',
@@ -34,9 +36,7 @@
         #Defaul module data
         'default_data/areas.xml',
         'default_data/topics.xml',
-        'default_data/products.xml',
-        'security/security.xml',
-        'security/ir.model.access.csv',
+        'default_data/products.xml',        
     ],
     # only loaded in demonstration mode
     'demo': [
