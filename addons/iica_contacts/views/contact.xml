@@ -129,7 +129,7 @@
     </record>
 
     <!-- Menu item that triggers IICA Contacts action -->
-    <menuitem id="iica_contacts_management_menu" name="Manage contacts" parent="iica_contacts_menu" groups="iica_contacts.iica_mailing_contact_admin"
+    <menuitem id="iica_contacts_management_menu" name="Manage contacts" parent="iica_contacts_menu" 
               action="action_view_iica_contacts_contacts"/>
     <!-- Menu item that triggers IICA Journalists action -->
     <menuitem id="iica_journalists_management_menu" name="Manage journalists" parent="iica_contacts_menu" groups="iica_contacts.iica_mailing_journalist_admin"
