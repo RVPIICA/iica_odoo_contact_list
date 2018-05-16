@@ -1,5 +1,7 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_read_contacts,read contacts,model_iica_contacts_contact,base.group_public,1,1,1,0
+access_read_follower,read followers,mail.model_mail_followers,base.group_public,1,1,1,0
+access_read_messages,read messages,mail.model_mail_message,base.group_public,1,1,1,0
 access_admin_contacts,admin contacts,model_iica_contacts_contact,iica_mailing_contact_admin,1,1,1,1
 access_admin_journalists,admin journalists,model_iica_contacts_contact,iica_mailing_journalist_admin,1,1,1,1
 public_read_area_interest,read areas interest,model_iica_contacts_area_interest,base.group_public,1,0,0,0
