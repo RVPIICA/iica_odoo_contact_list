@@ -27,12 +27,12 @@ class MassMailing(models.Model):
     mailing_model = fields.Selection(selection=_mailing_model, string='Recipients Model', required=True, default='iica_contacts.contact')
     contact_ids = fields.Many2many('iica_contacts.contact', 'iica_contacts_contact_mailing_rel', string='Contacs')
     language = fields.Selection(selection=__language_list, string='Language')
-    area_interest_ids = fields.Many2many('iica_contacts.area_interest', 'iica_contacts_area_interest_mailing_rel', string='Areas of interes', groups='iica_contacts.iica_mailing_manager')
-    topic_interest_ids = fields.Many2many('iica_contacts.topic_interest', 'iica_contacts_topic_interest_mailing_rel', string='Topics of interes', groups='iica_contacts.iica_mailing_manager')
-    product_interest_ids = fields.Many2many('iica_contacts.products_interest', 'iica_contacts_products_interest_mailing_rel', string='Products of interes', groups='iica_contacts.iica_mailing_manager')
-    additional_products_ids = fields.Many2many('iica_contacts.additional_products', 'iica_contacts_additional_products_mailing_rel', string='Additional products', groups='iica_contacts.iica_mailing_manager, iica_contacts.iica_mailing_press')
-    languages_ids = fields.Many2many('iica_contacts.journalist_languages', 'iica_contacts_languages_mailing_rel', string='Languages', groups='iica_contacts.iica_mailing_manager')
-    country_ids = fields.Many2many('res.country', 'iica_contacts_country_mailing_rel', string='Countries', groups='iica_contacts.iica_mailing_manager')
+    area_interest_ids = fields.Many2many('iica_contacts.area_interest', 'iica_contacts_area_interest_mailing_rel', string='Areas of interes')
+    topic_interest_ids = fields.Many2many('iica_contacts.topic_interest', 'iica_contacts_topic_interest_mailing_rel', string='Topics of interes')
+    product_interest_ids = fields.Many2many('iica_contacts.products_interest', 'iica_contacts_products_interest_mailing_rel', string='Products of interes')
+    additional_products_ids = fields.Many2many('iica_contacts.additional_products', 'iica_contacts_additional_products_mailing_rel', string='Additional products')
+    languages_ids = fields.Many2many('iica_contacts.journalist_languages', 'iica_contacts_languages_mailing_rel', string='Languages')
+    country_ids = fields.Many2many('res.country', 'iica_contacts_country_mailing_rel', string='Countries')
     newsletter_type = fields.Selection(selection=__newsletter_types, string='Type', default='1', required=True) 
 
     #Fills the domain filter with the required areas and topics of interest.
