@@ -71,6 +71,12 @@
                 </td>            
             </tr>
             <tr>
+                <tr>
+                    <td>
+                        <strong style="font-weight: bold">Sobre el IICA</strong>
+                        <p>Es el organismo internacional especializado en agricultura del Sistema Interamericano, cuya misión es estimular, promover y apoyar los esfuerzos de sus 34 Estados Miembros para lograr el desarrollo agrícola y el bienestar rural por medio de la cooperación técnica internacional de excelencia.</p>
+                    </td>
+                </tr>
                 <td style="padding-top: 20px;">
                     <span style="font-weight: bold;">Más información:</span>
                     <br/>
@@ -142,6 +148,12 @@
                         </p>
                     </div>                
                 </td>            
+            </tr>
+            <tr>
+                <td>
+                    <strong style="font-weight: bold">About IICA</strong>
+                    <p>IICA is the specialized agency for agriculture in the Inter-American system, with a mission to encourage, promote and support its 34 Member States in their efforts to achieve agricultural development and rural well-being through international technical cooperation of excellence.</p>
+                </td>
             </tr>
             <tr>
                 <td style="padding-top: 20px;">
