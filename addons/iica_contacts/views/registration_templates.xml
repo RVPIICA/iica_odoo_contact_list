@@ -133,13 +133,7 @@
                           </option>
                         </t>
                       </select>
-                    </div>
-                    <br />
-                    <p>* IICA Connection is our weekly news bulletin, it contains varied information of the different subjects in which we work.
-                      See one here: <a href="http://www.iica.int/en/newsletters-page/iica-connection" target="_blank">http://www.iica.int/en/newsletters-page/iica-connection</a></p>
-                    <p>* AgroEnlace is a thematic radio magazine produced in spanish for the small and medium producers.
-                      It seeks to promote agribusiness and stimulate participation in national and international markets.
-                      Listen to one here: <a href="http://www.iica.int/en/prensa/agro-enlace" target="_blank">http://www.iica.int/en/prensa/agro-enlace</a></p>
+                    </div>                   
                   </div>
                   <div id="areas-interest" class="tab-pane fade">
                     <h3>Areas of interest</h3>
@@ -165,8 +159,12 @@
               </div>
             </div>
             <div class="row">
-              <p>
-                The information provided here is for the sole purpose of ensuring that you wish to receive this material, and to determine your interest in particular topics. We will not share your information with any third party.
+              <p>* IICA Connection is our weekly news bulletin, it contains varied information of the different subjects in which we work.
+                      See one here: <a href="http://www.iica.int/en/newsletters-page/iica-connection" target="_blank">http://www.iica.int/en/newsletters-page/iica-connection</a></p>
+              <p>* AgroEnlace is a thematic radio magazine produced in spanish for the small and medium producers.
+                It seeks to promote agribusiness and stimulate participation in national and international markets.
+                Listen to one here: <a href="http://www.iica.int/en/prensa/agro-enlace" target="_blank">http://www.iica.int/en/prensa/agro-enlace</a></p>
+              <p>* The information provided here is for the sole purpose of ensuring that you wish to receive this material, and to determine your interest in particular topics. We will not share your information with any third party.
               </p>
             </div>
             <div class="row">
