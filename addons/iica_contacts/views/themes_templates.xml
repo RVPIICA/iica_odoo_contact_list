@@ -44,6 +44,24 @@
     <t t-call="iica_contacts.s_iica_prensa_otros" />
     <t t-call="iica_contacts.s_iica_footer_press" />
   </template>
+  <!-- Buenas  noticias -->
+  <template id="theme_iica_good_news">
+    <t t-call="iica_contacts.s_iica_banner_good_news" />
+    <t t-call="iica_contacts.s_iica_good_news_top" />
+    <t t-call="iica_contacts.s_iica_good_news_image_right" />
+    <t t-call="iica_contacts.s_iica_good_news_image_left" />
+    <t t-call="iica_contacts.s_iica_good_news_image_right" />
+    <t t-call="iica_contacts.s_iica_footer_social_eng" />
+  </template>
+  <!-- Buenas  noticias -->
+  <template id="theme_iica_buenas_noticias">
+    <t t-call="iica_contacts.s_iica_banner_buenas_noticias" />
+    <t t-call="iica_contacts.s_iica_good_news_top" />
+    <t t-call="iica_contacts.s_iica_good_news_image_right" />
+    <t t-call="iica_contacts.s_iica_good_news_image_left" />
+    <t t-call="iica_contacts.s_iica_good_news_image_right" />
+    <t t-call="iica_contacts.s_iica_footer_social_eng" />
+  </template>
   <!-- IICA Comunicado de prensa -->
   <template id="theme_iica_comunicado_prensa_es">
     <style>

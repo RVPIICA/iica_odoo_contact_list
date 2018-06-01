@@ -32,6 +32,16 @@
                        data-images-info='{"logo": {"format": "png"}}'>
                       <t t-call="iica_contacts.theme_iica_prensa"/>
                   </div>
+                  <div data-name="iica_good_news" groups="iica_contacts.iica_mailing_journalist"
+                       data-img="/iica_contacts/static/src/img/thumbnails/good_news_thumb"
+                       data-images-info='{"logo": {"format": "png"}}'>
+                      <t t-call="iica_contacts.theme_iica_good_news"/>
+                  </div>
+                  <div data-name="iica_buenas_noticias" groups="iica_contacts.iica_mailing_journalist"
+                       data-img="/iica_contacts/static/src/img/thumbnails/buenas_noticias_thumb"
+                       data-images-info='{"logo": {"format": "png"}}'>
+                      <t t-call="iica_contacts.theme_iica_buenas_noticias"/>
+                  </div>
                   <div data-name="iica_comunicado_prensa_es" groups="iica_contacts.iica_mailing_journalist"
                        data-img="/iica_contacts/static/src/img/thumbnails/press_release_spanish"
                        data-images-info='{"logo": {"format": "png"}}'>
@@ -52,6 +62,16 @@
                 <t t-snippet="iica_contacts.s_iica_block_image" t-thumbnail="/mass_mailing/static/src/img/blocks/block_image.png"/>
                 <t t-snippet="iica_contacts.s_iica_block_three_cols" t-thumbnail="/mass_mailing/static/src/img/blocks/block_three_cols.png"/>
                 <t t-snippet="iica_contacts.s_iica_only_text" t-thumbnail="/mass_mailing/static/src/img/blocks/block_paragraph.png"/>
+                </div>
+              </div>
+              <div id="iica_designer_conexion_agroenlace" class="o_panel" groups="iica_contacts.iica_mailing_journalist">
+                <div class="o_panel_header">
+                    <i class="fa fa-envelope-open"/> Buenas noticias / Good news
+                </div>
+                <div class="o_panel_body">
+                <t t-snippet="iica_contacts.s_iica_good_news_top" t-thumbnail="/mass_mailing/static/src/img/blocks/block_image_text.png"/>
+                <t t-snippet="iica_contacts.s_iica_good_news_image_right" t-thumbnail="/mass_mailing/static/src/img/blocks/block_image.png"/>
+                <t t-snippet="iica_contacts.s_iica_good_news_image_right" t-thumbnail="/mass_mailing/static/src/img/blocks/block_image.png"/>
                 </div>
               </div>
               <div id="iica_designer_press" class="o_panel" groups="iica_contacts.iica_mailing_press">
@@ -165,6 +185,42 @@
         </div>
     </div>
 </template>
+
+<template id="s_iica_banner_good_news" name="Banner Good News">
+    <div class="o_mail_block_banner">
+        <div class="o_mail_snippet_general">
+            <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles" style="padding-bottom:20px;">
+                <tbody>
+                    <tr>
+                        <td width="100%" valign="top" class="o_mail_full_width_padding" style="color: rgb(242, 242, 242)">
+                            <a href="#">
+                                <img src="/iica_contacts/static/src/img/banners/good_news_header600.jpg" class="center-block" alt="Banner Good News" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</template>
+<template id="s_iica_banner_buenas_noticias" name="Banner Buenas Noticias">
+    <div class="o_mail_block_banner">
+        <div class="o_mail_snippet_general">
+            <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles" style="padding-bottom:40px;">
+                <tbody>
+                    <tr>
+                        <td width="100%" valign="top" class="o_mail_full_width_padding" style="color: rgb(242, 242, 242)">
+                            <a href="#">
+                                <img src="/iica_contacts/static/src/img/banners/buenas_noticias_header600.jpg" class="center-block" alt="Banner Buenas Noticias" />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</template>
+
 <template id="s_iica_banner_prensa" name="Banner IICA en la prensa">
     <div class="o_mail_block_banner">
         <div class="o_mail_snippet_general">
@@ -251,7 +307,50 @@
         </div>
     </div>
 </template>
+<template id="s_iica_good_news_top" name="Large image with text">
+    <div class="o_mail_block_banner">
+        <div class="o_mail_snippet_general">
+          <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_h_padding">
+              <tbody>
+                  <tr>
+                      <td width="100%" align="center" style="text-align:center; padding-top: 20px;" class="">
+                        <a href="#">
+                          <img src="/iica_contacts/static/src/img/demos/news_text_under_demo.jpg" class="center-block" alt="Reproducir" />
+                        </a>                        
+                      </td>
+                  </tr>
+                  <tr>
+                      <td width="100%">
+                          <h3 style="display: block; font-size: 18px; font-weight: bold;"></h3>
+                          <p style="text-aling: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+          &amp;nbsp;
+        </div>
+    </div>
+</template>
 <template id="s_iica_block_image_text" name="Image - Text (Right Side)">
+    <div class="o_mail_block_image_text">
+        <div class="o_mail_snippet_general">
+            <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+                <tbody>
+                    <tr>                        
+                        <td style="width:270px;vertical-align:top;" class="o_mail_col_mv o_mail_h_padding o_mail_v_padding">
+                            <h4 style="font-weight: bold; font-size: 14px;">Título de la noticia</h4>
+                            <p class="o_mail_no_margin" style="text-align:justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </td>
+                        <td style="width:270px;text-align:center;vertical-align:middle" class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding">
+                            <img src="/iica_contacts/static/src/img/demos/news_text_right_demo.jpg" class="center-block" alt="Your Picture" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</template>
+<template id="s_iica_good_news_image_left" name="Image - Text (Left Side)">
     <div class="o_mail_block_image_text">
         <div class="o_mail_snippet_general">
             <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
@@ -259,13 +358,29 @@
                     <tr>
                         <td style="width:270px;text-align:center;vertical-align:middle" class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding">
                             <img src="/iica_contacts/static/src/img/demos/news_text_right_demo.jpg" class="center-block" alt="Your Picture" />
-                        </td>
-                        <td style="width:270px;vertical-align:middle;" class="o_mail_col_mv o_mail_h_padding o_mail_v_padding">
-                            <h3>Título de la noticia</h3>
+                        </td>    
+                        <td style="width:270px;vertical-align:top;" class="o_mail_col_mv o_mail_h_padding o_mail_v_padding">
+                            <h4 style="font-weight: bold; font-size: 14px;">Título de la noticia</h4>
                             <p class="o_mail_no_margin" style="text-align:justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <div style="margin-top:15px;">
-                                <a href="#" class="btn btn-link">Leer más</a>
-                            </div>
+                        </td>                                            
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</template>
+<template id="s_iica_good_news_image_right" name="Image - Text (Right Side)">
+    <div class="o_mail_block_image_text">
+        <div class="o_mail_snippet_general">
+            <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+                <tbody>
+                    <tr>                        
+                        <td style="width:270px;vertical-align:middle;" class="o_mail_col_mv o_mail_h_padding o_mail_v_padding">
+                            <h4 style="font-weight: bold; font-size: 14px;">Título de la noticia</h4>
+                            <p class="o_mail_no_margin" style="text-align:justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </td>
+                        <td style="width:270px;text-align:center;vertical-align:middle" class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding">
+                            <img src="/iica_contacts/static/src/img/demos/news_text_right_demo.jpg" class="center-block" alt="Your Picture" />
                         </td>
                     </tr>
                 </tbody>
