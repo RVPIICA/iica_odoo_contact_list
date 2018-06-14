@@ -99,6 +99,7 @@
                 <field name="email_formatted"/>
                 <field name="company"/>
                 <field name="unsubscription_date"/>
+                <field name="message_bounce"/>
             </tree>
         </field>
     </record>
