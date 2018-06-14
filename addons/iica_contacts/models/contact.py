@@ -35,6 +35,7 @@ class Contact(models.Model):
     product_interest_ids = fields.Many2many('iica_contacts.products_interest', 'iica_contacts_contact_product_rel', string='Products of interest')
     additional_products_ids = fields.Many2many('iica_contacts.additional_products', 'iica_contacts_contact_additional_products_rel', string='Additional products')
     contact_type = fields.Selection(selection=__contact_type, string='Contact type', required=True, default='0')
+    message_bounce = fields.Integer(string='Bounce', help='Counter of the number of bounced emails for this contact.', default='0')
 
     #Journalist specific fields
     #medium = company, change name in UI
