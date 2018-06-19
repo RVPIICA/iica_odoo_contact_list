@@ -675,7 +675,7 @@
             <tr>
                 <td style="padding-right: 30px;"><img width="74px" src="/iica_contacts/static/src/img/logos/save_the_planet.jpg"/></td>
                 <td>
-                    <p style="text-align: justify;">
+                    <p style="text-align: justify; font-size: 12px;">
                         De no ser estrictamente necesario, por favor no imprima esta información. 
                         En el IICA estamos comprometidos a utilizar la menor cantidad de papel posible, clasificar nuestros residuos, 
                         utilizar racionalmente el agua y disminuir el uso de combustibles fósiles.
@@ -712,7 +712,7 @@
             <tr>
                 <td style="padding-right: 14px;"><img width="91px" src="/iica_contacts/static/src/img/logos/agenda_2030.jpg"/></td>
                 <td>
-                    <p style="text-align: justify;">
+                    <p style="text-align: justify; font-size: 12px;">
                         IICA is committed to the fulfillment and promotion of the 2030 Sustainable Development Goals.
                     </p>
                 </td>
