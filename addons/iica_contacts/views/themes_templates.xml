@@ -5,12 +5,14 @@
       <t t-call="iica_contacts.s_iica_banner_agroenlace" />
       <t t-call="iica_contacts.s_iica_player_agroenlace" />
       <t t-call="iica_contacts.s_iica_buttons" />
+      <t t-call="iica_contacts.iica_cierre_es" /> 
       <t t-call="iica_contacts.s_iica_footer_social" />
   </template>
   <template id="theme_iica_agro_enlace_live">
       <t t-call="iica_contacts.s_iica_banner_agroenlace" />
       <t t-call="iica_contacts.s_iica_live_agro_enlace" />
       <t t-call="iica_contacts.s_iica_buttons" />
+      <t t-call="iica_contacts.iica_cierre_es" /> 
       <t t-call="iica_contacts.s_iica_footer_social" />
   </template>
   <!--IICAConexión-->
@@ -18,12 +20,14 @@
       <t t-call="iica_contacts.s_iica_banner_conexion" />
       <t t-call="iica_contacts.s_iica_block_image" />
       <t t-call="iica_contacts.s_iica_buttons_iica_conexion" />
+      <t t-call="iica_contacts.iica_cierre_es" /> 
       <t t-call="iica_contacts.s_iica_footer_social" />
   </template>
   <template id="theme_iica_connection">
       <t t-call="iica_contacts.s_iica_banner_connection" />
       <t t-call="iica_contacts.s_iica_block_image" />
       <t t-call="iica_contacts.s_iica_buttons_iica_connection" />
+      <t t-call="iica_contacts.iica_cierre_en" /> 
       <t t-call="iica_contacts.s_iica_footer_social_eng" />
   </template>
   <!-- IICA en la prensa -->
@@ -42,6 +46,7 @@
     <t t-call="iica_contacts.s_iica_prensa_sur" />
     <t t-call="iica_contacts.s_iica_prensa_r_otros" />
     <t t-call="iica_contacts.s_iica_prensa_otros" />
+    <t t-call="iica_contacts.iica_cierre_es" /> 
     <t t-call="iica_contacts.s_iica_footer_press" />
   </template>
   <!-- Buenas  noticias -->
@@ -51,6 +56,7 @@
     <t t-call="iica_contacts.s_iica_good_news_image_right" />
     <t t-call="iica_contacts.s_iica_good_news_image_left" />
     <t t-call="iica_contacts.s_iica_good_news_image_right" />
+    <t t-call="iica_contacts.iica_cierre_en" /> 
     <t t-call="iica_contacts.s_iica_footer_social_eng" />
   </template>
   <!-- Buenas  noticias -->
@@ -60,6 +66,7 @@
     <t t-call="iica_contacts.s_iica_good_news_image_right" />
     <t t-call="iica_contacts.s_iica_good_news_image_left" />
     <t t-call="iica_contacts.s_iica_good_news_image_right" />
+    <t t-call="iica_contacts.iica_cierre_es" /> 
     <t t-call="iica_contacts.s_iica_footer_social_eng" />
   </template>
   <!-- IICA Comunicado de prensa -->
@@ -140,30 +147,7 @@
             </tr>
         </table>        
     </div>
-    <div style="padding: 0 10px; width: 600px;">
-        <table style="margin-top: 20px;">
-            <tr>
-                <td style="padding-right: 30px;"><img width="74px" src="/iica_contacts/static/src/img/logos/save_the_planet.jpg"/></td>
-                <td>
-                    <p style="text-align: justify;">
-                        De no ser estrictamente necesario, por favor no imprima esta información. 
-                        En el IICA estamos comprometidos a utilizar la menor cantidad de papel posible, clasificar nuestros residuos, 
-                        utilizar racionalmente el agua y disminuir el uso de combustibles fósiles.
-                    </p>
-                </td>
-            </tr>
-        </table>
-        <table style="margin-top: 20px; margin-bottom: 20px;">
-            <tr>
-                <td style="padding-right: 14px;"><img width="91px" src="/iica_contacts/static/src/img/logos/agenda_2030.jpg"/></td>
-                <td>
-                    <p style="text-align: justify;">
-                        El IICA está comprometido con el cumplimiento y promoción de los Objetivos de Desarrollo Sostenible 2030.
-                    </p>
-                </td>
-            </tr>
-        </table>
-    </div>    
+    <t t-call="iica_contacts.iica_cierre_es" />    
     <t t-call="iica_contacts.s_iica_footer_social_nu" />        
   </template>
   <template id="theme_iica_comunicado_prensa_en">
@@ -243,29 +227,7 @@
             </tr>
         </table>        
     </div>
-    <div style="padding: 0 10px; width: 600px;">
-        <table style="margin-top: 20px;">
-            <tr>
-                <td style="padding-right: 30px;"><img width="74px" src="/iica_contacts/static/src/img/logos/save_the_planet.jpg"/></td>
-                <td>
-                    <p style="text-align: justify;">                       
-                        Print information only if necessary. At IICA, we are committed to using the least amount of paper possible, 
-                        sorting our waste, rationalizing our use of water and reducing the use of fossil fuels.
-                    </p>
-                </td>
-            </tr>
-        </table>
-        <table style="margin-top: 20px; margin-bottom: 20px;">
-            <tr>
-                <td style="padding-right: 14px;"><img width="91px" src="/iica_contacts/static/src/img/logos/agenda_2030.jpg"/></td>
-                <td>
-                    <p style="text-align: justify;">
-                        IICA is committed to the fulfillment and promotion of the 2030 Sustainable Development Goals.
-                    </p>
-                </td>
-            </tr>
-        </table>
-    </div> 
+    <t t-call="iica_contacts.iica_cierre_en" /> 
     <t t-call="iica_contacts.s_iica_footer_social_eng_nu" />        
   </template>
 </odoo>
