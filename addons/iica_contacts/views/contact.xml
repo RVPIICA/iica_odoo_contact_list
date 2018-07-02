@@ -57,7 +57,7 @@
                         <field name="extension" attrs="{'invisible': [('contact_type','=', '0')]}"/>
                         <field name="radio" attrs="{'invisible': [('contact_type','=', '1')]}"/>
                         <field name="mobile_phone" attrs="{'invisible': [('contact_type','=', '0')]}"/>
-                        <field name="opt_out" attrs="{'invisible': [('contact_type','=', '0')]}"/>
+                        <field name="opt_out" />
                         <field name="unsubscription_date" readonly="1"/>
                       </group>
                     </group>
