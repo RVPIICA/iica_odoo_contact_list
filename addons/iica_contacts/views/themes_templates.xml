@@ -230,4 +230,84 @@
     <t t-call="iica_contacts.iica_cierre_en" /> 
     <t t-call="iica_contacts.s_iica_footer_social_eng_nu" />        
   </template>
+  <template id="theme_iica_comunicado_prensa_pt">
+    <style>
+        .pull-left, .pull-right {
+            margin: 10px;
+        }
+    </style>
+    <div style="padding: 0 10px; width: 600px;">
+        <t t-call="iica_contacts.s_iica_logo_es" />
+        <table style="width: 100%">
+            <tr>
+                <td style="font-size: 20px; color: #036; font-weight: bold;">Título en dos líneas título en dos líneas título en dos líneas título en dos líneas título en dos líneas</td>
+            </tr>
+            <tr>
+                <td style="font-style: italic; font-size: 12px; padding-top: 20px;">Bajada en dos líneas, bajada en dos líneas bajada en dos líneas bajada en dos líneas bajada en dos líneas bajada en dos líneas bajada en dos líneas bajada en dos líneas.</td>
+            </tr>
+            <tr>
+                <td style="padding-top: 20px;">
+                    <div style="width:100%">
+                        <p>
+                            <span style="font-weight:bold">Lugar, XX de mes, 2018 (IICA).</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget massa vel odio mollis vehicula sed vehicula eros. Phasellus sem tellus, sagittis a mi ac, laoreet pellentesque tortor. Curabitur a blandit neque, a scelerisque enim. Fusce sed ultrices libero, sit amet tincidunt neque. Sed nec volutpat magna. Aenean convallis massa tincidunt porttitor molestie. Phasellus risus elit, aliquet a pretium eu, tincidunt sit amet orci. Fusce sem orci, placerat congue eleifend sit amet, venenatis ac risus. Sed ultrices, lacus eu iaculis pretium, quam dolor rhoncus orci, non facilisis elit purus at est. Donec mollis, nulla eget interdum eleifend, ante odio ultrices purus, eu interdum velit diam nec nunc. Donec pretium quam justo, sed consequat quam pretium vel. Mauris ac pretium nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                            Etiam orci risus, malesuada eu lectus eget, rutrum rutrum lacus. 
+                        </p>
+                    </div>                
+                </td>            
+            </tr>
+            <tr>
+                <tr>
+                    <td>
+                        <strong style="font-weight: bold">Sobre o IICA</strong>
+                        <p>É o organismo internacional especializado em agricultura do Sistema Interamericano. Sua missão é estimular, promover e apoiar os esforços de seus 34 Estados-membros para alcançar o desenvolvimento agrícola e o bem-estar rural, por meio da cooperação técnica internacional de excelência.</p>
+                    </td>
+                </tr>
+                <td style="padding-top: 20px;">
+                    <span style="font-weight: bold;">Mais informação:</span>
+                    <br/>
+                    <span>Nome, cargo.</span>
+                    <br/>
+                    <a href="#">xxxxx.xxxxx@iica.int</a>
+                </td>
+            </tr>
+        </table>
+        <table style="width: 100%; margin-top: 20px;">
+            <tr>
+                <td style="text-align: center;">
+                    <a href="#"><img width="250px" height="166px" src="/iica_contacts/static/src/img/demos/news_text_right_demo.jpg"/></a>
+                    <br/>
+                    <span style="display: block;">Galería de fotos</span>
+                </td>
+                <td style="text-align: center;">
+                    <a href="#"><img width="250px" height="166px" src="/iica_contacts/static/src/img/demos/news_text_right_demo.jpg"/></a>
+                    <br/>
+                    <span style="display: block;">Video: Título del video</span>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">
+                    <a href="#"><img width="250px" height="166px" src="/iica_contacts/static/src/img/demos/news_text_right_demo.jpg"/></a>
+                    <br/>
+                    <span style="display: block;">Audio: Título del audio</span>
+                </td>
+                <td style="text-align: center;">
+                    <a href="#"><img width="250px" height="166px" src="/iica_contacts/static/src/img/demos/news_text_right_demo.jpg"/></a>
+                    <br/>
+                    <span style="display: block;">Publicación: Título de la publicación</span>
+                </td>
+            </tr>
+        </table>
+        <table style="width: 100%; margin-top: 20px;">
+            <tr>
+                <td style="font-style: italic;font-size: 12px;">
+                    Comunicado elaborado por: <span>Nome Sobrenome</span>
+                    <br/>
+                    <span>Teléfono</span> - <a href="#">correo.electronico@iica.int</a>
+                </td>
+            </tr>
+        </table>        
+    </div>
+    <t t-call="iica_contacts.iica_cierre_pt" />    
+    <t t-call="iica_contacts.s_iica_footer_social_pt_nu" />        
+  </template>
 </odoo>
