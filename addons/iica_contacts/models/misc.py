@@ -63,3 +63,9 @@ class Languages(models.Model):
 
     name = fields.Char(string='Language name', required=True, translate=True)
     contacts = fields.Many2many('iica_contacts.contact', 'iica_contacts_journalist_language_rel', string='Contacts')
+
+class Users(models.Model):
+    """User fields"""
+    _inherit = 'res.users'
+
+    authorized_country_id = fields.Many2one('res.country', string='Country', ondelete='restrict')
