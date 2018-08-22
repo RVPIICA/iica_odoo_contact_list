@@ -20,6 +20,10 @@
       <field name="name">IICA Mailing - Journalist</field>
       <field name="implied_ids" eval="[(4, ref('iica_contacts.iica_mailing_manager'))]"/>
     </record>
+    <record id="iica_mailing_journalist_country" model="res.groups">
+      <field name="name">IICA Mailing - Journalist</field>
+      <field name="implied_ids" eval="[(4, ref('iica_contacts.iica_mailing_manager'))]"/>
+    </record>
     <record id="iica_mailing_conexion" model="res.groups">
       <field name="name">IICA Mailing - IICA Connection</field>
       <field name="implied_ids" eval="[(4, ref('iica_contacts.iica_mailing_manager'))]"/>
