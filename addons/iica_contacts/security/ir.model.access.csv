@@ -4,6 +4,7 @@ access_read_follower,read followers,mail.model_mail_followers,base.group_public,
 access_read_messages,read messages,mail.model_mail_message,base.group_public,1,1,1,0
 access_admin_contacts,admin contacts,model_iica_contacts_contact,iica_mailing_contact_admin,1,1,1,1
 access_admin_journalists,admin journalists,model_iica_contacts_contact,iica_mailing_journalist_admin,1,1,1,1
+access_admin_contacts_country,admin contacts country,model_iica_contacts_contact,iica_mailing_journalist_country,1,1,1,1
 public_read_area_interest,read areas interest,model_iica_contacts_area_interest,base.group_public,1,0,0,0
 public_read_topic_interest,read topics interest,model_iica_contacts_topic_interest,base.group_public,1,0,0,0
 public_read_products_interest,read products interest,model_iica_contacts_products_interest,base.group_public,1,0,0,0

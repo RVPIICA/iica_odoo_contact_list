@@ -1,6 +1,20 @@
 <odoo>
   <data>
 
+    <!--Expanded user-->
+    
+    <record id="expanded_user" model="ir.ui.view">
+        <field name="name">user.extended</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='lang']" position="before">
+                <field name="authorized_country_id"/>
+            </xpath>
+        </field>         
+    </record>
+    
+
     <!--Area tree view-->
     <record model="ir.ui.view" id="view_iica_contacts_area_interest_tree">
         <field name="name">iica_contacts.area_interest.tree</field>

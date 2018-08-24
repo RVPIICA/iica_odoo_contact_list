@@ -47,13 +47,26 @@ class Contact(models.Model):
     j_channel_ids = fields.Many2many('iica_contacts.journalist_channels', 'iica_contacts_journalist_channels_rel', string='Channels')
     j_topic_ids = fields.Many2many('iica_contacts.journalist_topics', 'iica_contacts_journalist_topic_rel', string='Topics')
     j_lang_ids = fields.Many2many('iica_contacts.journalist_languages', 'iica_contacts_journalist_language_rel', string='Languages')
-        
+    
+    #Country journalist specific fields.
+    visible_in_filter = fields.Boolean(compute='_compute_visible_in_filter', string='Visible in filter', store=False, search='_search_visible_in_filter')
 
     @api.depends('name', 'email')
     def _compute_email_formatted(self):
         for contact in self:
             contact.email_formatted = formataddr((contact.name, contact.email))
 
+    @api.depends('country_id')
+    def _compute_visible_in_filter(self):
+        for contact in self:
+            if (contact.country_id == self.env.user.authorized_country_id):
+                contact.visible_in_filter = True
+
+    @api.multi
+    def _search_visible_in_filter(self, operator, value):
+        records = self.search([]).filtered(lambda x:x.visible_in_filter is True)
+        if records:
+            return [('id', 'in', [x.id for x in records])]                 
 
     @api.multi
     def message_get_default_recipients(self):
