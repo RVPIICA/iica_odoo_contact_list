@@ -32,8 +32,11 @@ class MassMailing(models.Model):
     product_interest_ids = fields.Many2many('iica_contacts.products_interest', 'iica_contacts_products_interest_mailing_rel', string='Products of interes')
     additional_products_ids = fields.Many2many('iica_contacts.additional_products', 'iica_contacts_additional_products_mailing_rel', string='Additional products')
     languages_ids = fields.Many2many('iica_contacts.journalist_languages', 'iica_contacts_languages_mailing_rel', string='Languages')
-    country_ids = fields.Many2many('res.country', 'iica_contacts_country_mailing_rel', string='Countries')
+    country_ids = fields.Many2many('res.country', 'iica_contacts_country_mailing_rel', string='Countries', default=lambda self: self._get_default_country())
     newsletter_type = fields.Selection(selection=__newsletter_types, string='Type', default='1', required=True)
+
+    def _get_default_country(self):
+        return self.env.user.authorized_country_id
 
     #Fills the domain filter with the required areas and topics of interest.
     @api.onchange('language', 'area_interest_ids', 'topic_interest_ids', 'product_interest_ids', 'additional_products_ids', 'country_ids', 'languages_ids', 'newsletter_type')
