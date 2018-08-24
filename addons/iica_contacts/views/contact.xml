@@ -17,6 +17,7 @@
                 <separator/>
                 <filter string="Show only contacts" name="show_only_contacts" domain="[('contact_type', '=', '0')]"/>
                 <filter string="Show only journalists" name="show_only_journalists" domain="[('contact_type', '=', '1')]"/>
+                <filter string="Show only journalists from my country" name="show_country_contacts" domain="[('visible_in_filter', '=', True)]"/>
                 <separator/>
                 <filter string="Exclude Opt Out" name="not_opt_out" domain="[('opt_out', '=', False)]"/>
                 <group expand="0" string="Group By">
@@ -128,6 +129,18 @@
             </p>
         </field>
     </record>
+    <!-- Country Actions -->
+    <record model="ir.actions.act_window" id="action_view_iica_contacts_country">
+        <field name="name">My Contacts</field>
+        <field name="res_model">iica_contacts.contact</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{'search_default_show_country_contacts':1}</field>        
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">Create contact
+            </p>
+        </field>
+    </record>
 
     <!-- Menu item that triggers IICA Contacts action -->
     <menuitem id="iica_contacts_management_menu" name="Manage contacts" parent="iica_contacts_menu" groups="iica_contacts.iica_mailing_contact_admin"
@@ -135,5 +148,8 @@
     <!-- Menu item that triggers IICA Journalists action -->
     <menuitem id="iica_journalists_management_menu" name="Manage journalists" parent="iica_contacts_menu" groups="iica_contacts.iica_mailing_journalist_admin"
               action="action_view_iica_contacts_journalist"/>
+    <!-- Menu item that triggers IICA Countries action -->
+    <menuitem id="iica_country_management_menu" name="Manage country contacts" parent="iica_contacts_menu" groups="iica_contacts.iica_mailing_journalist_country"
+              action="action_view_iica_contacts_country"/>
   </data>
 </odoo>
