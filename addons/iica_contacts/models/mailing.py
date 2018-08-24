@@ -33,12 +33,7 @@ class MassMailing(models.Model):
     additional_products_ids = fields.Many2many('iica_contacts.additional_products', 'iica_contacts_additional_products_mailing_rel', string='Additional products')
     languages_ids = fields.Many2many('iica_contacts.journalist_languages', 'iica_contacts_languages_mailing_rel', string='Languages')
     country_ids = fields.Many2many('res.country', 'iica_contacts_country_mailing_rel', string='Countries')
-    newsletter_type = fields.Selection(selection=__newsletter_types, string='Type', default='1', required=True) 
-    user_country_id = fields.Integer(compute='_compute_user_country_id')
-    
-    #Gets the country assigned to a specific user.
-    def _compute_user_country_id(self):
-        return self.user_id.authorized_country_id
+    newsletter_type = fields.Selection(selection=__newsletter_types, string='Type', default='1', required=True)
 
     #Fills the domain filter with the required areas and topics of interest.
     @api.onchange('language', 'area_interest_ids', 'topic_interest_ids', 'product_interest_ids', 'additional_products_ids', 'country_ids', 'languages_ids', 'newsletter_type')
