@@ -69,3 +69,9 @@ class Users(models.Model):
     _inherit = 'res.users'
 
     authorized_country_id = fields.Many2one('res.country', string='Country', ondelete='restrict')
+
+class Countries(models.Model):
+    """Countries"""
+    _inherit = 'res.country'
+
+    authorized_users_ids = fields.One2many('res.users', 'authorized_country_id')
