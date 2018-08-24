@@ -42,17 +42,17 @@
                        data-images-info='{"logo": {"format": "png"}}'>
                       <t t-call="iica_contacts.theme_iica_buenas_noticias"/>
                   </div>
-                  <div data-name="iica_comunicado_prensa_es" groups="iica_contacts.iica_mailing_journalist"
+                  <div data-name="iica_comunicado_prensa_es" groups="iica_contacts.iica_mailing_journalist,iica_contacts.iica_mailing_journalist_country"
                        data-img="/iica_contacts/static/src/img/thumbnails/press_release_spanish"
                        data-images-info='{"logo": {"format": "png"}}'>
                       <t t-call="iica_contacts.theme_iica_comunicado_prensa_es"/>
                   </div>  
-                  <div data-name="iica_comunicado_prensa_en" groups="iica_contacts.iica_mailing_journalist"
+                  <div data-name="iica_comunicado_prensa_en" groups="iica_contacts.iica_mailing_journalist,iica_contacts.iica_mailing_journalist_country"
                        data-img="/iica_contacts/static/src/img/thumbnails/press_release_english"
                        data-images-info='{"logo": {"format": "png"}}'>
                       <t t-call="iica_contacts.theme_iica_comunicado_prensa_en"/>
                   </div>
-                  <div data-name="iica_comunicado_prensa_pt" groups="iica_contacts.iica_mailing_journalist"
+                  <div data-name="iica_comunicado_prensa_pt" groups="iica_contacts.iica_mailing_journalist,iica_contacts.iica_mailing_journalist_country"
                        data-img="/iica_contacts/static/src/img/thumbnails/press_release_portuguese"
                        data-images-info='{"logo": {"format": "png"}}'>
                       <t t-call="iica_contacts.theme_iica_comunicado_prensa_pt"/>
