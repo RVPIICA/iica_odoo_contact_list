@@ -104,8 +104,7 @@
                   <field name="newsletter_type"/>
                   <field name="language" attrs="{'invisible': [('newsletter_type','=', '2')]}"/>
                   <field name="languages_ids" options="{'no_create': True}" widget="many2many_tags" attrs="{'invisible': [('newsletter_type','=', '1')]}"/>
-                  <field name="country_ids" options="{'no_create': True}" widget="many2many_tags" attrs="{'invisible': [('newsletter_type','=', '1')]}" groups="iica_contacts.iica_mailing_journalist"/>             
-                  <field name="country_ids" options="{'no_create': True}" widget="many2many_tags" attrs="{'invisible': [('newsletter_type','=', '1')]}" domain="[('authorized_users_ids','=',uid)]" groups="iica_contacts.iica_mailing_journalist_country"/>
+                  <field name="country_ids" options="{'no_create': True}" widget="many2many_tags" attrs="{'invisible': [('newsletter_type','=', '1')]}" groups="iica_contacts.iica_mailing_journalist,iica_contacts.iica_mailing_journalist_country"/>          
                   <field name="mailing_domain"
                             options="{'model_field': 'mailing_model', 'model_domain': 'mailing_domain'}" attrs="{'invisible': True}"/>
                     </group>
