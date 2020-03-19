@@ -312,6 +312,30 @@
         </div>
     </div>
 </template>
+<template id="s_iica_agroenlace_banner_wa_s" name="Spotify Whatsapp">
+  <div class="o_mail_block_banner">
+    <div class="o_mail_snippet_general">
+      <div style="background-color: #1c3664; border-radius: 5px; padding: 10px;">
+        <table>
+          <tr>
+            <td width="30%">
+              <h3 style="color: white; font-size: 18px; font-weight: bold; margin-top: 60px;">Reciba AgroEnlace en su celular</h3>
+            </td>
+            <td width="35%" style="text-align: center; padding-right: 10px; padding-top: 20px;">
+              <img src="/iica_contacts/static/src/img/logos/logo_wa.png" style="width: 70px; height: auto;" alt="Spotify"/>
+              <h3 style="color: white; font-size: 18px;">Suscríbase al</h3>
+              <h3 style="color: white; font-size: 18px; margin-top: 0">+506 8908-9226</h3>
+            </td>
+            <td width="35%" style="text-align: center; border-left: 1px solid white; padding-left: 10px;">
+              <h3 style="color: white; font-size: 18px; text-align: center; margin-top: 34px;">Escuchenos en</h3>
+              <img src="/iica_contacts/static/src/img/logos/logo_spotify.png" alt="Spotify"/>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</template>
 <template id="s_iica_good_news_top" name="Large image with text">
     <div class="o_mail_block_banner">
         <div class="o_mail_snippet_general">
