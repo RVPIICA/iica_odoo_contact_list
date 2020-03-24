@@ -315,7 +315,7 @@
 <template id="s_iica_agroenlace_banner_wa_s" name="Spotify Whatsapp">
   <div class="o_mail_block_banner">
     <div class="o_mail_snippet_general">
-      <div style="background-color: #1c3664; border-radius: 5px; padding: 10px; width: 560px; margin: 0 auto;">
+      <div style="background-color: #1c3664; border-radius: 5px; padding: 10px; width: 560px; margin: 20px auto;">
         <table>
           <tr>
             <td width="24%">
