@@ -315,20 +315,19 @@
 <template id="s_iica_agroenlace_banner_wa_s" name="Spotify Whatsapp">
   <div class="o_mail_block_banner">
     <div class="o_mail_snippet_general">
-      <div style="background-color: #1c3664; border-radius: 5px; padding: 10px;">
+      <div style="background-color: #1c3664; border-radius: 5px; padding: 10px; width: 560px; margin: 0 auto;">
         <table>
           <tr>
-            <td width="30%">
-              <h3 style="color: white; font-size: 14px; font-weight: bold; margin-top: 46px;">Reciba AgroEnlace en su celular</h3>
+            <td width="24%">
+              <h3 style="color: white; font-size: 14px; font-weight: bold; margin-top: 34px;">Reciba AgroEnlace en su celular</h3>
             </td>
-            <td width="35%" style="text-align: center; padding-right: 10px; padding-top: 20px;">
+            <td width="41%" style="text-align: center; padding-right: 10px; padding-left: 10px; padding-top: 12px;">
               <a href="https://wa.me/50689089226" target="_blank"><img src="/iica_contacts/static/src/img/logos/logo_wa.png" style="width: 40px; height: auto;" alt="Spotify"/>
-              <h3 style="color: white; font-size: 14px; margin-top: 10px;">Suscríbase al</h3>
-              <h3 style="color: white; font-size: 14px; margin-top: 0">+506 8908-9226</h3></a>
+              <h3 style="color: white; font-size: 14px; margin-top: 10px;">Suscríbase al +506 8908-9226</h3></a>
             </td>
             <td width="35%" style="text-align: center; border-left: 1px solid white; padding-left: 10px;">
               <a href="https://spoti.fi/32p1SrY" target="_blank">
-                <h3 style="color: white; font-size: 14px; text-align: center; margin-top: 26px;">Escuchenos en</h3>
+                <h3 style="color: white; font-size: 14px; text-align: center; margin-top: 12px;">Escuchenos en</h3>
                 <img src="/iica_contacts/static/src/img/logos/logo_spotify.png" alt="Spotify" style="width: 78%;"/>
               </a>              
             </td>
