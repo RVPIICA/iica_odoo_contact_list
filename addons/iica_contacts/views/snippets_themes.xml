@@ -319,17 +319,17 @@
         <table>
           <tr>
             <td width="30%">
-              <h3 style="color: white; font-size: 18px; font-weight: bold; margin-top: 60px;">Reciba AgroEnlace en su celular</h3>
+              <h3 style="color: white; font-size: 14px; font-weight: bold; margin-top: 46px;">Reciba AgroEnlace en su celular</h3>
             </td>
             <td width="35%" style="text-align: center; padding-right: 10px; padding-top: 20px;">
-              <a href="https://wa.me/50689089226" target="_blank"><img src="/iica_contacts/static/src/img/logos/logo_wa.png" style="width: 70px; height: auto;" alt="Spotify"/>
-              <h3 style="color: white; font-size: 18px;">Suscríbase al</h3>
-              <h3 style="color: white; font-size: 18px; margin-top: 0">+506 8908-9226</h3></a>
+              <a href="https://wa.me/50689089226" target="_blank"><img src="/iica_contacts/static/src/img/logos/logo_wa.png" style="width: 40px; height: auto;" alt="Spotify"/>
+              <h3 style="color: white; font-size: 14px; margin-top: 10px;">Suscríbase al</h3>
+              <h3 style="color: white; font-size: 14px; margin-top: 0">+506 8908-9226</h3></a>
             </td>
             <td width="35%" style="text-align: center; border-left: 1px solid white; padding-left: 10px;">
               <a href="https://spoti.fi/32p1SrY" target="_blank">
-                <h3 style="color: white; font-size: 18px; text-align: center; margin-top: 34px;">Escuchenos en</h3>
-                <img src="/iica_contacts/static/src/img/logos/logo_spotify.png" alt="Spotify"/>
+                <h3 style="color: white; font-size: 14px; text-align: center; margin-top: 26px;">Escuchenos en</h3>
+                <img src="/iica_contacts/static/src/img/logos/logo_spotify.png" alt="Spotify" style="width: 78%;"/>
               </a>              
             </td>
           </tr>
