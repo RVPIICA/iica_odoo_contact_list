@@ -159,8 +159,6 @@
               </div>
             </div>
             <div class="row">
-              <p>* IICA Connection is our weekly news bulletin, it contains varied information of the different subjects in which we work.
-                      See one here: <a href="http://www.iica.int/en/newsletters-page/iica-connection" target="_blank">http://www.iica.int/en/newsletters-page/iica-connection</a></p>
               <p>* AgroEnlace is a thematic radio magazine produced in spanish for the small and medium producers.
                 It seeks to promote agribusiness and stimulate participation in national and international markets.
                 Listen to one here: <a href="http://www.iica.int/en/prensa/agro-enlace" target="_blank">http://www.iica.int/en/prensa/agro-enlace</a></p>
@@ -250,67 +248,6 @@
                       <li>Fax :(+506) 2216 0233</li>
                       <li>E-mail: <a href="mailto:iicahq@iica.int">iicahq@iica.int</a> </li>
                   </ul>
-                  <ul class="list-unstyled footer-social">
-                      <li><a href="https://www.facebook.com/iicanoticias" target="_blank"><img src="http://www.iica.int/sites/all/themes/custom/iica/img/facebook-white.svg"/></a></li>
-                      <li><a href="https://www.twitter.com/iicanoticias" target="_blank"><img src="http://www.iica.int/sites/all/themes/custom/iica/img/twitter-white.svg"/></a></li>
-                      <li><a href="https://www.youtube.com/iicanoticias" target="_blank"><img src="http://www.iica.int/sites/all/themes/custom/iica/img/youtube-white.svg"/></a></li>
-                      <li><a href="https://www.linkedin.com/company/40611?trk=tyah&amp;trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A40611%2Cidx%3A2-2-3%2CtarId%3A1466108612043%2Ctas%3Aiica" target="_blank"><img src="http://www.iica.int/sites/all/themes/custom/iica/img/li_white.svg"/></a></li>
-                  </ul>
-              </div>
-              <div class="col-md-3 footer-bordered footer-conexion">
-                  <ul class="list-unstyled">
-                      <li><img src="http://www.iica.int/sites/all/themes/custom/iica/img/footer-iicaconexion.svg"/></li>
-                      <li class="footer-conexion-titulo">IICAConexión</li>
-                      <li>Receive the hemispheric bulletin</li>
-                      <li>highlighting the results of our cooperation.</li>
-                      <li class="footer-conexion-suscribase"><a href="http://eepurl.com/b1qOx1" target="_blank">Subscribe</a></li>
-                  </ul>
-              </div>
-              <div class="col-md-6 footer-paises">
-                  <h6>OUR PRESENCE IN THE HEMISPHERE</h6>
-                  <div class="row">
-                      <ul class="col-md-4 list-unstyled">
-                          <li><a href="http://www.iica.int/en/countries/antigua-and-barbuda" target="_blank">Antigua and Barbuda</a></li>
-                          <li><a href="http://www.iica.int/es/countries/argentina" target="_blank">Argentina</a></li>
-                          <li><a href="http://www.iica.int/en/countries/bahamas" target="_blank">Bahamas</a></li>
-                          <li><a href="http://www.iica.int/en/countries/barbados" target="_blank">Barbados</a></li>
-                          <li><a href="http://www.iica.int/es/countries/belice" target="_blank">Belize</a></li>
-                          <li><a href="http://www.iica.int/es/countries/bolivia" target="_blank">Bolivia</a></li>
-                          <li><a href="http://www.iicabr.iica.org.br" target="_blank">Brazil</a></li>
-                          <li><a href="http://www.iica.int/en/countries/canada" target="_blank">Canada</a></li>
-                          <li><a href="http://www.iica.int/es/countries/chile" target="_blank">Chile</a></li>
-                          <li><a href="http://www.iica.int/es/countries/colombia" target="_blank">Colombia</a></li>
-                          <li><a href="http://www.iica.int/es/countries/costa-rica" target="_blank">Costa Rica</a></li>
-                          <li><a href="http://www.iica.int/en/countries/dominica" target="_blank">Dominica</a></li>
-                      </ul>
-                      <ul class="col-md-4 list-unstyled">
-                          <li><a href="http://www.iica.int/es/countries/republica-dominicana" target="_blank">Dominican Republic</a></li>
-                          <li><a href="http://www.iica.int/es/countries/ecuador" target="_blank">Ecuador</a></li>
-                          <li><a href="http://www.iica.int/es/countries/el-salvador" target="_blank">El Salvador</a></li>
-                          <li><a href="http://www.iica.int/en/countries/granada" target="_blank">Grenada</a></li>
-                          <li><a href="http://www.iica.int/es/countries/guatemala" target="_blank">Guatemala</a></li>
-                          <li><a href="http://www.iica.int/en/countries/guyana" target="_blank">Guyana</a></li>
-                          <li><a href="http://www.iica.int/en/countries/haiti" target="_blank">Haiti</a></li>
-                          <li><a href="http://www.iica.int/es/countries/honduras" target="_blank">Honduras</a></li>
-                          <li><a href="http://www.iica.int/en/countries/jamaica" target="_blank">Jamaica</a></li>
-                          <li><a href="http://www.iica.int/es/countries/mexico" target="_blank">Mexico</a></li>
-                          <li><a href="http://www.iica.int/es/countries/nicaragua" target="_blank">Nicaragua</a></li>
-                          <li><a href="http://www.iica.int/es/countries/panama" target="_blank">Panama</a></li>
-                      </ul>
-                      <ul class="col-md-4 list-unstyled">
-                          <li><a href="http://www.iica.int/es/countries/paraguay" target="_blank">Paraguay</a></li>
-                          <li><a href="http://www.iica.int/es/countries/spain" target="_blank">Permanent Office for Europe</a></li>
-                          <li><a href="http://www.iica.int/es/countries/peru" target="_blank">Peru</a></li>
-                          <li><a href="http://www.iica.int/en/countries/st-lucia" target="_blank">St. Lucia</a></li>
-                          <li><a href="http://www.iica.int/en/countries/san-cristobal-y-nieves" target="_blank">St. Kitts and Nevis</a></li>
-                          <li><a href="http://www.iica.int/en/countries/san-vicente-y-las-granadinas" target="_blank">St. Vincent and the Grenadines</a></li>
-                          <li><a href="http://www.iica.int/en/countries/surinam" target="_blank">Suriname</a></li>
-                          <li><a href="http://www.iica.int/en/countries/trinidad-and-tobago" target="_blank">Trinidad and Tobago</a></li>
-                          <li><a href="http://www.iica.int/en/countries/united-states" target="_blank">United States</a></li>
-                          <li><a href="http://www.iica.int/es/countries/uruguay" target="_blank">Uruguay</a></li>
-                          <li><a href="http://www.iica.int/es/countries/venezuela" target="_blank">Venezuela</a></li>
-                      </ul>
-                  </div>
               </div>
           </footer>
       </xpath>
